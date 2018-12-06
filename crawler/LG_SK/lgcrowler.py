@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
-from lgphone import PhoneInfo
+from phone import LGPhoneInfo
 from DbManage import DBHelper as Db
 import time
 import re
@@ -15,16 +15,17 @@ db = Db()
 
 #driver load
 #Solve the Chromedriver and Chrome crash problem, get options like down steps
-#chrome_options = wd.ChromeOptions()
-#chrome_options.binary_location = '/opt/google/chrome/google-chrome'
-#chrome_options.add_argument('--headless')
-#chrome_options.add_argument('--no-sandbox')
-#chrome_options.add_argument('--disable-dev-shm-usage')
+chrome_options = wd.ChromeOptions()
+chrome_options.binary_location = '/opt/google/chrome/google-chrome'
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
 
-#display = Display(visible = 0, size = (2000, 2000))
-#display.start()
+display = Display(visible = 0, size = (2000, 2000))
+display.start()
 
-driver = wd.Chrome('chromedriver')
+#driver = wd.Chrome('chromedriver')
+driver = wd.Chrome('./chromedriver')
 
 #homepage access
 driver.get(main_url)
@@ -111,18 +112,10 @@ for page in range(1, 10):
             check_tbody = check_tbody + 1
     print(page)
 
-    #Send to the Database
-    for phone_list in list_lg:
-        Db.db_insertCrawlingData(
-            phone_list.image,
-            phone_list.phone_name,
-            phone_list.model_name,
-            phone_list.original_price,
-            phone_list.gongsi,
-            phone_list.total_price,
-            phone_list.date
-        )
+    #Close the html file for next page html source
+    f.close()
 
+    #Go on for the next page
     try:
         number = 1 + 30 * page
         driver.execute_script("goPage('%s')" % number)
@@ -131,10 +124,24 @@ for page in range(1, 10):
     except Exception as e:
         print ('Next Page Error!', e)
 
-    #Close the html file for next page html source
-    f.close()
+#Check the duplicated and send to the Database
+for phone_list in list_lg:
+    if db.db_duplicated(phone_list.phone_name, phone_list.date) == 1:
+        db.db_insertCrawlingData(
+            phone_list.image,
+            phone_list.phone_name,
+            phone_list.model_name,
+            phone_list.original_price,
+            phone_list.gongsi,
+            phone_list.total_price,
+            phone_list.date
+        )
+    else:
+        db.db_backupAndUpdateData(phone_name, gongsi, total_price, date)
 
-#Close the driver and crawling save file
+#Close the all the connection
+db.db_free()
+driver.close()
 driver.quit()
 fw.close()
 
