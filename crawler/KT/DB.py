@@ -17,8 +17,8 @@ class DBHelper:
     '''
     def db_init(self):
         self.conn = my.connect(
-            host='210.117.181.26',
-            port=3307,
+            host='192.168.19.128',
+            port=3306,
             user='root',
             password='wldms332',
             db='project',

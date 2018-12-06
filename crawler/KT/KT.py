@@ -18,7 +18,8 @@ options = wd.ChromeOptions()
 options.add_argument('--ignore-certificate-errors-spki-list')
 options.add_argument('--ignore-ssl-errors')
 
-driver=wd.Chrome(executable_path='chromedriver_win.exe',chrome_options=options)
+driver=wd.Chrome()
+driver=wd.Chrome(executable_path='./chromedriver',chrome_options=options)
 driver.get(main_url)
 
 #잠시 대기 -> 페이지가 로드 되고 나서 즉각적으로 데이터를 획득하는 행위는 자제(이유:원하는 요소를 만날 때 까지 대기)
