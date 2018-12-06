@@ -8,9 +8,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+import sys
+sys.path.append("/home/jieun/project/test_it/crawler/KT")
 from KT_class import KT
 from DB import DBHelper as Dh
 KT_list= []
+
+
+
 
 main_url='https://shop.kt.com/smart/supportAmtList.do'
 #ssl 오류 방지
@@ -19,7 +24,7 @@ options.add_argument('--ignore-certificate-errors-spki-list')
 options.add_argument('--ignore-ssl-errors')
 
 driver=wd.Chrome()
-driver=wd.Chrome(executable_path='./chromedriver',chrome_options=options)
+driver=wd.Chrome(executable_path='crawler/KT/chromedriver',chrome_options=options)
 driver.get(main_url)
 
 #잠시 대기 -> 페이지가 로드 되고 나서 즉각적으로 데이터를 획득하는 행위는 자제(이유:원하는 요소를 만날 때 까지 대기)
@@ -56,19 +61,18 @@ file_.write(html)
 file_.close()
 
 
-#td 태그 내부의 내용을 추출하여 특정 파일에 저장 2.read the write file , removre tag and insert class instance
+#td 태그 내부의 내용을 추출하여 특정 파일(write.txt)에 저장 
 for page in range(1, int(final_page)+1):
-    file_ = open('html/page_%s.html' %page, 'r',encoding='UTF8' )
-
-    file2 = open('write', 'w',encoding='UTF8' )
+    file_ = open('crawler/KT/html/page_%s.html' %page, 'r',encoding='UTF8' )
+    file2 = open('crawler/KT/write', 'w',encoding='UTF8' )
     data = file_.read()
     a=re.findall("<td.*?>(.*?)</td>",data)
-    print(a)
     for i in a:
         file2.write(str(i))
         file2.write('\n')
-
-    #클래스에 정리하여 저장
+    file2.close()
+    file_.close()
+    #read write file -> save the instance of class_kt
     file_ = open('write', 'r',encoding='UTF8' )
     i=1
     flag=0
@@ -127,31 +131,14 @@ for page in range(1, int(final_page)+1):
             print('flag:',flag)
             if flag>=2 :
                 break
-
-    file_.close()
-    file2.close()
     file_.close()
 
-'''
-if os.path.isfile(file):
-  os.remove(file)
-'''
-
-#정규식 모듈
-import re 
-
-#클래스
-from KT_class import KT
-
-KT_list= []#dir(KT)
-
-
-
+#print the instances
 for obj in KT_list :
     vars(obj)
 
-from DB import DBHelper as Dh
 #db 입력
+from DB import DBHelper as Dh
 for obj in KT_list:
     Dh.db_insertCrawlingData(
         obj.img_link,
@@ -160,17 +147,12 @@ for obj in KT_list:
         obj.gongshi,
         obj.chuga, 
         obj.danmal,date
-    )
+)
+'''
+if os.path.isfile(file):
+  os.remove(file)
+'''
 
-conn = my.connect(
-        host='210.117.181.26',
-        port=3307,
-        user='root',
-        password='wldms332',
-        db='project',
-        charset='utf8',
-        #cursorclass=my.cursors.DictCursor
-) 
 
 '''
 #수집한 정보 개수를 루프 -> 페이지 방문 -> 제품상세 정보가져오기
