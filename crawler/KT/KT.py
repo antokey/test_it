@@ -108,7 +108,7 @@ for page in range(1, int(final_page)+1):
                     a=re.findall('\d+', temp_danmal[0])
                     for k in a:
                         sum+=k
-                    danmal=sum
+                    danmal=int(sum)
                     i+=1
                 else: flag+=1
             elif(i%7==3):
@@ -146,15 +146,19 @@ len(KT_list)
 
 #db 입력
 from DB import DBHelper as Dh
+db=Dh()
 for obj in KT_list:
-    Dh.db_insertCrawlingData(
+    db.db_insertCrawlingData(
         obj.img_link,
         obj.model,
+        obj.name,
         obj.out_price,
         obj.gongshi,
-        obj.chuga, 
-        obj.danmal,date
-)
+        obj.chuga,
+        obj.danmal,
+        obj.date
+    )
+db.db_free()
 '''
 if os.path.isfile(file):
   os.remove(file)

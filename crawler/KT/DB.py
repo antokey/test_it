@@ -44,5 +44,5 @@ class DBHelper:
 #만약 이프로그램이 단독으로 (모듈 x) 실행 된다면 실행 - > 테스트 코드를 삽입해서 사용
 if __name__=='__main__':
     db = DBHelper()
-    print( db.db_insertCrawlingData('1','2','3','4','5','6','7','8') )
+    #print( db.db_insertCrawlingData('/images/pc/support/supportFund/default_handset.jpg','ZTE-Z2321K','LTE 피쳐폰 Z','165000','126000',18900,20100,'2018.12.07') )
     db.db_free()
