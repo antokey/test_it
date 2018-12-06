@@ -44,7 +44,6 @@ for page in range(3, int(final_page)+3):
         file_ = open('html/page_%d.html' %int(page-2), 'w',encoding='UTF8' )
         file_.write(html)
         file_.close()
-        time.sleep(1)
         driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %page).click()
     except Exception as el:
         print('error no page', el)
@@ -55,25 +54,88 @@ html=driver.page_source
 file_ = open('html/page_1.html', 'w',encoding='UTF8' )
 file_.write(html)
 file_.close()
-time.sleep(1)
+
+
+#td 태그 내부의 내용을 추출하여 특정 파일에 저장 2.read the write file , removre tag and insert class instance
+for page in range(1, int(final_page)+1):
+    file_ = open('html/page_%s.html' %page, 'r',encoding='UTF8' )
+
+    file2 = open('write', 'w',encoding='UTF8' )
+    data = file_.read()
+    a=re.findall("<td.*?>(.*?)</td>",data)
+    print(a)
+    for i in a:
+        file2.write(str(i))
+        file2.write('\n')
+
+    #클래스에 정리하여 저장
+    file_ = open('write', 'r',encoding='UTF8' )
+    i=1
+    flag=0
+    first=False
+    #순서에 맞지 않으면 break
+    for line in file_:
+        if line!='\n':
+            sum=''
+            print(i%7,line)
+            if i%7==1:
+                if line.find('<img')!=-1:
+                    if first :
+                        obj = KT(img_link[0],model,out_price,gongshi,chuga,danmal,date)
+                        KT_list.append(obj)
+                    img_link= re.findall('<img[^>]*src=[\'\"]?([^>\'\"]+)[\'\"]?[^>]*>',line)
+                    i+=1
+                else: flag+=1
+            elif i%7==2:
+                if line.find('<span')!=-1:
+                    model_temp=re.findall("<span.*?>(.*?)</span>",line)
+                    model=model_temp[0].split('<')[0]
+                    i+=1
+                else: flag+=1
+            elif i%7==6:
+                if line.find('<b class="number"')!=-1:
+                    temp_danmal=re.findall("<b.*?>(.*?)</b>",line)
+                    a=re.findall('\d+', temp_danmal[0])
+                    for k in a:
+                        sum+=k
+                    danmal=sum
+                    i+=1
+                else: flag+=1
+            elif(i%7==3):
+                a=re.findall('\d+', line)
+                for k in a:
+                    sum+=k
+                out_price=int(sum)
+                i+=1
+            elif(i%7==4):
+                a=re.findall('\d+', line)
+                for k in a:
+                    sum+=k
+                gongshi=int(sum)
+                i+=1
+            elif(i%7==5):
+                a=re.findall('\d+', line)
+                for k in a:
+                    sum+=k
+                chuga=int(sum)
+                i+=1
+            elif(i%7==0):
+                date=line
+                i+=1
+                flag=0
+                first=True
+            print('flag:',flag)
+            if flag>=2 :
+                break
+
+    file_.close()
+    file2.close()
+    file_.close()
 
 '''
-#diver 종료
-driver.close()
-driver.quit()
+if os.path.isfile(file):
+  os.remove(file)
 '''
-#td 태그 내부의 내용을 추출하여 특정 파일에 저장
-#for page in range(1, int(final_page)):
-file_ = open('html/page_%d.html' %1, 'r',encoding='UTF8' )
-file2 = open('write', 'w',encoding='UTF8' )
-data = file_.read()
-a=re.findall("<td.*?>(.*?)</td>",data)
-print(a)
-for i in a:
-    file2.write(str(i))
-    file2.write('\n')
-file2.close()
-file_.close()
 
 #정규식 모듈
 import re 
@@ -83,67 +145,7 @@ from KT_class import KT
 
 KT_list= []#dir(KT)
 
-#클래스에 정리하여 저장
-file_ = open('write', 'r',encoding='UTF8' )
-i=1
-flag=0
-first=False
-#순서에 맞지 않으면 break
-for line in file_:
-    if line!='\n':
-        sum=''
-        print(i%7,line)
-        if i%7==1:
-            if line.find('<img')!=-1:
-                if first :
-                    obj = KT(img_link[0],model,out_price,gongshi,chuga,danmal,date)
-                    KT_list.append(obj)
-                img_link= re.findall('<img[^>]*src=[\'\"]?([^>\'\"]+)[\'\"]?[^>]*>',line)
-                i+=1
-            else: flag+=1
-        elif i%7==2:
-            if line.find('<span')!=-1:
-                model_temp=re.findall("<span.*?>(.*?)</span>",line)
-                model=model_temp[0].split('<')[0]
-                i+=1
-            else: flag+=1
-        elif i%7==6:
-            if line.find('<b class="number"')!=-1:
-                temp_danmal=re.findall("<b.*?>(.*?)</b>",line)
-                a=re.findall('\d+', temp_danmal[0])
-                for k in a:
-                    sum+=k
-                danmal=sum
-                i+=1
-            else: flag+=1
-        elif(i%7==3):
-            a=re.findall('\d+', line)
-            for k in a:
-                sum+=k
-            out_price=int(sum)
-            i+=1
-        elif(i%7==4):
-            a=re.findall('\d+', line)
-            for k in a:
-                sum+=k
-            gongshi=int(sum)
-            i+=1
-        elif(i%7==5):
-            a=re.findall('\d+', line)
-            for k in a:
-                sum+=k
-            chuga=int(sum)
-            i+=1
-        elif(i%7==0):
-            date=line
-            i+=1
-            flag=0
-            first=True
-        print('flag:',flag)
-        if flag>=2 :
-            break
 
-file_.close()
 
 for obj in KT_list :
     vars(obj)
@@ -208,5 +210,10 @@ for tour in tour_list:
         )
 '''
 
+'''
+#diver 종료
+driver.close()
+driver.quit()
+'''
 import sys
 sys.exit()
