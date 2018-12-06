@@ -42,12 +42,12 @@ a=driver.find_elements_by_css_selector('.pageWrap>.page')
 final_page= a[3].get_attribute('pageno')
 
 #두번째 페이지부터 마지막 페이지까지 html 추출
-for page in range(3, int(final_page)+2):
+for page in range(3, int(final_page)+2): #3-5
     try:
         driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %page).click()
-        print("go to [%d] pages" % int(page-2))
+        print("go to [%d] pages" % int(page-1))
         html=driver.page_source
-        file_ = open('crawler/KT/html/page_%d.html' %int(page-2), 'w',encoding='UTF8' )
+        file_ = open('crawler/KT/html/page_%d.html' %int(page-1), 'w',encoding='UTF8' )
         time.sleep(1)
         file_.write(html)
         file_.close()
@@ -90,7 +90,7 @@ for page in range(1, int(final_page)+1):
             if i%7==1:
                 if line.find('<img')!=-1:
                     if first :
-                        obj = KT(img_link[0],model,name,out_price,gongshi,chuga,danmal,date)
+                        obj = KT(img_link[0],model,name[0],out_price,gongshi,chuga,danmal,date)
                         KT_list.append(obj)
                     img_link= re.findall('<img[^>]*src=[\'\"]?([^>\'\"]+)[\'\"]?[^>]*>',line)
                     name = re.findall('<img[^>]*alt=[\'\"]?([^>\'\"]+)[\'\"]?[^>]*>',line)
@@ -142,6 +142,7 @@ for page in range(1, int(final_page)+1):
 #print the instances
 for obj in KT_list :
     vars(obj)
+len(KT_list)
 
 #db 입력
 from DB import DBHelper as Dh

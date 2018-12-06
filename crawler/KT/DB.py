@@ -30,19 +30,19 @@ class DBHelper:
         if self.conn:
             self.conn.close()
 
-    def db_insertCrawlingData(self,img_link, model, out_price, gongshi,chuga, danmal,date):
+    def db_insertCrawlingData(self,img_link, model,name, out_price, gongshi,chuga, danmal,date):
         with self.conn.cursor() as cursor: #with문을 사용함으로서 자동으로 닫아줌
             # Read a single record
             sql = '''
-            insert into `kt` 
-            (img_link, model, out_price, gongshi,chuga, danmal,date) #열이름
-            values(%s,%s,%s,%s,%s)
+            INSERT INTO kt 
+            (image_link,model, name, chulgo, gongshi, chuga, danmal, date) 
+            VALUES (%s,%s,%s,%s,%s,%s,%s,%s)
             '''
-            cursor.execute(sql,(img_link, model, out_price, gongshi,chuga, danmal,date))
+            cursor.execute(sql,(img_link, model,name, out_price, gongshi,chuga, danmal,date))
         self.conn.commit()
         
 #만약 이프로그램이 단독으로 (모듈 x) 실행 된다면 실행 - > 테스트 코드를 삽입해서 사용
 if __name__=='__main__':
     db = DBHelper()
-    print( db.db_insertCrawlingData('1','2','3','4','5','5','5') )
+    print( db.db_insertCrawlingData('1','2','3','4','5','6','7','8') )
     db.db_free()
