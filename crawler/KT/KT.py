@@ -42,24 +42,29 @@ a=driver.find_elements_by_css_selector('.pageWrap>.page')
 final_page= a[3].get_attribute('pageno')
 
 #두번째 페이지부터 마지막 페이지까지 html 추출
-for page in range(3, int(final_page)+3):
+for page in range(3, int(final_page)+2):
     try:
+        driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %page).click()
         print("go to [%d] pages" % int(page-2))
         html=driver.page_source
-        file_ = open('html/page_%d.html' %int(page-2), 'w',encoding='UTF8' )
+        file_ = open('crawler/KT/html/page_%d.html' %int(page-2), 'w',encoding='UTF8' )
+        time.sleep(1)
         file_.write(html)
         file_.close()
-        driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %page).click()
     except Exception as el:
         print('error no page', el)
+
 
 #다시 돌아가 첫 페이지 html 추출
 driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %1).click()
 html=driver.page_source
-file_ = open('html/page_1.html', 'w',encoding='UTF8' )
+file_ = open('crawler/KT/html/page_1.html', 'w',encoding='UTF8' )
 file_.write(html)
 file_.close()
 
+#diver 종료
+driver.close()
+driver.quit()
 
 #td 태그 내부의 내용을 추출하여 특정 파일(write.txt)에 저장 
 for page in range(1, int(final_page)+1):
@@ -73,7 +78,7 @@ for page in range(1, int(final_page)+1):
     file2.close()
     file_.close()
     #read write file -> save the instance of class_kt
-    file_ = open('write', 'r',encoding='UTF8' )
+    file_ = open('crawler/KT/write', 'r',encoding='UTF8' )
     i=1
     flag=0
     first=False
@@ -85,9 +90,10 @@ for page in range(1, int(final_page)+1):
             if i%7==1:
                 if line.find('<img')!=-1:
                     if first :
-                        obj = KT(img_link[0],model,out_price,gongshi,chuga,danmal,date)
+                        obj = KT(img_link[0],model,name,out_price,gongshi,chuga,danmal,date)
                         KT_list.append(obj)
                     img_link= re.findall('<img[^>]*src=[\'\"]?([^>\'\"]+)[\'\"]?[^>]*>',line)
+                    name = re.findall('<img[^>]*alt=[\'\"]?([^>\'\"]+)[\'\"]?[^>]*>',line)
                     i+=1
                 else: flag+=1
             elif i%7==2:
@@ -128,7 +134,7 @@ for page in range(1, int(final_page)+1):
                 i+=1
                 flag=0
                 first=True
-            print('flag:',flag)
+            #print('flag:',flag)
             if flag>=2 :
                 break
     file_.close()
@@ -193,9 +199,7 @@ for tour in tour_list:
 '''
 
 '''
-#diver 종료
-driver.close()
-driver.quit()
+
 '''
 import sys
 sys.exit()

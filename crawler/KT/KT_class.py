@@ -11,7 +11,7 @@ class KT:
     date=' '
     #생성자
 
-    def __init__(self, img_link,name,model, out_price, gongshi,chuga, danmal,date): #기본값주면 인자 안넣어도됨 date=''
+    def __init__(self, img_link,model,name, out_price, gongshi,chuga, danmal,date): #기본값주면 인자 안넣어도됨 date=''
         self.img_link = img_link
         self.model = model
         self.name=name
