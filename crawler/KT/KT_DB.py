@@ -38,14 +38,21 @@ class DBHelper:
             '''
             cursor.execute(find_sql, (name) )
             result = cursor.fetchall()
-            if result > 1 :
-                if result[7]== date :
+            if len(result) > 0 :
+                if result[0][7]== date :
                     update_sql = '''
                     update `kt`
-                    set gongsi=%s, chuga=%s,dangal=%s, date=%s
-                    where phone_name=%s
+                    set gongshi=%s, chuga=%s,danmal=%s, date=%s
+                    where name=%s
                     '''
-                    cursor.execute( update_sql, (gongshi,chuga,danmal,date,name) )           
+                    cursor.execute( update_sql, (gongshi,chuga,danmal,date,name) )
+
+                    insert_update_table_sql= '''
+                    INSERT INTO `update_data`
+                    (`image_link`, `model`, `name`, `chulgo`, `gongshi`, `chuga`, `danmal`, `date`, `telecom`)
+                    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,'kt');
+                    '''
+                    cursor.execute( insert_update_table_sql, (img_link, model,name, out_price, gongshi,chuga, danmal,date) )     
             else : 
                 insert_sql = '''
                 INSERT INTO kt 
@@ -54,9 +61,11 @@ class DBHelper:
                 '''
                 cursor.execute(insert_sql,(img_link, model,name, out_price, gongshi,chuga, danmal,date))
         self.conn.commit()
+
+
         
 #만약 이프로그램이 단독으로 (모듈 x) 실행 된다면 실행 - > 테스트 코드를 삽입해서 사용
 if __name__=='__main__':    
-    db = DBHelper()
-    #print( db.db_insertCrawlingData('/images/pc/support/supportFund/default_handset.jpg','ZTE-Z2321K','LTE 피쳐폰 Z','165000','126000',18900,20100,'2018.12.07') )
-    db.db_free()
+db = DBHelper()
+print( db.db_insertCrawlingData('/images/pc/support/supportFund/default_handset.jpg','ZTE-Z2321K','LTE 피쳐폰 Z','165000','126000',18900,20100,'2018.12.08') )
+db.db_free()
