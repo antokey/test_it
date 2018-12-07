@@ -39,7 +39,8 @@ class DBHelper:
             cursor.execute(find_sql, (name) )
             result = cursor.fetchall()
             if len(result) > 0 :
-                if result[0][7]== date :
+                print(result[0][7],date)
+                if result[0][7]!= date :
                     update_sql = '''
                     update `kt`
                     set gongshi=%s, chuga=%s,danmal=%s, date=%s
@@ -67,5 +68,5 @@ class DBHelper:
 #만약 이프로그램이 단독으로 (모듈 x) 실행 된다면 실행 - > 테스트 코드를 삽입해서 사용
 if __name__=='__main__':    
     db = DBHelper()
-    ( db.db_insertCrawlingData('/images/pc/support/supportFund/default_handset.jpg','ZTE-Z2321K','LTE 피쳐폰 Z','165000','126000',18900,20100,'2018.12.08') )
+    #db.db_insertCrawlingData('/images/pc/support/supportFund/default_handset.jpg','ZTE-Z2321K','jieun','165000','126000',18900,20100,'2018.12.22')
     db.db_free()
