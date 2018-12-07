@@ -1,5 +1,5 @@
 <?php
-  session_start();
+  /*session_start();
   require("config.php");
   require("function.php");
   $conn= db_init($config['host'],$config['duser'],$config['dpasswd'],$config['dname']);
@@ -7,7 +7,7 @@
 
   $result=mysqli_query($conn,'SELECT * FROM topic ORDER BY  created DESC'); //리뷰 DB
   //데이터 조회
-
+*/
  ?>
  <!DOCTYPE html>
 <html>
@@ -18,7 +18,7 @@
    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style3.css">
-  <title>JBNU_CU</title>
+  <title>JE_JS_PHONE</title>
 
 </head>
  <!-- Bootstrap -->
