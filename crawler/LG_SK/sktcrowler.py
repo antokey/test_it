@@ -93,7 +93,7 @@ for page in range(2, 10):
             text = re.sub('&nbsp;|\t', '', a)
             price_int = re.sub('\D+', '', text)
             total_price = int(price_int)
-            obj = PhoneInfo(image, phone_name, model_name, original_price, gongsi, addition, total_price, date)
+            obj = SKPhoneInfo(image, phone_name, model_name, original_price, gongsi, addition, total_price, date)
             list_sk.append(obj)
 
     #Close the html file for the next html source

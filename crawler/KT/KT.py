@@ -86,7 +86,7 @@ for page in range(1, int(final_page)+1):
     for line in file_:
         if line!='\n':
             sum=''
-            print(i%7,line)
+            #print(i%7,line)
             if i%7==1:
                 if line.find('<img')!=-1:
                     if first :
@@ -108,29 +108,29 @@ for page in range(1, int(final_page)+1):
                     a=re.findall('\d+', temp_danmal[0])
                     for k in a:
                         sum+=k
-                    danmal=int(sum)
+                    danmal=(sum)
                     i+=1
                 else: flag+=1
             elif(i%7==3):
                 a=re.findall('\d+', line)
                 for k in a:
                     sum+=k
-                out_price=int(sum)
+                out_price=(sum)
                 i+=1
             elif(i%7==4):
                 a=re.findall('\d+', line)
                 for k in a:
                     sum+=k
-                gongshi=int(sum)
+                gongshi=(sum)
                 i+=1
             elif(i%7==5):
                 a=re.findall('\d+', line)
                 for k in a:
                     sum+=k
-                chuga=int(sum)
+                chuga=(sum)
                 i+=1
             elif(i%7==0):
-                date=line
+                date=line[:-2]
                 i+=1
                 flag=0
                 first=True
