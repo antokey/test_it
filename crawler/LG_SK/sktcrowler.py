@@ -8,14 +8,13 @@ from DbManage import SKDBHelper as Db
 import time
 import re
 import sys
-from email.quoprimime import body_check
-from Tools.pynche.DetailsViewer import ADDTOVIEW
 
 #Preload the information for the crawling
 main_url = "http://shop.tworld.co.kr/handler/Dantong-SKT"
 db = Db()
+db_table_name = 'sk'
 
-#driver load
+#Driver load
 #Solve the Chromedriver and Chrome crash problem, get options like down steps
 chrome_options = wd.ChromeOptions()
 chrome_options.binary_location = '/opt/google/chrome/google-chrome'
@@ -40,8 +39,6 @@ driver.implicitly_wait(10)
 list_sk = []
 count = 0
 check = 0
-
-fw = open("crawling_sk.txt", "w", encoding="utf-8")
 
 for page in range(2, 10):
     html_source = driver.page_source
@@ -93,7 +90,7 @@ for page in range(2, 10):
             text = re.sub('&nbsp;|\t', '', a)
             price_int = re.sub('\D+', '', text)
             total_price = int(price_int)
-            obj = SKPhoneInfo(image, phone_name, model_name, original_price, gongsi, addition, total_price, date)
+            obj = SKPhoneInfo(image, model_name, phone_name, original_price, gongsi, addition, total_price, date)
             list_sk.append(obj)
 
     #Close the html file for the next html source
@@ -107,26 +104,20 @@ for page in range(2, 10):
         print("Next Page Error!", e)
 
 #Check the duplicated value in Database and send to the Database
-for phone_list in list_sk:
-    if db.db_duplicated(phone_list.phone_name, phone_list.date) == 1:
-        db.db_insertCrawlingData(
-            phone_list.image,
-            phone_list.phone_name,
-            phone_list.model_name,
-            phone_list.original_price,
-            phone_list.gongsi,
-            phone_list.addition,
-            phone_list.total_price,
-            phone_list.date
-        )
-    else:
-        #If argument is duplicated, it will be changed gongsi, addition, total_price, and date.
-        #Backup previous data, and update new data
-        db.db_backupAndUpdateData(phone_name, gongsi, addition, total_price, date)
+for obj in list_sk:
+    db.db_insertCrawlingData(
+        obj.img_link,
+        obj.model,
+        obj.name,
+        obj.out_price,
+        obj.gongshi,
+        obj.chuga,
+        obj.danmal,
+        obj.date
+    )
         
 
 #Disconnect the driver
 db.db_free()
 driver.close()
 driver.quit()
-fw.close()

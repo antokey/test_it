@@ -1,39 +1,39 @@
 class LGPhoneInfo:
-    image = ''
-    phone_name = ''
-    model_name = ''
-    original_price = 0
-    gongsi = 0
-    total_price = 0
+    img_link = ''
+    model = ''
+    name = ''
+    out_price = 0
+    gongshi = 0
+    danmal = 0
     date = ''
 
     #생성자
-    def __init__(self, image, phone_name, model_name, original_price, gongsi, total_price, date):
-        self.image = image
-        self.phone_name = phone_name
-        self.model_name = model_name
-        self.original_price = original_price
-        self.gongsi = gongsi
-        self.total_price = total_price
+    def __init__(self, img_link, model, name, out_price, gongshi, danmal, date):
+        self.img_link = img_link
+        self.model = model
+        self.name = name
+        self.out_price = out_price
+        self.gongshi = gongshi
+        self.danmal = danmal
         self.date = date
 
 class SKPhoneInfo:
-    image = ''
-    phone_name = ''
-    model_name = ''
-    original_price = 0
-    gongsi = 0
-    addition = 0
-    total_price = 0
+    img_link = ''
+    model = ''
+    name = ''
+    out_price = 0
+    gongshi = 0
+    chuga = 0
+    danmal = 0
     date = ''
 
     #생성자
-    def __init__(self, image, phone_name, model_name, original_price, gongsi, addition, total_price, date):
-        self.image = image
-        self.phone_name = phone_name
-        self.model_name = model_name
-        self.original_price = original_price
-        self.gongsi = gongsi
-        self.addition = addition
-        self.total_price = total_price
+    def __init__(self, img_link, model, name, out_price, gongshi, chuga, danmal, date):
+        self.img_link = img_link
+        self.model = model
+        self.name = name
+        self.out_price = out_price
+        self.gongshi = gongshi
+        self.chuga = chuga
+        self.danmal = danmal
         self.date = date
