@@ -47,7 +47,6 @@ class DBHelper:
                     where name=%s
                     '''
                     cursor.execute( update_sql, (gongshi,chuga,danmal,date,name) )
-
                     insert_update_table_sql= '''
                     INSERT INTO `update_data`
                     (`image_link`, `model`, `name`, `chulgo`, `gongshi`, `chuga`, `danmal`, `date`, `telecom`)
