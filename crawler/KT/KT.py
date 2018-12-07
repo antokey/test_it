@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import sys
 sys.path.append("/home/jieun/project/test_it/crawler/KT")
 from KT_class import KT
-from DB import DBHelper as Dh
+from KT_DB import DBHelper as Dh
 KT_list= []
 
 
@@ -145,7 +145,7 @@ for obj in KT_list :
 len(KT_list)
 
 #db 입력
-from DB import DBHelper as Dh
+from KT_DB import DBHelper as Dh
 db=Dh()
 for obj in KT_list:
     db.db_insertCrawlingData(
@@ -160,51 +160,6 @@ for obj in KT_list:
     )
 db.db_free()
 '''
-if os.path.isfile(file):
-  os.remove(file)
-'''
-
-
-'''
-#수집한 정보 개수를 루프 -> 페이지 방문 -> 제품상세 정보가져오기
-for tour in tour_list:
-    #tour -> TourInfo
-    print(type(tour))
-    #link데이터에서 실데이터 획득
-    #분해
-    arr=tour.link.split(',')
-    print(arr)
-    if arr:
-        #대체(링크만 뽑아옴)
-        link=arr[0].replace('searchModule.OnClickDetail(','')
-        print('link:',link)
-        #슬라이싱(''제거)
-        detail_url=link[1:-1]     
-        print(detail_url)
-        #상세페이지 이동 : url 값이 완성된 형태인지 확인(http~)
-        driver.get(detail_url)
-        time.sleep(3)
-        #pip install bs4
-        #현재 페이지를 뷰티플스프의 dom으로 구성
-        soup=bs(driver.page_source,'html.parser')
-        data=soup.select('.tip-cover')
-        print((data))
-        #db 입력
-        content_final =''
-        #for c in data[0].contents:
-        #   content_final=str(c)
-        #콘텐츠 내용에따라서 전처리가 필요할수 있음
-        Dh.db_insertCrawlingData(
-            tour.title,
-            tour.price,
-            tour.area,
-            data[0].contents,
-            keyword
-        )
-'''
-
-'''
-
-'''
 import sys
 sys.exit()
+'''
