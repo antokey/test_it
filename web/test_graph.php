@@ -12,69 +12,80 @@
   echo 'SELECT * FROM update_data WHERE name ='.$name.' ORDER BY id DESC' //데이터 조회
  ?>
 
- <html>
-  <head>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
+<!--function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Year', 'Sales', 'Expenses','aaa'],
           ['2004',  1000,      400,      400],
           ['2005',  1170,      460,      400]
         ]);
+        
+      function drawChart() { 
+        var data = new google.visualization.DataTable(); 
+        data.addColumn('string', 'Cluster'); 
+        data.addColumn('number', 'Loans'); 
+        data.addColumn('number', 'Lines');       
+        data.addRows(3); 
+        data.setCell(0, 0, 'Tong Ning mu'); 
+        data.setCell(1, 0, 'Huang Ang fa'); 
+        data.setCell(2, 0, 'Teng nu'); 
+        data.setCell(0, 1, 174); 
+        data.setCell(1, 1, 523); 
+        data.setCell(2, 1, 86); 
 
-        var options = {
-          title: 'Company Performance'
-        };
+             /* data.addRows([
+        [1,  37.8, 80.8, 41.8],
+        [2,  30.9, 69.5, 32.4],
+        [3,  25.4,   57, 25.7],
+        [4,  11.7, 18.8, 10.5],
+        [5,  11.9, 17.6, 10.4],
+        [6,   8.8, 13.6,  7.7],
+        [7,   7.6, 12.3,  9.6],
+        [8,  12.3, 29.2, 10.6],
+        [9,  16.9, 42.9, 14.8],
+        [10, 12.8, 30.9, 11.6],
+        [11,  5.3,  7.9,  4.7],
+        [12,  6.6,  8.4,  5.2],
+        [13,  4.8,  6.3,  3.6],
+        [14,  4.2,  6.2,  3.4]
+      ]);*/
+-->
 
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
-  </head>
-  <body>
-    <div id="chart_div" style="width: 900px; height: 500px;"></div>
-  </body>
+
+
+<html>
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Day');
+      data.addColumn('number', 'Guardians of the Galaxy');
+      data.addColumn('number', 'The Avengers');
+      data.addColumn('number', 'Transformers: Age of Extinction');
+
+
+
+
+      data.addRow([
+        [1,  37.8, 80.8, 41.8]
+      ]);
+
+      var options = {
+        title: 'Test_graph'
+      };
+
+      var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+  </script>
+</head>
+<body>
+  <div id="line_top_x"></div>
+</body>
 </html>
- 
-
-
-<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-<script type="text/javascript">
-    google.load('visualization', '1', {packages: ['corechart'],'language':'ko'});
-
-    function drawVisualization(dataFromAjax) {
-         var data = google.visualization.arrayToDataTable(dataFromAjax);
-         new google.visualization.ColumnChart(document.getElementById('map')).
-         draw(data, {fontName: "맑은 고딕, Malgon Gothic", 
-                fontSize: 11,
-                forceIFrame: false,
-                vAxis: {maxValue: 100}}
-           );
-    }
-    function drawInit()
-    {
-         var data = null;
-         var table_data = null;
-
-
-         $.ajax({
-             url:'data.jsp',
-             data: {},
-             success: function(res) {
-                 table_data = eval("(" + res + ")");
-                 drawVisualization(table_data);
-             }
-        });
-    }
-    
-    google.setOnLoadCallback(drawInit);
- 
-    setInterval(function() { drawInit(); }, 3000);
-</script> 
-
-<div id="map"></div>
