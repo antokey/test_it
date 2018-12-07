@@ -30,36 +30,6 @@
        <a href="index.php" ><img class="img-circle"src="http://cu.bgfretail.com/images/facebook.jpg"/>
        <h1><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php">JBNU_CU</a></h1></a>
      </header>
-
-     <div class="menubar">
-        <ul class="center">
-           <li class="center"><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=1">학도점</a>
-             <ul>
-               <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=1&c_id=A">음료</a></li>
-               <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=1&c_id=B">도시락</a></li>
-               <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=1&c_id=C">제과</a></li>
-               <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=1&c_id=D">햄버거</a></li>
-             </ul>
-           </li>
-           <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=2" id="current">상대점</a>
-                <ul>
-                  <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=2&c_id=A">음료</a></li>
-                  <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=2&c_id=B">도시락</a></li>
-                  <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=2&c_id=C">제과</a></li>
-                  <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=2&c_id=D">햄버거</a></li>
-                </ul>
-           </li>
-           <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=3">중도점</a>
-             <ul>
-               <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=3&c_id=A">음료</a></li>
-               <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=3&c_id=B">도시락</a></li>
-               <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=3&c_id=C">제과</a></li>
-               <li><a href="http://210.117.181.22/termprj/s201515305/DBproject/index.php?store=3&c_id=D">햄버거</a></li>
-              </ul>
-           </li>
-
-        </ul>
-     </div>
      <div style="text-align:-webkit-right; height: 25px;">
          <form method=GET name=frm1 action='index.php' class = "search">
          <label > [물품 검색]</label>
