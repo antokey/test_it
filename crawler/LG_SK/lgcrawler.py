@@ -45,12 +45,12 @@ for page in range(1, 10):
     #Get the html source and save
     html_source = driver.page_source
 
-    f = open("source.txt", "w", encoding="utf-8")
+    f = open("/home/jieun/project/test_it/crawler/LG_SK/source.txt", "w", encoding="utf-8")
     f.write(html_source)
     f.close()
 
     #Open the save current html file
-    f = open("source.txt", "rt", encoding="utf-8")
+    f = open("/home/jieun/project/test_it/crawler/LG_SK/source.txt", "rt", encoding="utf-8")
 
     #Declare the argument using for the distinction to keyword
     count = 0

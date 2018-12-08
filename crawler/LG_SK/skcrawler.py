@@ -55,12 +55,12 @@ for page in range(2, 10):
     ul = ul.group()
 
     #Save the html source
-    f = open("source_sk.txt", "w", encoding="utf-8")
+    f = open("/home/jieun/project/test_it/crawler/LG_SK/source_sk.txt", "w", encoding="utf-8")
     f.write(ul)
     f.close()
 
     #Open the html source for the reading
-    f = open("source_sk.txt", "rt", encoding="utf-8")
+    f = open("/home/jieun/project/test_it/crawler/LG_SK/source_sk.txt", "rt", encoding="utf-8")
     for line in f:
         if 'model_name' in line:
             text = re.sub('<.+?>', '', line, 0, re.I|re.S)
