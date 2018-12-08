@@ -10,17 +10,34 @@
 
   $result=mysqli_query($conn,'SELECT * FROM update_data WHERE name ="'.$name.'" ORDER BY id DESC'); 
 
-  /*while($row = mysqli_fetch_array($result)) {
-    echo '<h2>'.$row['name'].'</h2>';
-    echo $row['date'];
-  }*/
-  $row = mysqli_fetch_array($result);
-  print_r($row);
+  while($row = mysqli_fetch_array($result)) {
+    $temp[]=$row;
+  }
+  print_r ($temp); 
  ?>
 <html>
 <head>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>      
     <script type="text/javascript"> 
+
+      var arr2 = <?= json_encode($temp) ?>;
+      
+      document.write("<br/><b>Normal Object</b><br/>");
+      for(var a=0; i<=arr2.length; a++) {
+        document.write(a, " : ", arr2[a], "<br/>"); 
+        //for(var b in arr2[a]) {
+       //}
+      }
+
+      for(var a in arr) {
+        for(var b in arr[a]) {
+        document.write(a, " : ", arr2, "<br/>"); 
+       }
+      }
+      document.write("<br/><b>Normal Object22</b><br/>"); 
+
+
+
       google.charts.load('current', {'packages':['line']});
       google.charts.setOnLoadCallback(drawChart);
 
@@ -32,8 +49,8 @@
       data.addColumn('number', 'price');
       for (var i = 0; i <3; i++) {
         data.addRow(['aa',3]); //here is values to change [data,price]
-      }
 
+      }
       var options = {
         title: 'Test_graph',
         width: 900,
@@ -44,6 +61,7 @@
 
       chart.draw(data, google.charts.Line.convertOptions(options));
     }
+    
   </script>
 </head>
 <body>
@@ -53,6 +71,11 @@
 
 
 <!--function drawChart() {
+      /* Array and Object Definition */ 
+      var arr = [ "Yongwoo", 25, "Catholic Univ, of Korea", "Computer Science" ]; 
+      var obj = { "NAME" : "Yongwoo", "AGE" : 25, "UNIVERSITY" : "Catholic Univ, of Korea", "MAJOR" : "Computer Science" };
+            /* Array and Object Value Check */ 
+            document.write("<b>Normal String Arrary :</b> ", obj2, "<br/>"); 
 
        // var price = '<?= $row[6] ?>';
      // var date = <?= $row[7] ?>;
