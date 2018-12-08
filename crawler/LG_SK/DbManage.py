@@ -24,84 +24,63 @@ class DBHelper:
         if self.conn:
             self.conn.close()
 
-    def db_duplicated(self, phone_name, date):
-        with self.conn.cursor(my.cursors.DictCursor) as cursor:
-            sql = '''
-            select * from `lg` where phone_name=%s and date=%s
+    def db_insertCrawlingData(self, img_link, model, name, out_price, gongshi, danmal, date): # add the instance or update
+        with self.conn.cursor() as cursor: #with문을 사용함으로서 자동으로 닫아줌
+            find_sql = '''
+            select * from `lg` where model=%s and name=%s
             '''
-            cursor.execute(sql, (phone_name, date) )
+            cursor.execute(find_sql, (model, name) )
             result = cursor.fetchall()
-
-            if result == ():
-                return 1
-            else:
-                return 0
-
-
-    def db_insertCrawlingData(self, image, phone_name, model_name, original_price, gongsi, total_price, date):
-        with self.conn.cursor() as cursor:
-            sql = '''
-            insert into `lg` 
-            (image, phone_name, model_name, original_price, gongsi, total_price, date) 
-            values( %s,%s,%s,%s,%s,%s,%s )
-            '''
-            cursor.execute(sql, (image, phone_name, model_name, original_price, gongsi, total_price, date) )
-        self.conn.commit()
-    
-    def db_backupAndUpdateData(self, phone_name, gongsi, total_price, date):
-        with self.conn.cursor() as cursor:
-            sql1 = '''
-            insert into `lg_backup`
-            (select * from `lg` where phone_name=%s)
-            '''
-            cursor.execute( sql1, (phone_name) )
-
-            sql2 = '''
-            update `lg`
-            set gongsi=%s, total_price=%s, date=%s
-            where phone_name=%s
-            '''
-            cursor.execute( sql2, (gongsi, total_price, date, phone_name) )
+            if len(result) > 0 :
+                if (result[0]['date'] != date):
+                    update_sql = '''
+                    update `lg`
+                    set gongshi=%s, danmal=%s, date=%s
+                    where name=%s
+                    '''
+                    cursor.execute( update_sql, (gongshi, danmal, date, name) )
+                    insert_update_table_sql= '''
+                    INSERT INTO `update_data`
+                    (`image_link`, `model`, `name`, `chulgo`, `gongshi`, `chuga`, `danmal`, `date`, `telecom`)
+                    VALUES (%s,%s,%s,%s,%s,0,%s,%s,'lg');
+                    '''
+                    cursor.execute( insert_update_table_sql, (img_link, model, name, out_price, gongshi, danmal, date) )
+            else :
+                insert_sql = '''
+                INSERT INTO `lg` 
+                (image_link, model, name, chulgo, gongshi, chuga, danmal, date) 
+                VALUES (%s,%s,%s,%s,0,%s,%s,%s)
+                '''
+                cursor.execute( insert_sql,(img_link, model,name, out_price, gongshi, danmal, date) )
         self.conn.commit()
 
 class SKDBHelper(DBHelper):
-    def db_duplicated(self, phone_name, date):
-        with self.conn.cursor(my.cursors.DictCursor) as cursor:
-            sql = '''
-            select * from `sk` where phone_name=%s and date=%s
+    def db_insertCrawlingData(self, img_link, model, name, out_price, gongshi, chuga, danmal, date): # add the instance or update
+        with self.conn.cursor() as cursor: #with문을 사용함으로서 자동으로 닫아줌
+            find_sql = '''
+            select * from `sk` where model=%s and name=%s
             '''
-            cursor.execute(sql, (phone_name, date) )
+            cursor.execute(find_sql, (model, name) )
             result = cursor.fetchall()
-
-            #print(result)
-
-            if result == ():
-                return 1
-            else:
-                return 0
-
-    def db_insertCrawlingData(self, image, phone_name, model_name, original_price, gongsi, addition, total_price, date):
-        with self.conn.cursor() as cursor :
-            sql = '''
-            insert into `sk` 
-            (image, phone_name, model_name, original_price, gongsi, addition, total_price, date) 
-            values( %s,%s,%s,%s,%s,%s,%s,%s )
-            '''
-            cursor.execute(sql, (image, phone_name, model_name, original_price, gongsi, addition, total_price, date) )
-        self.conn.commit()
-
-    def db_backupAndUpdateData(self, phone_name, gongsi, addition, total_price, date):
-        with self.conn.cursor() as cursor:
-            sql1 = '''
-            insert into `sk_backup`
-            (select * from `sk` where phone_name=%s)
-            '''
-            cursor.execute( sql1, (phone_name) )
-
-            sql2 = '''
-            update `sk`
-            set gongsi=%s, addition=%s, total_price=%s, date=%s
-            where phone_name=%s
-            '''
-            cursor.execute( sql2, (gongsi, addition, total_price, date, phone_name) )
+            if len(result) > 0 :
+                if (result[0]['date'] != date) :
+                    update_sql = '''
+                    update `sk`
+                    set gongshi=%s, danmal=%s, date=%s
+                    where name=%s
+                    '''
+                    cursor.execute( update_sql, (gongshi, danmal, date, name) )
+                    insert_update_table_sql= '''
+                    INSERT INTO `update_data`
+                    (`image_link`, `model`, `name`, `chulgo`, `gongshi`, `chuga`, `danmal`, `date`, `telecom`)
+                    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,'sk');
+                    '''
+                    cursor.execute( insert_update_table_sql, (img_link, model, name, out_price, gongshi, chuga, danmal, date) )
+            else :
+                insert_sql = '''
+                INSERT INTO `sk` 
+                (image_link, model, name, chulgo, gongshi, chuga, danmal, date) 
+                VALUES (%s,%s,%s,%s,%s,%s,%s,%s)
+                '''
+                cursor.execute( insert_sql,( img_link, model, name, out_price, gongshi, chuga, danmal, date ) )
         self.conn.commit()

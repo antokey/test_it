@@ -12,8 +12,9 @@ import sys
 #Preload the information for the crawling
 main_url = 'https://www.uplus.co.kr/css/note/item/RetrieveItemDstrDisc.hpi'
 db = Db()
+db_table_name = 'lg'
 
-#driver load
+#Driver load
 #Solve the Chromedriver and Chrome crash problem, get options like down steps
 chrome_options = wd.ChromeOptions()
 chrome_options.binary_location = '/opt/google/chrome/google-chrome'
@@ -32,9 +33,6 @@ driver.get(main_url)
 
 #wait
 driver.implicitly_wait(10)
-
-#Create the crawling save file
-fw = open("crawling_lg.txt", "w", encoding="utf-8")
 
 #Create the list
 list_lg = []
@@ -63,7 +61,6 @@ for page in range(1, 10):
                 continue
             image = re.findall("<img[^>]*src=[\"']?([^>\"']+)[\"']?[^>]*>", line)
             image = image[0]
-            fw.write(image[0] + '\n')
         if 'td class="txtC"' in line:
             if check_txtC != 23:
                 check_txtC = check_txtC + 1
@@ -101,11 +98,9 @@ for page in range(1, 10):
             elif count == 5:
                 nospace = re.sub('\n', '', nospace)
                 date = nospace
-                obj = PhoneInfo(image, phone_name, model_name, original_price, gongsi, total_price, date)
-                #print(vars(obj))
+                obj = LGPhoneInfo(image, model_name, phone_name, original_price, gongsi, total_price, date)
                 list_lg.append(obj)
                 count = 0
-            fw.write(nospace)
         if '</tbody>' in line:
             if check_tbody == 3:
                 break
@@ -125,23 +120,19 @@ for page in range(1, 10):
         print ('Next Page Error!', e)
 
 #Check the duplicated and send to the Database
-for phone_list in list_lg:
-    if db.db_duplicated(phone_list.phone_name, phone_list.date) == 1:
-        db.db_insertCrawlingData(
-            phone_list.image,
-            phone_list.phone_name,
-            phone_list.model_name,
-            phone_list.original_price,
-            phone_list.gongsi,
-            phone_list.total_price,
-            phone_list.date
-        )
-    else:
-        db.db_backupAndUpdateData(phone_name, gongsi, total_price, date)
+for obj in list_lg:
+    db.db_insertCrawlingData(
+        obj.img_link,
+        obj.model,
+        obj.name,
+        obj.out_price,
+        obj.gongshi,
+        obj.danmal,
+        obj.date
+    )
 
 #Close the all the connection
 db.db_free()
 driver.close()
 driver.quit()
-fw.close()
 
