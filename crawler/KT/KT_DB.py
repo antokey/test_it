@@ -12,7 +12,6 @@ class DBHelper:
     '''
     def __init__(self):
         self.db_init()
-        print('gg')
     '''
     맴버 함수
     '''
@@ -40,8 +39,6 @@ class DBHelper:
             cursor.execute(find_sql, (model) )
             result = cursor.fetchall()
             if len(result) > 0 :
-                print(result[0][2])
-                #print(result[0][7],date)
                 if result[0][7]!= date :
                     update_sql = '''
                     update `kt`

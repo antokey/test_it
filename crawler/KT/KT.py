@@ -140,9 +140,10 @@ for page in range(1, int(final_page)+1):
     file_.close()
 
 #db 입력
-
+'''
+import importlib
 importlib.reload(Dh)
-import KT_DB as Dh
+'''
 db=Dh.DBHelper()
 for obj in KT_list:
     db.db_insertCrawlingData(
@@ -156,8 +157,7 @@ for obj in KT_list:
         obj.date
     )
 db.db_free()
-import importlib
-import KT_DB as Dh
+
 '''
 import sys
 sys.exit()
