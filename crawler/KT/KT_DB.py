@@ -32,7 +32,7 @@ class DBHelper:
 
     def db_insertCrawlingData(self,img_link, model,name, out_price, gongshi,chuga, danmal,date): # add the instance or update
         with self.conn.cursor() as cursor: #with문을 사용함으로서 자동으로 닫아줌
-            
+            file=open('test','a')
             find_sql = '''
             select * from `kt` where name=%s
             '''
@@ -55,6 +55,7 @@ class DBHelper:
                     cursor.execute( insert_update_table_sql, (img_link, model,name, out_price, gongshi,chuga, danmal,date) )     
                     print('-update kt','name:',name,result[0][7],'->',date)
             else : 
+                file.write(name)
                 insert_sql = '''
                 INSERT INTO kt 
                 (image_link,model, name, chulgo, gongshi, chuga, danmal, date) 
@@ -68,5 +69,5 @@ class DBHelper:
 #만약 이프로그램이 단독으로 (모듈 x) 실행 된다면 실행 - > 테스트 코드를 삽입해서 사용
 if __name__=='__main__':    
     db = DBHelper()
-    db.db_insertCrawlingData('/images/pc/support/supportFund/default_handset.jpg','ZTE-Z2321K','jieun','165000','126000',18900,20100,'2018.12.07')
+    db.db_insertCrawlingData('/images/pc/support/supportFund/default_handset.jpg','ZTE-Z2321K','jieun453','165000','126000',18900,20100,'2018.12.07')
     db.db_free()

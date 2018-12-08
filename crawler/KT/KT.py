@@ -48,7 +48,7 @@ for page in range(3, int(final_page)+2): #3-5
         #print("go to [%d] pages" % int(page-1))
         html=driver.page_source
         file_ = open('/home/jieun/project/test_it/crawler/KT/html/page_%d.html' %int(page-1), 'w',encoding='UTF8' )
-        time.sleep(1)
+        time.sleep(2)
         file_.write(html)
         file_.close()
     except Exception as el:
@@ -69,7 +69,7 @@ driver.quit()
 #td 태그 내부의 내용을 추출하여 특정 파일(write.txt)에 저장 
 for page in range(1, int(final_page)+1):
     file_ = open('/home/jieun/project/test_it/crawler/KT/html/page_%s.html' %page, 'r',encoding='UTF8' )
-    file2 = open('write', 'w',encoding='UTF8' )
+    file2 = open('/home/jieun/project/test_it/crawler/KT/write', 'w',encoding='UTF8' )
     data = file_.read()
     a=re.findall("<td.*?>(.*?)</td>",data)
     for i in a:
@@ -139,12 +139,9 @@ for page in range(1, int(final_page)+1):
                 break
     file_.close()
 
-#print the instances
-for obj in KT_list :
-    vars(obj)
-len(KT_list)
 
 #db 입력
+
 from KT_DB import DBHelper as Dh
 db=Dh()
 for obj in KT_list:
