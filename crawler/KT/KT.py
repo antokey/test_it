@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import sys
 sys.path.append("/home/jieun/project/test_it/crawler/KT")
 from KT_class import KT
-from KT_DB import DBHelper as Dh
+import KT_DB as Dh
 KT_list= []
 
 main_url='https://shop.kt.com/smart/supportAmtList.do'
@@ -56,7 +56,7 @@ for page in range(3, int(final_page)+2): #3-5
 
 
 #다시 돌아가 첫 페이지 html 추출
-driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %1).click()
+driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %3).click()
 html=driver.page_source
 file_ = open('/home/jieun/project/test_it/crawler/KT/html/page_1.html', 'w',encoding='UTF8' )
 file_.write(html)
@@ -139,11 +139,11 @@ for page in range(1, int(final_page)+1):
                 break
     file_.close()
 
-
 #db 입력
 
-from KT_DB import DBHelper as Dh
-db=Dh()
+importlib.reload(Dh)
+import KT_DB as Dh
+db=Dh.DBHelper()
 for obj in KT_list:
     db.db_insertCrawlingData(
         obj.img_link,
@@ -157,8 +157,7 @@ for obj in KT_list:
     )
 db.db_free()
 import importlib
-from KT_DB import DBHelper as Dh
-importlib.reload(Dh)
+import KT_DB as Dh
 '''
 import sys
 sys.exit()

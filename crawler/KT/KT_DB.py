@@ -12,6 +12,7 @@ class DBHelper:
     '''
     def __init__(self):
         self.db_init()
+        print('gg')
     '''
     맴버 함수
     '''
@@ -34,11 +35,12 @@ class DBHelper:
         with self.conn.cursor() as cursor: #with문을 사용함으로서 자동으로 닫아줌
             file=open('test','a')
             find_sql = '''
-            select * from `kt` where name=%s
+            select * from `kt` where model=%s
             '''
-            cursor.execute(find_sql, (name) )
+            cursor.execute(find_sql, (model) )
             result = cursor.fetchall()
             if len(result) > 0 :
+                print(result[0][2])
                 #print(result[0][7],date)
                 if result[0][7]!= date :
                     update_sql = '''
@@ -53,9 +55,8 @@ class DBHelper:
                     VALUES (%s,%s,%s,%s,%s,%s,%s,%s,'kt');
                     '''
                     cursor.execute( insert_update_table_sql, (img_link, model,name, out_price, gongshi,chuga, danmal,date) )     
-                    print('-update kt','name:',name,result[0][7],'->',date)
+                    print('-update kt','model:',model,result[0][7],'->',date)
             else : 
-                file.write(name)
                 insert_sql = '''
                 INSERT INTO kt 
                 (image_link,model, name, chulgo, gongshi, chuga, danmal, date) 

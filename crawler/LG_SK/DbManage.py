@@ -44,7 +44,7 @@ class DBHelper:
                     (`image_link`, `model`, `name`, `chulgo`, `gongshi`, `chuga`, `danmal`, `date`, `telecom`)
                     VALUES (%s,%s,%s,%s,%s,0,%s,%s,'lg');
                     '''
-                    print('-update lg','name:',name,result[0]['date'],'->',date)
+                    print('-update lg','model:',model,result[0]['date'],'->',date)
                     cursor.execute( insert_update_table_sql, (img_link, model, name, out_price, gongshi, danmal, date) )
             else :
                 insert_sql = '''
@@ -76,7 +76,7 @@ class SKDBHelper(DBHelper):
                     (`image_link`, `model`, `name`, `chulgo`, `gongshi`, `chuga`, `danmal`, `date`, `telecom`)
                     VALUES (%s,%s,%s,%s,%s,%s,%s,%s,'sk');
                     '''
-                    print('-update sk','name:',name,result[0]['date'],'->',date)
+                    print('-update sk','model:',model,result[0]['date'],'->',date)
                     cursor.execute( insert_update_table_sql, (img_link, model, name, out_price, gongshi, chuga, danmal, date) )
             else :
                 insert_sql = '''
