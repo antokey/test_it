@@ -9,16 +9,14 @@
   $telecom='kt';
 
   $result=mysqli_query($conn,'SELECT * FROM update_data WHERE name ="'.$name.'" ORDER BY id DESC'); 
-  var_dump($result);
 
-  while($row = mysqli_fetch_array($result)) {
+  /*while($row = mysqli_fetch_array($result)) {
     echo '<h2>'.$row['name'].'</h2>';
     echo $row['date'];
-  }
-
+  }*/
+  $row = mysqli_fetch_array($result);
+  print_r($row);
  ?>
-
-
 <html>
 <head>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>      
@@ -29,10 +27,11 @@
     function drawChart() {
 
       var data = new google.visualization.DataTable();
+
       data.addColumn('string', 'Day');
       data.addColumn('number', 'price');
       for (var i = 0; i <3; i++) {
-        data.addRow(['a',i]); //here is values to change [data,price]
+        data.addRow(['aa',3]); //here is values to change [data,price]
       }
 
       var options = {
@@ -54,6 +53,12 @@
 
 
 <!--function drawChart() {
+
+       // var price = '<?= $row[6] ?>';
+     // var date = <?= $row[7] ?>;
+      //var date = <?= json_encode($arr) ?>;
+
+
         var data = google.visualization.arrayToDataTable([
           ['Year', 'Sales', 'Expenses','aaa'],
           ['2004',  1000,      400,      400],
