@@ -156,6 +156,9 @@ for obj in KT_list:
         obj.date
     )
 db.db_free()
+import importlib
+from KT_DB import DBHelper as Dh
+importlib.reload(Dh)
 '''
 import sys
 sys.exit()
