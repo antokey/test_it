@@ -22,11 +22,14 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 
+'''
+pip3 install pyvirtualdisplay
+from pyvirtualdisplay import Display
 display = Display(visible = 0, size = (2000, 2000))
 display.start()
-
+'''
 #driver = wd.Chrome('chromedriver')
-driver = wd.Chrome('./chromedriver')
+driver = wd.Chrome('/home/jieun/project/test_it/crawler/LG_SK/chromedriver')
 
 #homepage access
 driver.get(main_url)
@@ -105,7 +108,7 @@ for page in range(1, 10):
             if check_tbody == 3:
                 break
             check_tbody = check_tbody + 1
-    print(page)
+    #print(page)
 
     #Close the html file for next page html source
     f.close()
@@ -114,7 +117,7 @@ for page in range(1, 10):
     try:
         number = 1 + 30 * page
         driver.execute_script("goPage('%s')" % number)
-        time.sleep(5)
+        time.sleep(2)
 
     except Exception as e:
         print ('Next Page Error!', e)

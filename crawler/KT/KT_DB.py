@@ -53,7 +53,7 @@ class DBHelper:
                     VALUES (%s,%s,%s,%s,%s,%s,%s,%s,'kt');
                     '''
                     cursor.execute( insert_update_table_sql, (img_link, model,name, out_price, gongshi,chuga, danmal,date) )     
-                    print('-update','name:',name,result[0][7],'->',date)
+                    print('-update kt','name:',name,result[0][7],'->',date)
             else : 
                 insert_sql = '''
                 INSERT INTO kt 
