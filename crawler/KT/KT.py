@@ -14,9 +14,6 @@ from KT_class import KT
 from KT_DB import DBHelper as Dh
 KT_list= []
 
-
-
-
 main_url='https://shop.kt.com/smart/supportAmtList.do'
 #ssl 오류 방지
 options = wd.ChromeOptions()
@@ -24,7 +21,7 @@ options.add_argument('--ignore-certificate-errors-spki-list')
 options.add_argument('--ignore-ssl-errors')
 
 driver=wd.Chrome()
-driver=wd.Chrome(executable_path='crawler/KT/chromedriver',chrome_options=options)
+driver=wd.Chrome(executable_path='./chromedriver',chrome_options=options)
 driver.get(main_url)
 
 #잠시 대기 -> 페이지가 로드 되고 나서 즉각적으로 데이터를 획득하는 행위는 자제(이유:원하는 요소를 만날 때 까지 대기)
@@ -47,7 +44,7 @@ for page in range(3, int(final_page)+2): #3-5
         driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %page).click()
         print("go to [%d] pages" % int(page-1))
         html=driver.page_source
-        file_ = open('crawler/KT/html/page_%d.html' %int(page-1), 'w',encoding='UTF8' )
+        file_ = open('html/page_%d.html' %int(page-1), 'w',encoding='UTF8' )
         time.sleep(1)
         file_.write(html)
         file_.close()
@@ -58,7 +55,7 @@ for page in range(3, int(final_page)+2): #3-5
 #다시 돌아가 첫 페이지 html 추출
 driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %1).click()
 html=driver.page_source
-file_ = open('crawler/KT/html/page_1.html', 'w',encoding='UTF8' )
+file_ = open('html/page_1.html', 'w',encoding='UTF8' )
 file_.write(html)
 file_.close()
 
@@ -68,8 +65,8 @@ driver.quit()
 
 #td 태그 내부의 내용을 추출하여 특정 파일(write.txt)에 저장 
 for page in range(1, int(final_page)+1):
-    file_ = open('crawler/KT/html/page_%s.html' %page, 'r',encoding='UTF8' )
-    file2 = open('crawler/KT/write', 'w',encoding='UTF8' )
+    file_ = open('html/page_%s.html' %page, 'r',encoding='UTF8' )
+    file2 = open('write', 'w',encoding='UTF8' )
     data = file_.read()
     a=re.findall("<td.*?>(.*?)</td>",data)
     for i in a:
@@ -78,7 +75,7 @@ for page in range(1, int(final_page)+1):
     file2.close()
     file_.close()
     #read write file -> save the instance of class_kt
-    file_ = open('crawler/KT/write', 'r',encoding='UTF8' )
+    file_ = open('write', 'r',encoding='UTF8' )
     i=1
     flag=0
     first=False

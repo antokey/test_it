@@ -12,10 +12,10 @@ class DBHelper:
     def db_init(self):
         self.conn = my.connect(
             host='localhost',
-            port=3307,
+            port=3306,
             user='root',
-            password='123456',
-            db='it_seminar',
+            password='wldms332',
+            db='project',
             charset='utf8',
             cursorclass=my.cursors.DictCursor
         )
