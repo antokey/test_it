@@ -78,7 +78,7 @@ for(k=0~kt_max)
     if(flag_sk)
     <td>print(sk[s][col)<td>
     if(flag_lg)
-    <td> lg[l][col] <td>
+    <td>.lg[l][col].<td>
 
 
 

@@ -61,52 +61,61 @@ mysqli_query($conn, "set names utf8");
 			  $max = max($cnt_kt, $cnt_sk, $cnt_lg);
 			  
 			  while($row1 = mysqli_fetch_array($result_kt)){
-				$temp1[] = $row1;
+				$rows_kt[] = $row1;
 			  }
 			  
 			  while($row2 = mysqli_fetch_array($result_sk)){
-				$temp2[] = $row2;
+				$rows_sk[] = $row2;
 			  }
 			  
 			  while($row3 = mysqli_fetch_array($result_lg)){
-				$temp3[] = $row3;
+				$rows_lg[] = $row3;
 			  }
 		  }
 	$j = 0;
 	$k = 0;
 	$l = 0;
-	echo = "
+	
+	for($i = 0 ; $i < $max ; $i++){
+		echo "
 	<table align = center width = '800' border = '1' cellpadding = '10'>
     <tr align = center>
-      <td bgcolor = '#4374D9'></td>
+	  <td></td>
+      <td bgcolor = '#4374D9'><font color = 'white'>LG</font></td>
       <td bgcolor = '#4374D9'><font color = 'white'>KT</font></td>
-      <td bgcolor = '#4374D9'><font color = 'white'>SKT</font></td>
-      <td bgcolor = '#4374D9'><font color = 'white'>LG U+</font></td>
+      <td bgcolor = '#4374D9'><font color = 'white'>SK</font></td>
     </tr>";
-	for($i = 0 ; $i < $max ; $i++){
-		for($j = 0 < $j < cnt_kt ; $j++){
-			if($temp1[$j][3] == $temp3[$i][3])
+		$flag_kt = FALSE;
+		$flag_sk = FALSE;
+		for($j = 0 ; $j < $cnt_kt ; $j++){
+			if($rows_kt[$j][3] == $rows_lg[$i][3]){
 				$flag_kt = TRUE;
 				break;
-		for($k = 0 < $k < cnt_sk ; $k++){
-			if($temp2[$k][3] == $temp3[$i][3])
+			}
+		}
+		for($k = 0 ; $k < $cnt_sk ; $k++){
+			if($rows_sk[$k][3] == $rows_lg[$i][3]){
 				$flag_sk = TRUE;
 				break;
+			}
 		}
+		
+		$list = array('', '', '', '출고가(a)', '공시지원금(b)', '추가지원금(c)', '단말대금(a-b-c)', '공시일자');
 		for($col = 3 ; $col < 8 ; $col++){
-			echo "<tr align=center>";
-			echo "<td>".$temp3[$i][$col]."</td>";
+			echo "<tr align=center>
+					<td bgcolor = '#4374D9'><font color = 'white'>".$list[$col]."</td>";
+			echo "<td>".$rows_lg[$i][$col]."</td>";
 			
-			if(flag_kt){
-				echo "<td>".$temp1[$j][$col]."</td>";
-			}else{echo "0";}
-			if(flag_sk){
-				echo "<td>".$temp2[$k][$col]."</td>";
+			if($flag_kt){
+				echo "<td>".$rows_kt[$j][$col]."</td>";
+			}else{echo "<td>0</td>";}
+			if($flag_sk){
+				echo "<td>".$rows_sk[$k][$col]."</td>";
 			}else{echo "<td>0</td>";}
 			echo "</tr>";
 		}
+	echo "</table>";
 	}
 	?>
-	</table>
 </body>
 </html>
