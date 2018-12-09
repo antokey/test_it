@@ -16,17 +16,20 @@ db_table_name = 'lg'
 
 #Driver load
 #Solve the Chromedriver and Chrome crash problem, get options like down steps
-#chrome_options = wd.ChromeOptions()
-#chrome_options.binary_location = '/opt/google/chrome/google-chrome'
-#chrome_options.add_argument('--headless')
-#chrome_options.add_argument('--no-sandbox')
-#chrome_options.add_argument('--disable-dev-shm-usage')
+chrome_options = wd.ChromeOptions()
+chrome_options.binary_location = '/opt/google/chrome/google-chrome'
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
 
-#display = Display(visible = 0, size = (2000, 2000))
-#display.start()
-
-driver = wd.Chrome('chromedriver')
-#driver = wd.Chrome('./chromedriver')
+'''
+pip3 install pyvirtualdisplay
+from pyvirtualdisplay import Display
+display = Display(visible = 0, size = (2000, 2000))
+display.start()
+'''
+#driver = wd.Chrome('chromedriver')
+driver = wd.Chrome('/home/jieun/project/test_it/crawler/LG_SK/chromedriver')
 
 #homepage access
 driver.get(main_url)
@@ -42,12 +45,12 @@ for page in range(1, 10):
     #Get the html source and save
     html_source = driver.page_source
 
-    f = open("source.txt", "w", encoding="utf-8")
+    f = open("/home/jieun/project/test_it/crawler/LG_SK/source.txt", "w", encoding="utf-8")
     f.write(html_source)
     f.close()
 
     #Open the save current html file
-    f = open("source.txt", "rt", encoding="utf-8")
+    f = open("/home/jieun/project/test_it/crawler/LG_SK/source.txt", "rt", encoding="utf-8")
 
     #Declare the argument using for the distinction to keyword
     count = 0
@@ -73,6 +76,11 @@ for page in range(1, 10):
             elif count == 0:
                 nospace = re.sub('\n', '', nospace)
                 phone_name = nospace
+                count = count + 1
+                continue
+            elif count == 1:
+                nospace = re.sub('\n', '', nospace)
+                model_name = nospace
                 if nospace.find('plus') > -1:
                     phone_name = phone_name.replace("plus", "+")
                 if nospace.find('플러스') > -1:
@@ -81,11 +89,6 @@ for page in range(1, 10):
                     phone_name = phone_name.replace("Galaxy", "갤럭시")
                 if nospace.find('아이폰') > -1:
                     phone_name = phone_name.replace("아이폰", "iPhone")
-                count = count + 1
-                continue
-            elif count == 1:
-                nospace = re.sub('\n', '', nospace)
-                model_name = nospace
                 count = count + 1
                 continue
             elif count == 2:
@@ -113,7 +116,7 @@ for page in range(1, 10):
             if check_tbody == 3:
                 break
             check_tbody = check_tbody + 1
-    print(page)
+    #print(page)
 
     #Close the html file for next page html source
     f.close()
@@ -122,7 +125,7 @@ for page in range(1, 10):
     try:
         number = 1 + 30 * page
         driver.execute_script("goPage('%s')" % number)
-        time.sleep(5)
+        time.sleep(2)
 
     except Exception as e:
         print ('Next Page Error!', e)
@@ -139,9 +142,11 @@ for obj in list_lg:
                 obj.gongshi,
                 obj.danmal,
                 obj.date
-            )
+             )
 
 #Close the all the connection
 db.db_free()
 driver.close()
 driver.quit()
+
+
