@@ -81,6 +81,14 @@ for page in range(1, 10):
             elif count == 1:
                 nospace = re.sub('\n', '', nospace)
                 model_name = nospace
+                if nospace.find('plus') > -1:
+                    phone_name = phone_name.replace("plus", "+")
+                if nospace.find('플러스') > -1:
+                    phone_name = phone_name.replace("플러스", "+")
+                if nospace.find('Galaxy') > -1:
+                    phone_name = phone_name.replace("Galaxy", "갤럭시")
+                if nospace.find('아이폰') > -1:
+                    phone_name = phone_name.replace("아이폰", "iPhone")
                 count = count + 1
                 continue
             elif count == 2:
@@ -124,15 +132,17 @@ for page in range(1, 10):
 
 #Check the duplicated and send to the Database
 for obj in list_lg:
-    db.db_insertCrawlingData(
-        obj.img_link,
-        obj.model,
-        obj.name,
-        obj.out_price,
-        obj.gongshi,
-        obj.danmal,
-        obj.date
-    )
+    if (obj.name.find('데모') == -1):
+        if(obj.model.find('DE') == -1):
+            db.db_insertCrawlingData(
+                obj.img_link,
+                obj.model,
+                obj.name,
+                obj.out_price,
+                obj.gongshi,
+                obj.danmal,
+                obj.date
+             )
 
 #Close the all the connection
 db.db_free()

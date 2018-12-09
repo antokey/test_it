@@ -5,10 +5,9 @@
   $conn= db_init($config['host'],$config['duser'],$config['dpasswd'],$config['dname']);
   mysqli_query($conn,"set names utf8");
 
-  $model='ZTE-Z2321K'; # here is place to put seach keyword
-  $telecom='kt';  # here is place to put seach keyword
-
-  $result=mysqli_query($conn,'SELECT * FROM update_data WHERE model ="'.$model.'and telecom='" ORDER BY id DESC'); 
+  $model='jieun'; # here is place to put seach keyword
+  $tel='kt';  # here is place to put seach keyword
+  $result=mysqli_query($conn,'SELECT * FROM update_data WHERE model ="'.$model.'" and telecom="'.$tel.'" ORDER BY id DESC'); 
 
   while($row = mysqli_fetch_array($result)) {
     $temp[]=$row;
