@@ -28,9 +28,9 @@
          <form method=GET name=frm1 action='index.php' class = "search">
          <label > [검색]</label>
          <select name="phone_select" style="height: 20px;">
-             <option value="all" selected="selected">지점선택</option>
-             <option value="phone_name">핸드폰명</option>
-             <option value="phone_model" >모델명</option>
+             <option value="all" selected="selected">검색 옵션</option>
+             <option value="name">핸드폰명</option>
+             <option value="model" >모델명</option>
          </select>
          <input type=text size=45 name=search placeholder="검색어를 입력해주세요." style="width: 203px; height: 28px;">
           <!-- <input type=submit class="btn btn-info btn-sm" value="검색" style="margin-bottom: 5px;" >-->
@@ -38,31 +38,42 @@
          </form>
      </div>
     <div class="row">
+      <nav class="col-md-3" style="width: 200px; margin-right:15px ;" >
+
+      </nav>
 
       <div class="col-md-9" style=" padding-top: 30px;">
           <article > <!-- 본문영역 -->
-            <div class="col-md-9" >' ;
-                  <hr>환영합니다.<br>.^_^" ;
+            <!--<div class="col-md-3" >-->
+                 
               <?php
               if(empty($_GET['phone_select'])==false & empty($_GET['search'])==false ) //phone_select 에 정보가 있다면
               {
                 $get=$_GET['phone_select'];
-                $sh=$_GET['seach'];
-                if($get=='phone_name') // 'phone_name'
+                $search_keyword=$_GET['search'];
+                if($get=='name') // 'phone_name'
                 {
-                  echo "ph_name";
-                  //print_article ($sql,$conn);
-                }
-                else // 'phone_model'
-                {
-                  echo "ph_model";
-                  //$sql = "SELECT *  FROM {$store} JOIN  product ON product.p_id = {$store}.p_id" ;
-                  //print_article ($sql,$conn);
+                  load_result_by_keword($conn,$search_keyword,$get);
 
                 }
+                else if($get=='model') // 'phone_model'
+                {
+                  load_result_by_keword($conn,$search_keyword,$get);
+
+                }
+                else
+                {
+                  echo "<script> alert('검색옵션을 선택해주세요.');</script>";
+                }
               }
- 
-              $temp =  make_update_array('jieun','kt',$conn);
+              else
+                {
+                  echo "<hr>환영 합니다.^_^ [제품명] 검색의 경우 원하는 제품의 시그니처 넘버를 입력할경우 정확한 검색이 가능합니다.<br>
+                  ex) 갤럭시 s7 -> s7로 검색<br>
+                  아이폰 8 plus ->8 plus로 검색<br>";
+                }            
+                // $temp =  make_update_array('jieun','kt',$conn);
+
               ?>            
               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>   
               <script>
@@ -72,12 +83,10 @@
               <body>
               <div id="line_top_x"></div>
               </body>
-            
-            </div> 
           </article>
       </div>
     </div>
-   </div>
+
 
 
    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
