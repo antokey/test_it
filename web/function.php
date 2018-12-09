@@ -232,7 +232,7 @@ function make_update_array ($model,$tel,$conn)
   //$model='jieun'; # here is place to put seach keyword
   //$tel='kt';  # here is place to put seach keyword
 
-  $result=mysqli_query($conn,'SELECT * FROM update_data WHERE model ="'.$model.'" and telecom="'.$tel.'" ORDER BY id DESC'); 
+  $result=mysqli_query($conn,'SELECT * FROM update_data WHERE model ="'.$model.'" and telecom="'.$tel.'" ORDER BY id ASC'); 
   $temp=[];
   while($row = mysqli_fetch_array($result)) {
     $temp[]=$row;
