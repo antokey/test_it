@@ -27,7 +27,7 @@ class DBHelper:
     def db_insertCrawlingData(self, img_link, model, name, out_price, gongshi, danmal, date): # add the instance or update
         with self.conn.cursor() as cursor: #with문을 사용함으로서 자동으로 닫아줌
             find_sql = '''
-            select * from `lg` where model=%s and name=%s
+            select * from `lg` where model=%s
             '''
             cursor.execute(find_sql, (model, name) )
             result = cursor.fetchall()
@@ -59,10 +59,13 @@ class SKDBHelper(DBHelper):
     def db_insertCrawlingData(self, img_link, model, name, out_price, gongshi, chuga, danmal, date): # add the instance or update
         with self.conn.cursor() as cursor: #with문을 사용함으로서 자동으로 닫아줌
             find_sql = '''
-            select * from `sk` where model=%s and name=%s
+            select * from `sk` where model=%s
             '''
             cursor.execute(find_sql, (model, name) )
             result = cursor.fetchall()
+            print(name,model) 
+            print(result)
+            print(len(result))
             if len(result) > 0 :
                 if (result[0]['date'] != date) :
                     update_sql = '''

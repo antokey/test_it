@@ -110,6 +110,7 @@ for page in range(2, 10):
         print("Next Page Error!", e)
 
 #Check the duplicated value in Database and send to the Database
+db = Db.SKDBHelper()
 for obj in list_sk:
     db.db_insertCrawlingData(
         obj.img_link,
