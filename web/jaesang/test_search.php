@@ -90,33 +90,44 @@ mysqli_query($conn, "set names utf8");
     <tr align = center>";
 		echo "
 		<td>정상가(a)</td>
-		<td>"<?php echo $temp1[0][3];?>echo"</td>
-		<td>"<?php echo $temp2[0][3];?>echo"</td>
-		<td>"<?php echo $temp3[0][3];?>echo"</td>
+		<td>";
+			echo $temp1[0][3];
+		echo"</td>
+		<td>";
+			echo $temp2[0][3];
+		echo"</td>
+		<td>";
+			echo $temp3[0][3];
+		echo"</td>
 	</tr>
 	<tr align = center>
 		<td>공시지원금(b)</td>
-		<td>"<?php echo $temp1[0][4];?>echo"</td>
-		<td>"<?php echo $temp2[0][4];?>echo"</td>
-		<td>"<?php echo $temp3[0][4];?>echo"</td>
+		<td>";
+			echo $temp1[0][4];
+		echo"</td>
+		<td>";
+			echo $temp2[0][4];
+		echo"</td>
+		<td>";echo $temp3[0][4];
+		echo"</td>
 	</tr>
 	<tr align = center>
 		<td>추가지원금(c)</td>
-		<td>"<?php echo $temp1[0][5];?>echo"</td>
-		<td>"<?php echo $temp2[0][5];?>echo"</td>
-		<td>"<?php echo $temp3[0][5];?>echo"</td>
+		<td>";echo $temp1[0][5];echo"</td>
+		<td>";echo $temp2[0][5];echo"</td>
+		<td>";echo $temp3[0][5];echo"</td>
 	</tr>
 	<tr align = center>
 		<td>판매가(c)</td>
-		<td>"<?php echo $temp1[0][6];?>echo"</td>
-		<td>"<?php echo $temp2[0][6];?>echo"</td>
-		<td>"<?php echo $temp3[0][6];?>echo"</td>
+		<td>";echo $temp1[0][6];echo"</td>
+		<td>";echo $temp2[0][6];echo"</td>
+		<td>";echo $temp3[0][6];echo"</td>
 	</tr>
 	<tr align = center>
 		<td>공시일자</td>
-		<td>"<?php echo $temp1[0][7];?>echo"</td>
-		<td>"<?php echo $temp2[0][7];?>echo"</td>
-		<td>"<?php echo $temp3[0][7];?>echo"</td>
+		<td>";echo $temp1[0][7];echo"</td>
+		<td>";echo $temp2[0][7];echo"</td>
+		<td>";echo $temp3[0][7];echo"</td>
 	</tr>
 	  </table>";
 	  if($j < $cnt_kt){
