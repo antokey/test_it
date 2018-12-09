@@ -26,17 +26,15 @@ except Exception as e:
     print('error!',e)
     
 driver.get(main_url)
-
 #잠시 대기 -> 페이지가 로드 되고 나서 즉각적으로 데이터를 획득하는 행위는 자제(이유:원하는 요소를 만날 때 까지 대기)
 #explict(명시적) 특정 요소가 찾아질때까지 기다림
 try:
     element= WebDriverWait(driver,10).until(
-        EC.presence_of_element_located((By.CLASS_NAME,'pageWrap'))
-        #지정한 하나개의 요소가 오면 wait 종료
-    )
+    EC.presence_of_element_located((By.CLASS_NAME,'pageWrap'))
+    #지정한 하나개의 요소가 오면 wait 종료
+)
 except Exception as e:
     print('error!',e)
-
 #현재시점에서 마지막 페이지 넘버 색출
 a=driver.find_elements_by_css_selector('.pageWrap>.page')
 final_page= a[3].get_attribute('pageno')
@@ -44,6 +42,15 @@ final_page= a[3].get_attribute('pageno')
 #두번째 페이지부터 마지막 페이지까지 html 추출
 for page in range(3, int(final_page)+2): #3-5
     try:
+
+        try:
+            element= WebDriverWait(driver,10).until(
+                EC.presence_of_element_located((By.CLASS_NAME,'pageWrap'))
+                #지정한 하나개의 요소가 오면 wait 종료
+            )
+        except Exception as e:
+            print('error!',e)
+        time.sleep(1)
         driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %page).click()
         #print("go to [%d] pages" % int(page-1))
         html=driver.page_source

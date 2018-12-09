@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" style="" class="lguno-ie8compat lgucssgradients lgufontface lgumediaqueries lgubackgroundsize lguborderradius lguboxshadow lguboxsizing lgulastchild chrome pcView"><head>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" style="" class="lguno-ie8compat lgucssgradients lgufontface lgumediaqueries lgubackgroundsize lguborderradius lguboxshadow lguboxsizing lgulastchild chrome pcView fixTop"><head>
 <title>태블릿/스마트기기 &lt; U+휴대폰 지원금 | LG U+</title>
 <!-- header area-->
 
@@ -44,7 +44,7 @@
 <title>LG유플러스</title>
 
 <!-- JavaScript Framework -->
-<script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://cr.acecounter.com/Web/AceCounter_AW.js?gc=AS2A40481265909&amp;py=0&amp;gd=gtc10&amp;gp=8080&amp;up=NaPm_Ncisy&amp;rd=1544361077510"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K6GHZVS"></script><script type="text/javascript" src="/common/renewal/ui/js/cm/jquery.js"></script> 
+<script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://cr.acecounter.com/Web/AceCounter_AW.js?gc=AS2A40481265909&amp;py=0&amp;gd=gtc10&amp;gp=8080&amp;up=NaPm_Ncisy&amp;rd=1544378827321"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K6GHZVS"></script><script type="text/javascript" src="/common/renewal/ui/js/cm/jquery.js"></script> 
 <script type="text/javascript" src="/common/renewal/ui/js/cm/lib.js"></script>
 <script type="text/javascript" src="/common/renewal/ui/js/cm/ui.gnb.js"></script>
 <script type="text/javascript" src="/common/renewal/ui/js/cm/ui.js"></script>
@@ -115,7 +115,7 @@
 	var HPI_BROWSER_TYPE = 'Chrome';
 	var HPI_SSL = 'https://www.uplus.co.kr:443';
 	var HPI_NON_SSL = 'http://www.uplus.co.kr:80';
-	var HPI_SYS_TODAY = '20181209';
+	var HPI_SYS_TODAY = '20181210';
 
 	$(document).ready(function() {
 		jQuery.browser = {}; (function () { 
@@ -637,7 +637,7 @@ text = text.replace(/(^\s*)/g,"");
 					<ul class="listGnbPri">
 						<!-- U<sup>+</sup> Shop -->
 						<!--1 start --><li class="gnbMenu01"><a href="/sqr/home/Index.hpi?mid=10002" data-gnb="#gnbArea01" class="btnDpt1 menu01">U+Shop</a>
-<div class="wrapGnbSec" id="gnbArea01">
+<div class="wrapGnbSec" id="gnbArea01" style="display: none;">
 <ul class="listGnbSec">
 <!--2 start --><li>
 <a href="/sqr/prdt/wlsp/RetrieveNewLteTypeProdList.hpi?mid=11775" class="btnDp2">휴대폰 구매</a>
@@ -692,7 +692,7 @@ text = text.replace(/(^\s*)/g,"");
 <!--3 end --></li>
 <!--2 end --></ul>
 </div></li><!--1 end --><!--1 start --><li class="gnbMenu02"><a href="/com/main/psmain/PsMbMain.hpi?mid=10474" data-gnb="#gnbArea02" class="btnDpt1 menu02">상품 서비스</a>
-<div class="wrapGnbSec" id="gnbArea02">
+<div class="wrapGnbSec" id="gnbArea02" style="display: none;">
 <ul class="listGnbSec">
 <!--2 start --><li>
 <a href="/ent/spps/chrg/RetrieveChrgList.hpi?catgCd=All&amp;ampmid=11014" class="btnDp2">모바일 서비스 보기</a>
@@ -768,7 +768,7 @@ text = text.replace(/(^\s*)/g,"");
 <!--3 end --></li>
 <!--2 end --></ul>
 </div></li><!--1 end --><!--1 start --><li class="gnbMenu03"><a href="/ent/myma/RetrieveMyPageSubMain.hpi?mid=10503" data-gnb="#gnbArea03" class="btnDpt1 menu03">내 정보관리</a>
-<div class="wrapGnbSec" id="gnbArea03">
+<div class="wrapGnbSec" id="gnbArea03" style="display: none;">
 <ul class="listGnbSec">
 <!--2 start --><li>
 <a href="/bil/chrg/bilv/RetrieveBillViewEntrList.hpi?mid=10552" class="btnDp2">요금 조회 및 납부 관리</a>
@@ -813,7 +813,7 @@ text = text.replace(/(^\s*)/g,"");
 <!--3 end --></li>
 <!--2 end --></ul>
 </div></li><!--1 end --><!--1 start --><li class="gnbMenu04"><a href="/biz/bzma/RetrieveMainCS.hpi?mid=10611" data-gnb="#gnbArea04" class="btnDpt1 menu04">고객지원</a>
-<div class="wrapGnbSec" id="gnbArea04">
+<div class="wrapGnbSec" id="gnbArea04" style="display: none;">
 <ul class="listGnbSec">
 <!--2 start --><li>
 <a href="/css/sinf/brsc/RetrivePosSvc.hpi?mid=10753" class="btnDp2">문의하기</a>
@@ -877,7 +877,7 @@ text = text.replace(/(^\s*)/g,"");
 <!--3 end --></li>
 <!--2 end --></ul>
 </div></li><!--1 end --><!--1 start --><li class="gnbMenu05"><a href="/ent/ubma/RetrieveMainUM.hpi?mid=10612" data-gnb="#gnbArea05" class="btnDpt1 menu05 current">혜택보기</a>
-<div class="wrapGnbSec" id="gnbArea05">
+<div class="wrapGnbSec" id="gnbArea05" style="display: none;">
 <ul class="listGnbSec">
 <!--2 start --><li>
 <a href="/evt/mbrs/memb/RetrieveMbspCardUseMain.hpi?mid=10635" class="btnDp2">멤버십 혜택</a>
@@ -1106,7 +1106,7 @@ text = text.replace(/(^\s*)/g,"");
 													</ol>
 												</div>
 												<form name="topCoRnauthFrm" id="topCoRnauthFrm" method="post" onsubmit="return false;" action="">
-													<input type="hidden" name="HPI_BLOCK_TOKEN_KEY" value="topCoRnauthFrm" /><input type="hidden" name="HPI_BLOCK_TOKEN_VALUE" value="ehdeul" />
+													<input type="hidden" name="HPI_BLOCK_TOKEN_KEY" value="topCoRnauthFrm" /><input type="hidden" name="HPI_BLOCK_TOKEN_VALUE" value="gkkyie" />
 													<ul class="iput_box">
 														<li>
 															<div class="user_name">
@@ -1192,7 +1192,7 @@ text = text.replace(/(^\s*)/g,"");
 					<a class="btnShort btnShortPk" href="http://www.uplus.co.kr:80/com/main/pkmain/PkMain.hpi?mid=10004&amp;tmid=m3" target="_blank" title="새창열림">회사소개</a><a class="btnShort active btnShortPs" href="http://www.uplus.co.kr:80/home/Index.hpi?mid=10000&amp;tmid=m1">개인</a><a class="btnShort btnShortBiz" href="http://www.uplus.co.kr:80/biz/bzma/RetrieveMain.hpi?mid=10001&amp;tmid=m2">기업/소상공인</a>
 				</nav>
 				<button type="button" class="btnClsUtil btnCloseAllMenu hidden-xs"><span class="blind">전체메뉴닫기</span></button>
-			</div><div class="gnb-chatbot" style="right: -115px;">					<div class="icon-chat gnb hover">					챗봇열기/닫기					<span class="motionImg"><span class="unit7"></span></span>					<div class="gnb-chatbot-tooltip" style="display: none;">						<p class="intro">챗봇말풍선</p>						<span class="cont">저는 <span class="point">U봇</span>이라고 해요</span>					</div>				    <div class="pc-temp-img-loading"></div>				</div>				<div class="gnb-chatbot-area off" style="left: -635px;">				</div>			  </div>			
+			</div><div class="gnb-chatbot" style="right: -115px;">					<div class="icon-chat gnb hover">					챗봇열기/닫기					<span class="motionImg"><span class="unit8"></span></span>					<div class="gnb-chatbot-tooltip" style="display: none;">						<p class="intro">챗봇말풍선</p>						<span class="cont"><span class="point">U봇</span>에게 물어 보세요</span>					</div>				    <div class="pc-temp-img-loading"></div>				</div>				<div class="gnb-chatbot-area off" style="left: -627px;">				</div>			  </div>			
 			<!--// Utility Area -->
 	
 			<!-- Search -->
@@ -1351,7 +1351,7 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 	<input type="hidden" name="suprtAmt24Order" id="suprtAmt24Order" />	
 	<input type="hidden" name="saleAmt24Order" id="saleAmt24Order" />
 	<input type="hidden" name="hpiDeviceType" value="ETC" />
-	<input type="hidden" name="curDate" value="20181209" />
+	<input type="hidden" name="curDate" value="20181210" />
 	
 	<section class="sectContWrap sectConWrapBz">
 		<!-- Title Area -->
@@ -8461,7 +8461,7 @@ Floating.prototype.Run = function () {
 	
 	<!-- 17/12/13[유플러스홈페이지 개선 ] -->
 	<!-- top 이동 버튼 -->
-	<a href="#none" class="Mb_BtnMoveTop"><span class="blind">페이지 상단으로 이동</span></a>
+	<a href="#none" class="Mb_BtnMoveTop" style="display: inline;"><span class="blind">페이지 상단으로 이동</span></a>
 	
 	<!-- 플로팅버튼 -->
 	
