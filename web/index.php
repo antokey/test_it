@@ -1,20 +1,15 @@
 <?php
   require("function.php");
-  /*session_start();
-  require("config.php");
+  require("db_config.php");
   $conn= db_init($config['host'],$config['duser'],$config['dpasswd'],$config['dname']);
   mysqli_query($conn,"set names utf8");
-
-  $result=mysqli_query($conn,'SELECT * FROM topic ORDER BY  created DESC'); //리뷰 DB
-  //데이터 조회
-*/
- ?>
+?>
  <!DOCTYPE html>
 <html>
 <head >
 	<meta charset="utf-8" >
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">require("function.php");
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style3.css">
@@ -66,7 +61,16 @@
 
                 }
               }
+ 
+              //print_graph ('jieun','kt',$conn);
+
               ?>
+              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>      
+              <script type="text/javascript">
+                draw_graph(); 
+                d();
+              </script>
+ 
 
 
             </div> 

@@ -5,7 +5,6 @@ function db_init($host,$duser,$dpasswd,$dname){
   mysqli_select_db($conn,$dname);
   return $conn ;
 }
-
 function print_article ($sql,$conn)
 {
   $c = 0;
@@ -49,7 +48,6 @@ function print_article ($sql,$conn)
   }
 
 }
-
 function print_graph ($model,$tel,$conn)
 {
 
@@ -64,11 +62,41 @@ function print_graph ($model,$tel,$conn)
   print_r ($temp); 
 
 }
-
-
 ?>
  <script>
- function search1(){
+  function draw_graph(){
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+  
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('string', 'Day');
+        data.addColumn('number', 'price');
+        for(var a=0; a<3; a++) {
+          data.addRow(['aaa',222]);  
+        } 
+        /*for(var a=0; a<arr2.length; a++) {
+          data.addRow([arr2[a]['date'],Number(arr2[a]['danmal'])]);  
+        } */     
+
+        var options = {
+          title: 'Test_graph',
+          width: 900,
+          height: 500,
+        };
+
+        var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+        chart.draw(data, google.charts.Line.convertOptions(options));
+      }
+  }
+
+  
+  function d(){document.write("<br/><b>Normal Object</b><br/>");}
+
+
+  function search1(){
    if(frm1.search.value ){
 
      frm1.submit();
@@ -79,43 +107,7 @@ function print_graph ($model,$tel,$conn)
 
    }
  }
- function search1(){
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>      
-    <script type="text/javascript"> 
 
-      var arr2 = <?= json_encode($temp) ?>;
-      /*
-      document.write("<br/><b>Normal Object</b><br/>");
-      for(var a=0; a<=arr2.length; a++) {
-        for(var b in arr2[a]) {
-          document.write(b, " : ", arr2[a][b], "<br/>"); 
-       }
-      }
-      */
-    google.charts.load('current', {'packages':['line']});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-
-      var data = new google.visualization.DataTable();
-
-      data.addColumn('string', 'Day');
-      data.addColumn('number', 'price');
-      for(var a=0; a<arr2.length; a++) {
-        data.addRow([arr2[a]['date'],Number(arr2[a]['danmal'])]);  
-      }      
-
-      var options = {
-        title: 'Test_graph',
-        width: 900,
-        height: 500,
-      };
-
-      var chart = new google.charts.Line(document.getElementById('line_top_x'));
-
-      chart.draw(data, google.charts.Line.convertOptions(options));
-    }
-
- }
 
  </script>
+
