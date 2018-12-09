@@ -59,3 +59,7 @@
    <script src="http://210.117.181.22/termprj/s201515305/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
  </body>
  </html>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2f6c154ee481ab3b9d9ed47469bbda32084ae4b9

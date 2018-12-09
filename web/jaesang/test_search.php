@@ -12,6 +12,7 @@ mysqli_query($conn, "set names utf8");
   <link rel="stylesheet" href="min.css">
 </head>
 <body>
+<<<<<<< HEAD
   <?php
   		$category = $_GET['phone_select'];
           if($category == 'phone_name'){
@@ -20,10 +21,29 @@ mysqli_query($conn, "set names utf8");
             $sql1 = "SELECT * FROM kt WHERE REPLACE(name, ' ', '') LIKE '%$keyword%'";
             $sql2 = "SELECT * FROM sk WHERE REPLACE(name, ' ', '') LIKE '%$keyword%'";
             $sql3 = "SELECT * FROM lg WHERE REPLACE(name, ' ', '') LIKE '%$keyword%'";
+=======
+  <table align = center width = "800" border = "1" cellpadding = "10">
+    <tr align = center>
+      <td bgcolor = "#4374D9"></td>
+      <td bgcolor = "#4374D9"><font color = "white">KT</font></td>
+      <td bgcolor = "#4374D9"><font color = "white">SKT</font></td>
+      <td bgcolor = "#4374D9"><font color = "white">LG U+</font></td>
+    </tr>
+    <tr align = center>
+	  <?php
+	  $category = $_GET['phone_select'];
+          if($category == 'phone_name'){
+            $keyword = $_GET['search'];
+
+            $sql1 = "SELECT chulgo FROM kt WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY kt.chulgo ASC";
+            $sql2 = "SELECT chulgo FROM sk WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY sk.chulgo ASC";
+            $sql3 = "SELECT chulgo FROM lg WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY lg.chulgo ASC";
+>>>>>>> 2f6c154ee481ab3b9d9ed47469bbda32084ae4b9
 
             $result_kt = mysqli_query($conn, $sql1);
             $result_sk = mysqli_query($conn, $sql2);
             $result_lg = mysqli_query($conn, $sql3);
+<<<<<<< HEAD
 			
 			$cnt_kt = mysqli_num_rows($result_kt);
 			$cnt_sk = mysqli_num_rows($result_sk);
@@ -46,17 +66,26 @@ mysqli_query($conn, "set names utf8");
 			while($row3 = mysqli_fetch_array($result_lg)){
               $temp3[] = $row3;
             }
+=======
+>>>>>>> 2f6c154ee481ab3b9d9ed47469bbda32084ae4b9
 		  }
 		  else if($category == 'phone_model'){
 			  $keyword = $_GET['search'];
 			  
+<<<<<<< HEAD
 			  $sql1 = "SELECT * FROM kt WHERE REPLACE(model, ' ', '') LIKE '%$keyword%'";
               $sql2 = "SELECT * FROM sk WHERE REPLACE(model, ' ', '') LIKE '%$keyword%'";
               $sql3 = "SELECT * FROM lg WHERE REPLACE(model, ' ', '') LIKE '%$keyword%'";
+=======
+			  $sql1 = "SELECT chulgo FROM kt WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY kt.chulgo ASC";
+              $sql2 = "SELECT chulgo FROM sk WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY sk.chulgo ASC";
+              $sql3 = "SELECT chulgo FROM lg WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY lg.chulgo ASC";
+>>>>>>> 2f6c154ee481ab3b9d9ed47469bbda32084ae4b9
 			  
 			  $result_kt = mysqli_query($conn, $sql1);
               $result_sk = mysqli_query($conn, $sql2);
               $result_lg = mysqli_query($conn, $sql3);
+<<<<<<< HEAD
 			  
 			  $cnt_kt = mysqli_num_rows($result_kt);
 			  $cnt_sk = mysqli_num_rows($result_sk);
@@ -143,3 +172,260 @@ mysqli_query($conn, "set names utf8");
 	?>
 </body>
 </html>
+=======
+		  }
+	  ?>
+      <td>정상가(a)</td>
+      <td>
+        <ul>
+      <?php
+          while($row1 = mysqli_fetch_array($result_kt)){
+              echo "<li>$row1[chulgo]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+      <td>
+        <ul>
+      <?php
+          while($row2 = mysqli_fetch_array($result_sk)){
+              echo "<li>$row2[chulgo]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+      <td>
+        <ul>
+      <?php
+          while($row3 = mysqli_fetch_array($result_lg)){
+              echo "<li>$row3[chulgo]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+    </tr>
+    <tr align = center>
+<?php
+	  $category = $_GET['phone_select'];
+          if($category == 'phone_name'){
+            $keyword = $_GET['search'];
+
+            $sql1 = "SELECT gongshi FROM kt WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY kt.chulgo ASC";
+            $sql2 = "SELECT gongshi FROM sk WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY sk.chulgo ASC";
+            $sql3 = "SELECT gongshi FROM lg WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY lg.chulgo ASC";
+
+            $result_kt = mysqli_query($conn, $sql1);
+            $result_sk = mysqli_query($conn, $sql2);
+            $result_lg = mysqli_query($conn, $sql3);
+		  }
+		  else if($category == 'phone_model'){
+			  $keyword = $_GET['search'];
+			  
+			  $sql1 = "SELECT gongshi FROM kt WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY kt.chulgo ASC";
+              $sql2 = "SELECT gongshi FROM sk WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY sk.chulgo ASC";
+              $sql3 = "SELECT gongshi FROM lg WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY lg.chulgo ASC";
+			  
+			  $result_kt = mysqli_query($conn, $sql1);
+              $result_sk = mysqli_query($conn, $sql2);
+              $result_lg = mysqli_query($conn, $sql3);
+		  }
+	  ?>
+      <td>공시지원금(b)</td>
+      <td>
+        <ul>
+      <?php
+          while($row1 = mysqli_fetch_array($result_kt)){
+              echo "<li>$row1[gongshi]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+      <td>
+        <ul>
+      <?php
+          while($row2 = mysqli_fetch_array($result_sk)){
+              echo "<li>$row2[gongshi]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+      <td>
+        <ul>
+      <?php
+          while($row3 = mysqli_fetch_array($result_lg)){
+              echo "<li>$row3[gongshi]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+    </tr>
+    <tr align = center>
+<?php
+	  $category = $_GET['phone_select'];
+          if($category == 'phone_name'){
+            $keyword = $_GET['search'];
+
+            $sql1 = "SELECT chuga FROM kt WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY kt.chulgo ASC";
+            $sql2 = "SELECT chuga FROM sk WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY sk.chulgo ASC";
+            $sql3 = "SELECT chuga FROM lg WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY lg.chulgo ASC";
+
+            $result_kt = mysqli_query($conn, $sql1);
+            $result_sk = mysqli_query($conn, $sql2);
+            $result_lg = mysqli_query($conn, $sql3);
+		  }
+		  else if($category == 'phone_model'){
+			  $keyword = $_GET['search'];
+			  
+			  $sql1 = "SELECT chuga FROM kt WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY kt.chulgo ASC";
+              $sql2 = "SELECT chuga FROM sk WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY sk.chulgo ASC";
+              $sql3 = "SELECT chuga FROM lg WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY lg.chulgo ASC";
+			  
+			  $result_kt = mysqli_query($conn, $sql1);
+              $result_sk = mysqli_query($conn, $sql2);
+              $result_lg = mysqli_query($conn, $sql3);
+		  }
+	  ?>
+      <td>추가지원금(c)</td>
+      <td>
+        <ul>
+      <?php
+          while($row1 = mysqli_fetch_array($result_kt)){
+              echo "<li>$row1[chuga]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+      <td>
+        <ul>
+      <?php
+          while($row2 = mysqli_fetch_array($result_sk)){
+              echo "<li>$row2[chuga]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+      <td>
+        <ul>
+      <?php
+          while($row3 = mysqli_fetch_array($result_lg)){
+              echo "<li>$row3[chuga]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+    </tr>
+    <tr align = center>
+<?php
+	  $category = $_GET['phone_select'];
+          if($category == 'phone_name'){
+            $keyword = $_GET['search'];
+
+            $sql1 = "SELECT danmal FROM kt WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY kt.chulgo ASC";
+            $sql2 = "SELECT danmal FROM sk WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY sk.chulgo ASC";
+            $sql3 = "SELECT danmal FROM lg WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY lg.chulgo ASC";
+
+            $result_kt = mysqli_query($conn, $sql1);
+            $result_sk = mysqli_query($conn, $sql2);
+            $result_lg = mysqli_query($conn, $sql3);
+		  }
+		  else if($category == 'phone_model'){
+			  $keyword = $_GET['search'];
+			  
+			  $sql1 = "SELECT danmal FROM kt WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY kt.chulgo ASC";
+              $sql2 = "SELECT danmal FROM sk WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY sk.chulgo ASC";
+              $sql3 = "SELECT danmal FROM lg WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY lg.chulgo ASC";
+			  
+			  $result_kt = mysqli_query($conn, $sql1);
+              $result_sk = mysqli_query($conn, $sql2);
+              $result_lg = mysqli_query($conn, $sql3);
+		  }
+	  ?>
+      <td>판매가(c)</td>
+      <td>
+        <ul>
+      <?php
+          while($row1 = mysqli_fetch_array($result_kt)){
+              echo "<li>$row1[danmal]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+      <td>
+        <ul>
+      <?php
+          while($row2 = mysqli_fetch_array($result_sk)){
+              echo "<li>$row2[danmal]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+      <td>
+        <ul>
+      <?php
+          while($row3 = mysqli_fetch_array($result_lg)){
+              echo "<li>$row3[danmal]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+    </tr>
+	<tr align = center>
+<?php
+	  $category = $_GET['phone_select'];
+          if($category == 'phone_name'){
+            $keyword = $_GET['search'];
+
+            $sql1 = "SELECT date FROM kt WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY kt.chulgo ASC";
+            $sql2 = "SELECT date FROM sk WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY sk.chulgo ASC";
+            $sql3 = "SELECT date FROM lg WHERE REPLACE(name, ' ', '') LIKE '%$keyword%' ORDER BY lg.chulgo ASC";
+
+            $result_kt = mysqli_query($conn, $sql1);
+            $result_sk = mysqli_query($conn, $sql2);
+            $result_lg = mysqli_query($conn, $sql3);
+		  }
+		  else if($category == 'phone_model'){
+			  $keyword = $_GET['search'];
+			  
+			  $sql1 = "SELECT date FROM kt WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY kt.chulgo ASC";
+              $sql2 = "SELECT date FROM sk WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY sk.chulgo ASC";
+              $sql3 = "SELECT date FROM lg WHERE REPLACE(model, ' ', '') LIKE '%$keyword%' ORDER BY lg.chulgo ASC";
+			  
+			  $result_kt = mysqli_query($conn, $sql1);
+              $result_sk = mysqli_query($conn, $sql2);
+              $result_lg = mysqli_query($conn, $sql3);
+		  }
+	  ?>
+      <td>공시일자</td>
+      <td>
+        <ul>
+      <?php
+          while($row1 = mysqli_fetch_array($result_kt)){
+              echo "<li>$row1[date]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+      <td>
+        <ul>
+      <?php
+          while($row2 = mysqli_fetch_array($result_sk)){
+              echo "<li>$row2[date]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+      <td>
+        <ul>
+      <?php
+          while($row3 = mysqli_fetch_array($result_lg)){
+              echo "<li>$row3[date]</li>";
+          }
+      ?>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+>>>>>>> 2f6c154ee481ab3b9d9ed47469bbda32084ae4b9
