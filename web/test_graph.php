@@ -19,7 +19,7 @@
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>      
     <script type="text/javascript"> 
 
-      var arr2 = <?= json_encode($temp) ?>;
+      
       /*
       document.write("<br/><b>Normal Object</b><br/>");
       for(var a=0; a<=arr2.length; a++) {

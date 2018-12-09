@@ -48,7 +48,7 @@ function print_article ($sql,$conn)
   }
 
 }
-function print_graph ($model,$tel,$conn)
+function make_update_array ($model,$tel,$conn)
 {
 
   //$model='jieun'; # here is place to put seach keyword
@@ -59,12 +59,14 @@ function print_graph ($model,$tel,$conn)
   while($row = mysqli_fetch_array($result)) {
     $temp[]=$row;
   }
-  print_r ($temp); 
+  return $temp; 
 
 }
 ?>
  <script>
-  function draw_graph(){
+  function draw_graph(arr2){
+
+   
       google.charts.load('current', {'packages':['line']});
       google.charts.setOnLoadCallback(drawChart);
   
@@ -73,11 +75,13 @@ function print_graph ($model,$tel,$conn)
 
         data.addColumn('string', 'Day');
         data.addColumn('number', 'price');
-        for(var a=0; a<3; a++) {
-          data.addRow(['aaa',222]);  
-        } 
-        /*for(var a=0; a<arr2.length; a++) {
+
+        for(var a=0; a<arr2.length; a++) {
           data.addRow([arr2[a]['date'],Number(arr2[a]['danmal'])]);  
+        } 
+
+        /*        for(var a=0; a<3; a++) {
+          data.addRow(['aaa',222]);  
         } */     
 
         var options = {

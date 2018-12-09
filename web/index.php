@@ -62,17 +62,17 @@
                 }
               }
  
-              //print_graph ('jieun','kt',$conn);
-
-              ?>
-              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>      
-              <script type="text/javascript">
-                draw_graph(); 
-                d();
+              $temp =  make_update_array('jieun','kt',$conn);
+              ?>            
+              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>   
+              <script>
+                var arr = <?= json_encode($temp) ?>;
+                 draw_graph(arr); 
               </script>
- 
-
-
+              <body>
+              <div id="line_top_x"></div>
+              </body>
+            
             </div> 
           </article>
       </div>
@@ -80,8 +80,8 @@
    </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-   <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="http://210.117.181.22/termprj/s201515305/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   Include all compiled plugins (below), or include individual files as needed  
+   <script src="http://210.117.181.22/termprj/s201515305/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>-->
  </body>
  </html>
