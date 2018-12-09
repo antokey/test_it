@@ -16,17 +16,21 @@ db_table_name = 'sk'
 
 #Driver load
 #Solve the Chromedriver and Chrome crash problem, get options like down steps
-#chrome_options = wd.ChromeOptions()
-#chrome_options.binary_location = '/opt/google/chrome/google-chrome'
-#chrome_options.add_argument('--headless')
-#chrome_options.add_argument('--no-sandbox')
-#chrome_options.add_argument('--disable-dev-shm-usage')
+chrome_options = wd.ChromeOptions()
+chrome_options.binary_location = '/opt/google/chrome/google-chrome'
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
 
-#display = Display(visible = 0, size = (2000, 2000))
-#display.start()
+'''
+pip3 install pyvirtualdisplay
+from pyvirtualdisplay import Display
+display = Display(visible = 0, size = (2000, 2000))
+display.start()
+'''
 
-driver = wd.Chrome("chromedriver")
-#driver = wd.Chrome("./chromedriver")
+#driver = wd.Chrome("chromedriver")
+driver = wd.Chrome("/home/jieun/project/test_it/crawler/LG_SK/chromedriver")
 
 #Homepage Access
 driver.get(main_url)
@@ -51,12 +55,12 @@ for page in range(2, 10):
     ul = ul.group()
 
     #Save the html source
-    f = open("source_sk.txt", "w", encoding="utf-8")
+    f = open("/home/jieun/project/test_it/crawler/LG_SK/source_sk.txt", "w", encoding="utf-8")
     f.write(ul)
     f.close()
 
     #Open the html source for the reading
-    f = open("source_sk.txt", "rt", encoding="utf-8")
+    f = open("/home/jieun/project/test_it/crawler/LG_SK/source_sk.txt", "rt", encoding="utf-8")
     for line in f:
         if 'model_name' in line:
             text = re.sub('<.+?>', '', line, 0, re.I|re.S)
@@ -99,7 +103,7 @@ for page in range(2, 10):
     f.close()
 
     #Go on for the next page
-    print(page)
+    #print(page)
     try:
         driver.execute_script("goPage(%s)" % page)
     except Exception as e:
@@ -123,3 +127,4 @@ for obj in list_sk:
 db.db_free()
 driver.close()
 driver.quit()
+
