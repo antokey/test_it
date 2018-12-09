@@ -51,6 +51,7 @@
               {
                 $get=$_GET['phone_select'];
                 $search_keyword=$_GET['search'];
+                $search_keyword=preg_replace("/\s+/","",$search_keyword);  //remove space code
                 if($get=='name') // 'phone_name'
                 {
                   load_result_by_keword($conn,$search_keyword,$get);
@@ -68,9 +69,13 @@
               }
               else
                 {
-                  echo "<hr>환영 합니다.^_^ [제품명] 검색의 경우 원하는 제품의 시그니처 넘버를 입력할경우 정확한 검색이 가능합니다.<br>
-                  ex) 갤럭시 s7 -> s7로 검색<br>
-                  아이폰 8 plus ->8 plus로 검색<br>";
+                  echo "<hr>환영 합니다.^_^ <br>
+                  [제품명]으로 검색시 원하는 제품의 시그니처 넘버를 입력할경우 정확한 검색이 가능합니다.<br>
+                  ex) 갤럭시 s7 -> s7 / 아이폰 8 plus ->8 plus <br>
+                  [모델명]으로 검색시 맨 뒤의 통신사 코드는 빼고 검색해 주세요<br>
+                  ex)SM-A750NK ->SM-A750N
+                  ";
+                  
                 }            
                 // $temp =  make_update_array('jieun','kt',$conn);
 

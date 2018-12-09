@@ -87,3 +87,14 @@ class SKDBHelper(DBHelper):
                 cursor.execute( insert_sql,( img_link, model, name, out_price, gongshi, chuga, danmal, date ) )
         self.conn.commit()
 
+if __name__=='__main__':    
+    db = DBHelper()
+    db.db_insertCrawlingData('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKK_q91ykAygogBFp6SD4WsUux1TO02EVs3o9WPTsfTiufZYP6','jieun-jung','jieun','165000','126000',20230,'2018.12.25')
+    db.db_free()
+
+    db = SKDBHelper()
+    db.db_insertCrawlingData('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKK_q91ykAygogBFp6SD4WsUux1TO02EVs3o9WPTsfTiufZYP6','jieun-jung','jieun','165000','126000',18900,20230,'2018.12.23')
+    db.db_free()
+
+
+

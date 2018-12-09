@@ -67,5 +67,5 @@ class DBHelper:
 #만약 이프로그램이 단독으로 (모듈 x) 실행 된다면 실행 - > 테스트 코드를 삽입해서 사용
 if __name__=='__main__':    
     db = DBHelper()
-    db.db_insertCrawlingData('/images/pc/support/supportFund/default_handset.jpg','jieun','jieun','165000','126000',18900,20230,'2018.12.13')
+    db.db_insertCrawlingData('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKK_q91ykAygogBFp6SD4WsUux1TO02EVs3o9WPTsfTiufZYP6','jieun-jung','jieun','165000','178000',18900,20230,'2018.12.24')
     db.db_free()

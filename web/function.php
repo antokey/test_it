@@ -77,15 +77,18 @@
 						<td bgcolor = '#4374D9'><font color = 'white'>".$list[$col]."</td>";
 
 				if($col==0)  print_img($rows_kt[$i][0]) ;
+				else if($col==8) print_gh_btn($rows_kt[$i][1],'kt');
 				else echo "<td>".$rows_kt[$i][$col]."</td>";
 			
 				if($flag_lg){
 					if($col==0) print_img($rows_lg[$j][0]);
+					else if($col==8) print_gh_btn($rows_lg[$j][1],'lg');
 					else echo "<td>".$rows_lg[$j][$col]."</td>";
 				}else{echo "<td>0</td>";}
 
 				if($flag_sk){
 					if($col==0)  print_img($rows_sk[$k][0]);
+					else if($col==8) print_gh_btn($rows_sk[$k][1],'sk');
 					else echo "<td>".$rows_sk[$k][$col]."</td>";
 				}else{echo "<td>0</td>";}
 				echo "</tr>";
@@ -129,14 +132,17 @@
 						<td bgcolor = '#4374D9'><font color = 'white'>".$list[$col]."</td>";
 
 				if($col==0)  print_img($rows_sk[$i][0]);
+				else if($col==8) print_gh_btn($rows_sk[$i][1],'sk');
 				else echo "<td>".$rows_sk[$i][$col]."</td>";
  
 				if($flag_kt){
 					if($col==0) print_img($rows_kt[$j][0]);
+					else if($col==8) print_gh_btn($rows_kt[$j][1],'kt');
 					else echo "<td>".$rows_kt[$j][$col]."</td>";
 				}else{echo "<td>0</td>";}
 				if($flag_lg){
 					if($col==0)  print_img($rows_lg[$k][0]);
+					else if($col==8) print_gh_btn($rows_lg[$k][1],'lg');
 					else echo "<td>".$rows_lg[$k][$col]."</td>";
 				}else{echo "<td>0</td>";}
 				echo "</tr>";
@@ -186,13 +192,13 @@
 
 				if($flag_kt){
           if($col==0)  print_img($rows_kt[$j][0]);
-          else if($col==8) print_gh_btn($rows_kt[$i][1],'kt');
+          else if($col==8) print_gh_btn($rows_kt[$j][1],'kt');
 					else echo "<td>".$rows_kt[$j][$col]."</td>";
 				}
 				else{echo "<td>0</td>";}
 				if($flag_sk){
           if($col==0)  print_img($rows_sk[$k][0]) ;
-          else if($col==8) print_gh_btn($rows_sk[$i][1],'sk');
+          else if($col==8) print_gh_btn($rows_sk[$k][1],'sk');
 					else echo "<td>".$rows_sk[$k][$col]."</td>";
 				}
 				else{echo "<td>0</td>";}
@@ -211,7 +217,7 @@ function print_img($url){
 function print_gh_btn($model,$tel){
 
   echo '<td><a href="graph.php?model='.$model.'&tel='.$tel.'"  class=" btn-default btn-success btn-default" target="_blank" ">보기</a></td>';
-s
+
 }
 
 function db_init($host,$duser,$dpasswd,$dname){
@@ -250,7 +256,7 @@ function make_update_array ($model,$tel,$conn)
         data.addColumn('number', 'price');
 
         for(var a=0; a<arr2.length; a++) {
-          data.addRow([arr2[a]['date'],Number(arr2[a]['danmal'])]);  
+          data.addRow([arr2[a]['date'],Number(arr2[a]['gongshi'])]);  
         } 
 
         /*        for(var a=0; a<3; a++) {

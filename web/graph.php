@@ -20,7 +20,7 @@
             draw_graph(arr); 
         else 
         {
-            alert('no result');
+            alert('지원금의 갱신 내역이 없습니다.');
             // window.open('','_parent','');
              window.close();
         }
