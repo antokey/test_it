@@ -1,49 +1,53 @@
+<?php
+	function aaa($temp){
+	$max=max(count(temp[0]),count(temp[1]),count(temp[2]));
+	for ($i=0;$i<3;$i++)
+		if($max==count[$temp[$i]])
+		{
+			$max_tel=$i;
+			break;
+		}
+	for($i = 0 ; $i < $max ; $i++){
+		echo "
+	<table align = center width = '800' border = '1' cellpadding = '10'>
+    <tr align = center>
+	  <td></td>
+      <td bgcolor = '#4374D9'><font color = 'white'>LG</font></td>
+      <td bgcolor = '#4374D9'><font color = 'white'>KT</font></td>
+      <td bgcolor = '#4374D9'><font color = 'white'>SK</font></td>
+    </tr>";
+		$flag = FALSE;
+		for($t=0;$t<3;$t++)
+		{	
+			if($t==$max_tel) continue
+			for($j = 0 ; $j < count(temp[$t]) ; $j++){
+				if($temp[$t][$j][3] == $temp[$max_tel][$i][3]){
+					$flag = TRUE;
+					break;
+				}
+			}
+		}
+		$list = array('', '', '', '출고가(a)', '공시지원금(b)', '추가지원금(c)', '단말대금(a-b-c)', '공시일자');
+			for($col = 3 ; $col < 8 ; $col++){
+				echo "<tr align=center>
+						<td bgcolor = '#4374D9'><font color = 'white'>".$list[$col]."</td>";
+				echo "<td>".$temp[$max_tel][$i][$col]."</td>";
 
-<!--function drawChart() {
-      /* Array and Object Definition */ 
-      var arr = [ "Yongwoo", 25, "Catholic Univ, of Korea", "Computer Science" ]; 
-      var obj = { "NAME" : "Yongwoo", "AGE" : 25, "UNIVERSITY" : "Catholic Univ, of Korea", "MAJOR" : "Computer Science" };
-            /* Array and Object Value Check */ 
-            document.write("<b>Normal String Arrary :</b> ", obj2, "<br/>"); 
+				for($t=0;$t<3;$t++)
+				{	
+					if($t==$max_tel) continue
+					if($flag){
+						for($j = 0 ; $j < count(temp[$t]) ; $j++)
+							echo "<td>".$temp[$t][$j][$col]."</td>";
+					}
+					else
+						{echo "<td>0</td>";}
+					echo "</tr>";
+				}
+		}
+	echo "</table>";
+	}
 
-       // var price = '<?= $row[6] ?>';
-     // var date = <?= $row[7] ?>;
-      //var date = <?= json_encode($arr) ?>;
+}
 
-
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses','aaa'],
-          ['2004',  1000,      400,      400],
-          ['2005',  1170,      460,      400]
-        ]);
-        
-      function drawChart() { 
-        var data = new google.visualization.DataTable(); 
-        data.addColumn('string', 'Cluster'); 
-        data.addColumn('number', 'Loans'); 
-        data.addColumn('number', 'Lines');       
-        data.addRows(3); 
-        data.setCell(0, 0, 'Tong Ning mu'); 
-        data.setCell(1, 0, 'Huang Ang fa'); 
-        data.setCell(2, 0, 'Teng nu'); 
-        data.setCell(0, 1, 174); 
-        data.setCell(1, 1, 523); 
-        data.setCell(2, 1, 86); 
-
-             /* data.addRows([
-        [1,  37.8, 80.8, 41.8],
-        [2,  30.9, 69.5, 32.4],
-        [3,  25.4,   57, 25.7],
-        [4,  11.7, 18.8, 10.5],
-        [5,  11.9, 17.6, 10.4],
-        [6,   8.8, 13.6,  7.7],
-        [7,   7.6, 12.3,  9.6],
-        [8,  12.3, 29.2, 10.6],
-        [9,  16.9, 42.9, 14.8],
-        [10, 12.8, 30.9, 11.6],
-        [11,  5.3,  7.9,  4.7],
-        [12,  6.6,  8.4,  5.2],
-        [13,  4.8,  6.3,  3.6],
-        [14,  4.2,  6.2,  3.4]
-      ]);*/
--->
+?>

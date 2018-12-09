@@ -1,5 +1,9 @@
 <?php
 	function lg_standard($rows_lg, $rows_kt, $rows_sk, $max, $cnt_kt, $cnt_sk){
+		$j = 0;
+		$k = 0;
+		$l = 0;
+		
 		for($i = 0 ; $i < $max ; $i++){
 			echo "
 		<table align = center width = '800' border = '1' cellpadding = '10'>
@@ -43,13 +47,17 @@
 	}
 	
 	function kt_standard($rows_lg, $rows_kt, $rows_sk, $max, $cnt_lg, $cnt_sk){
+		$j = 0;
+		$k = 0;
+		$l = 0;
+		
 		for($i = 0 ; $i < $max ; $i++){
 			echo "
 		<table align = center width = '800' border = '1' cellpadding = '10'>
 		<tr align = center>
 		  <td></td>
-		  <td bgcolor = '#4374D9'><font color = 'white'>LG</font></td>
 		  <td bgcolor = '#4374D9'><font color = 'white'>KT</font></td>
+		  <td bgcolor = '#4374D9'><font color = 'white'>LG</font></td>
 		  <td bgcolor = '#4374D9'><font color = 'white'>SK</font></td>
 		</tr>";
 			$flag_lg = FALSE;
@@ -86,14 +94,18 @@
 	}
 	
 	function sk_standard($rows_lg, $rows_kt, $rows_sk, $max, $cnt_kt, $cnt_lg){
+		$j = 0;
+		$k = 0;
+		$l = 0;
+			
 		for($i = 0 ; $i < $max ; $i++){
 			echo "
 		<table align = center width = '800' border = '1' cellpadding = '10'>
 		<tr align = center>
 		  <td></td>
-		  <td bgcolor = '#4374D9'><font color = 'white'>LG</font></td>
-		  <td bgcolor = '#4374D9'><font color = 'white'>KT</font></td>
 		  <td bgcolor = '#4374D9'><font color = 'white'>SK</font></td>
+		  <td bgcolor = '#4374D9'><font color = 'white'>KT</font></td>
+		  <td bgcolor = '#4374D9'><font color = 'white'>LG</font></td>
 		</tr>";
 			$flag_kt = FALSE;
 			$flag_lg = FALSE;

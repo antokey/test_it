@@ -73,8 +73,6 @@ for page in range(2, 10):
             keyword = re.findall('<img.*?src="([^"]*)".*?alt="([^"]*)".*?>', line)
             image = keyword[0][0]
             phone_name = keyword[0][1]
-            if phone_name.find('아이폰') > -1:
-                phone_name = phone_name.replace("아이폰", "IPHONE")
         if 'support_sum' in line:
             a = re.sub('<.+?>', '', line, 0, re.I|re.S)
             text = re.sub('&nbsp;|\t', '', a)
