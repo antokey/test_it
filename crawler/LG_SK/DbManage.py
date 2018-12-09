@@ -29,7 +29,7 @@ class DBHelper:
             find_sql = '''
             select * from `lg` where model=%s
             '''
-            cursor.execute(find_sql, (model, name) )
+            cursor.execute(find_sql, (model) )
             result = cursor.fetchall()
             if len(result) > 0 :
                 if (result[0]['date'] != date):
@@ -61,11 +61,8 @@ class SKDBHelper(DBHelper):
             find_sql = '''
             select * from `sk` where model=%s
             '''
-            cursor.execute(find_sql, (model, name) )
+            cursor.execute(find_sql, (model) )
             result = cursor.fetchall()
-            print(name,model) 
-            print(result)
-            print(len(result))
             if len(result) > 0 :
                 if (result[0]['date'] != date) :
                     update_sql = '''
