@@ -210,8 +210,8 @@ function print_img($url){
 }
 function print_gh_btn($model,$tel){
 
-  echo '<td><a href="graph.php?model='.$model.'&tel='.$tel.'"  class=" btn-default btn-success btn-default">보기</a></td>';
-
+  echo '<td><a href="graph.php?model='.$model.'&tel='.$tel.'"  class=" btn-default btn-success btn-default" target="_blank" ">보기</a></td>';
+s
 }
 
 function db_init($host,$duser,$dpasswd,$dname){
@@ -227,10 +227,11 @@ function make_update_array ($model,$tel,$conn)
   //$tel='kt';  # here is place to put seach keyword
 
   $result=mysqli_query($conn,'SELECT * FROM update_data WHERE model ="'.$model.'" and telecom="'.$tel.'" ORDER BY id DESC'); 
-
+  $temp=[];
   while($row = mysqli_fetch_array($result)) {
     $temp[]=$row;
   }
+
   return $temp; 
 
 }
@@ -257,7 +258,7 @@ function make_update_array ($model,$tel,$conn)
         } */     
 
         var options = {
-          title: 'Test_graph',
+          title: '공시지원금 변화',
           width: 900,
           height: 500,
         };
