@@ -47,3 +47,46 @@ if(isset($_GET['search'])){ //값이 존재한다면
 }
 
  ?>
+			if($j < $cnt_kt){
+				echo $temp1[$j][4];
+			}
+			else{
+				echo "";
+			}
+		echo"</td>
+		<td>";
+			if($k < $cnt_sk){
+				echo $temp2[$k][4];
+			}
+			else{
+				echo "";
+			}
+
+for(k=0~kt_max)
+
+  for(s=0~sk_max)
+    if(sk[s][chulgo]==kt[i][chulgo])
+        flag_sk=t
+
+  for(s=0~sl_max)
+    if(lg[l][chulgo]==kt[i][chulgo])
+        flag_lg= t
+
+
+  for(col=0,9)
+    <td>>print(kt[k][col])<td>
+    if(flag_sk)
+    <td>print(sk[s][col)<td>
+    if(flag_lg)
+    <td> lg[l][col] <td>
+
+
+
+  <td> skt 
+  for(s=0~sk_max)
+   if(sk[s][chulgo]==kt[i][chulgo])
+        <tr>print(sk[s][all])<tr>
+  </td>
+  for(l=0~lg_max)
+    lg[l][chulgo]
+  \n

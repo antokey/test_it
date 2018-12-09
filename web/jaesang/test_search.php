@@ -16,7 +16,7 @@ mysqli_query($conn, "set names utf8");
   		$category = $_GET['phone_select'];
           if($category == 'phone_name'){
             $keyword = $_GET['search'];
-
+			
             $sql1 = "SELECT * FROM kt WHERE REPLACE(name, ' ', '') LIKE '%$keyword%'";
             $sql2 = "SELECT * FROM sk WHERE REPLACE(name, ' ', '') LIKE '%$keyword%'";
             $sql3 = "SELECT * FROM lg WHERE REPLACE(name, ' ', '') LIKE '%$keyword%'";
@@ -75,174 +75,38 @@ mysqli_query($conn, "set names utf8");
 	$j = 0;
 	$k = 0;
 	$l = 0;
-	for($i = 0 ; $i < $max ; $i++){
-		echo "<table align = center width = '800' border = '1' cellpadding = '10'>
+	echo = "
+	<table align = center width = '800' border = '1' cellpadding = '10'>
     <tr align = center>
-      <td bgcolor = '#4374D9'>";
-	  if($j < $cnt_kt){
-		  echo $temp1[$j][2];
-	  }
-	  else if($k < $cnt_sk){
-		  echo $temp2[$k][2];
-	  }
-	  else if($l < $cnt_lg){
-		  echo $temp3[$l][2];
-	  }
-	  else{
-		  echo "";
-	  }
-	  echo"</td>
+      <td bgcolor = '#4374D9'></td>
       <td bgcolor = '#4374D9'><font color = 'white'>KT</font></td>
       <td bgcolor = '#4374D9'><font color = 'white'>SKT</font></td>
       <td bgcolor = '#4374D9'><font color = 'white'>LG U+</font></td>
-    </tr>
-    <tr align = center>";
-		echo "
-		<td>정상가(a)</td>
-		<td>";
-			if($j < $cnt_kt){
-				echo $temp1[$j][3];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-		<td>";
-			if($k < $cnt_sk){
-				echo $temp2[$k][3];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-		<td>";
-			if($l < $cnt_lg){
-				echo $temp3[$l][3];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-	</tr>
-	<tr align = center>
-		<td>공시지원금(b)</td>
-		<td>";
-			if($j < $cnt_kt){
-				echo $temp1[$j][4];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-		<td>";
-			if($k < $cnt_sk){
-				echo $temp2[$k][4];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-		<td>";
-			if($l < $cnt_lg){
-				echo $temp3[$l][4];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-	</tr>
-	<tr align = center>
-		<td>추가지원금(c)</td>
-		<td>";
-			if($j < $cnt_kt){
-				echo $temp1[$j][5];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-		<td>";
-			if($k < $cnt_sk){
-				echo $temp2[$k][5];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-		<td>";
-			if($l < $cnt_lg){
-				echo $temp3[$l][5];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-	</tr>
-	<tr align = center>
-		<td>판매가(c)</td>
-		<td>";
-			if($j < $cnt_kt){
-				echo $temp1[$j][6];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-		<td>";
-			if($k < $cnt_sk){
-				echo $temp2[$k][6];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-		<td>";
-			if($l < $cnt_lg){
-				echo $temp3[$l][6];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-	</tr>
-	<tr align = center>
-		<td>공시일자</td>
-		<td>";
-			if($j < $cnt_kt){
-				echo $temp1[$j][7];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-		<td>";
-			if($k < $cnt_sk){
-				echo $temp2[$k][7];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-		<td>";
-			if($l < $cnt_lg){
-				echo $temp3[$l][7];
-			}
-			else{
-				echo "";
-			}
-		echo"</td>
-	</tr>
-	  </table>";
-	  if($j < $cnt_kt){	
-		  $j += 1;
-	  }
-	  if($k < $cnt_sk){
-		  $k += 1;
-	  }
-	  if($l < $cnt_lg){
-		  $l += 1;
-	  }
+    </tr>";
+	for($i = 0 ; $i < $max ; $i++){
+		for($j = 0 < $j < cnt_kt ; $j++){
+			if($temp1[$j][3] == $temp3[$i][3])
+				$flag_kt = TRUE;
+				break;
+		for($k = 0 < $k < cnt_sk ; $k++){
+			if($temp2[$k][3] == $temp3[$i][3])
+				$flag_sk = TRUE;
+				break;
+		}
+		for($col = 3 ; $col < 8 ; $col++){
+			echo "<tr align=center>";
+			echo "<td>".$temp3[$i][$col]."</td>";
+			
+			if(flag_kt){
+				echo "<td>".$temp1[$j][$col]."</td>";
+			}else{echo "0";}
+			if(flag_sk){
+				echo "<td>".$temp2[$k][$col]."</td>";
+			}else{echo "<td>0</td>";}
+			echo "</tr>";
+		}
 	}
 	?>
+	</table>
 </body>
 </html>
