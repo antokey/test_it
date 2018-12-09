@@ -50,69 +50,19 @@ function print_article ($sql,$conn)
 
 }
 
-
-function alter_table($val)
-{
-   switch($val){
-
-      case 1:
-         return "store_lib" ;
-
-      case 2:
-         return "store_com" ;
-
-      case 3:
-         return "store_center_lib" ;
-   }
-
-}
-
-function is_exist ($conn)
+function print_graph ($sql,$conn)
 {
 
-
-  $sql = 'SELECT *  FROM store_lib WHERE p_id='.$_GET['p_id'] ;
-  $result=mysqli_query($conn,$sql);
-  if($result->num_rows > 0)
-  {
-      echo "[학습도서관] 지점에서 판매중"."<br>";
-      require('Map_info\store_lib.html') ;
-      echo "<br>";
-  }
-  $sql = 'SELECT * FROM store_com WHERE p_id='.$_GET['p_id'] ;
-  $result=mysqli_query($conn,$sql);
-  if($result->num_rows > 0)
-  {
-      echo "[상대도서관] 지점에서 판매중"."<br>";
-      require('Map_info\store_com.html') ;
-      echo "<br>";
-  }
-
-  $sql = 'SELECT * FROM store_center_lib WHERE p_id='.$_GET['p_id'] ;
-  $result=mysqli_query($conn,$sql);
-  if($result->num_rows > 0)
-  {
-      echo "[중앙도서관] 지점에서 판매중"."<br>";
-      require('Map_info\store_center_lib.html') ;
-      echo "<br>";
-  }
+  
 }
 
 
-function update($conn,$pid){
-  echo "<script>alert('수정');</script>" ;
-  mysqli_query($conn,"UPDATE product SET p_name = '정지은',p_size = '311152' WHERE p_id=".$pid );
-
-}
-
-
- ?>
+?>
  <script>
  function search1(){
    if(frm1.search.value ){
 
      frm1.submit();
-
 
    }else{
 
@@ -120,5 +70,4 @@ function update($conn,$pid){
 
    }
  }
-
  </script>

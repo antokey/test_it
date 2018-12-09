@@ -44,7 +44,7 @@
 <title>LG유플러스</title>
 
 <!-- JavaScript Framework -->
-<script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://cr.acecounter.com/Web/AceCounter_AW.js?gc=AS2A40481265909&amp;py=0&amp;gd=gtc10&amp;gp=8080&amp;up=NaPm_Ncisy&amp;rd=1544339216877"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K6GHZVS"></script><script type="text/javascript" src="/common/renewal/ui/js/cm/jquery.js"></script> 
+<script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://cr.acecounter.com/Web/AceCounter_AW.js?gc=AS2A40481265909&amp;py=0&amp;gd=gtc10&amp;gp=8080&amp;up=NaPm_Ncisy&amp;rd=1544339388629"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K6GHZVS"></script><script type="text/javascript" src="/common/renewal/ui/js/cm/jquery.js"></script> 
 <script type="text/javascript" src="/common/renewal/ui/js/cm/lib.js"></script>
 <script type="text/javascript" src="/common/renewal/ui/js/cm/ui.gnb.js"></script>
 <script type="text/javascript" src="/common/renewal/ui/js/cm/ui.js"></script>
@@ -1106,7 +1106,7 @@ text = text.replace(/(^\s*)/g,"");
 													</ol>
 												</div>
 												<form name="topCoRnauthFrm" id="topCoRnauthFrm" method="post" onsubmit="return false;" action="">
-													<input type="hidden" name="HPI_BLOCK_TOKEN_KEY" value="topCoRnauthFrm" /><input type="hidden" name="HPI_BLOCK_TOKEN_VALUE" value="ddegzd" />
+													<input type="hidden" name="HPI_BLOCK_TOKEN_KEY" value="topCoRnauthFrm" /><input type="hidden" name="HPI_BLOCK_TOKEN_VALUE" value="djjwts" />
 													<ul class="iput_box">
 														<li>
 															<div class="user_name">
@@ -1192,7 +1192,7 @@ text = text.replace(/(^\s*)/g,"");
 					<a class="btnShort btnShortPk" href="http://www.uplus.co.kr:80/com/main/pkmain/PkMain.hpi?mid=10004&amp;tmid=m3" target="_blank" title="새창열림">회사소개</a><a class="btnShort active btnShortPs" href="http://www.uplus.co.kr:80/home/Index.hpi?mid=10000&amp;tmid=m1">개인</a><a class="btnShort btnShortBiz" href="http://www.uplus.co.kr:80/biz/bzma/RetrieveMain.hpi?mid=10001&amp;tmid=m2">기업/소상공인</a>
 				</nav>
 				<button type="button" class="btnClsUtil btnCloseAllMenu hidden-xs"><span class="blind">전체메뉴닫기</span></button>
-			</div><div class="gnb-chatbot" style="right: -115px;">					<div class="icon-chat gnb hover">					챗봇열기/닫기					<span class="motionImg"><span class="unit2"></span></span>					<div class="gnb-chatbot-tooltip">						<p class="intro">챗봇말풍선</p>						<span class="cont"></span>					</div>				    <div class="pc-temp-img-loading"></div>				</div>				<div class="gnb-chatbot-area off" style="left: -627px;">				</div>			  </div>			
+			</div><div class="gnb-chatbot" style="right: -115px;">					<div class="icon-chat gnb hover">					챗봇열기/닫기					<span class="motionImg"><span class="unit2"></span></span>					<div class="gnb-chatbot-tooltip" style="display: none;">						<p class="intro">챗봇말풍선</p>						<span class="cont"><span class="point">U봇</span>과 대화해 보세요</span>					</div>				    <div class="pc-temp-img-loading"></div>				</div>				<div class="gnb-chatbot-area off" style="left: -627px;">				</div>			  </div>			
 			<!--// Utility Area -->
 	
 			<!-- Search -->
@@ -1339,7 +1339,7 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 <!-- //top area -->
 
 	<form name="itemForm" method="post" onsubmit="return false;">
-	<input type="hidden" name="devonTargetRow" id="devonTargetRow" value="121" />
+	<input type="hidden" name="devonTargetRow" id="devonTargetRow" value="241" />
 	<input type="hidden" name="pagingSpec" id="pagingSpec" />
 	<input type="hidden" name="svcDvCd" value="001" />
 	<input type="hidden" name="svcCd1" id="svcCd1" value="LPZ0000777" />
@@ -1522,7 +1522,7 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 
 
 <!-- START OF LPAGE HIDDEN PARAMETER -->
-<input type="hidden" name="devonTargetRow" id="devonTargetRow" value="121" />
+<input type="hidden" name="devonTargetRow" id="devonTargetRow" value="241" />
 <input type="hidden" name="devonOrderBy" id="devonOrderBy" value="" />
 <!-- END OF LPAGE HIDDEN PARAMETER -->
 	<h2 class="titLevel02">선택약정할인(통신요금 25% 할인)</h2>
@@ -1797,3793 +1797,157 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 							<td class="txtC">
 							  
 							  
-							  <img src="//image.uplus.co.kr/images/us/mo/A1823-128_1.png" alt="iPad 32GB" style="width:63px;" />
+							  <img src="//image.uplus.co.kr/images/us/mo/LG-F320L_1.png" alt="LG G2" style="width:63px;" />
 							  
 							  
 							  
 							</td>
-							<td class="txtC"><strong>iPad 32GB</strong></td>
-							<td class="txtC">A1823-32</td>					
-							<td class="txtC">462,000원</td>
-							<td class="txtC"><strong>32,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">430,000원</strong></td>
-							<td class="txtC">2017.12.31</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-							
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/LG-F580L_1.png" alt="LG 젠틀" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>LG 젠틀</strong></td>
-							<td class="txtC" rowspan="1">LG-F580L</td>	
-							<td class="txtC">132,000원</td>
-							<td class="txtC"><strong>132,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">0원</strong></td>
-							<td class="txtC">2017.12.31</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('LG-F580L','PCFOGLTE','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/LG-F820L_1.png" alt="LG U" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>LG U</strong></td>
-							<td class="txtC" rowspan="1">LG-F820L</td>	
-							<td class="txtC">231,000원</td>
-							<td class="txtC"><strong>102,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">129,000원</strong></td>
-							<td class="txtC">2017.12.31</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('LG-F820L','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/thumbnail_noimg.png" alt="LG V30 Signature" style="width:63px;" />
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>LG V30 Signature</strong></td>
-							<td class="txtC" rowspan="1">LGM-V300L256</td>	
-							<td class="txtC">1,999,800원</td>
-							<td class="txtC"><strong>173,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">1,826,800원</strong></td>
-							<td class="txtC">2017.12.29</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/LG-F800L_1.png" alt="LG V20" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>LG V20</strong></td>
-							<td class="txtC" rowspan="1">LG-F800L</td>	
-							<td class="txtC">899,800원</td>
-							<td class="txtC"><strong>610,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">289,800원</strong></td>
-							<td class="txtC">2017.12.22</td>
-							<td class="txtC">
-							  
-							  B &gt; C
-							  
-							  
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('LG-F800L','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/ushop_LGX401_LGM-X401L_BlackSilver_01.png" alt="X401" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>X401</strong></td>
-							<td class="txtC" rowspan="1">LGM-X401L</td>	
-							<td class="txtC">289,300원</td>
-							<td class="txtC"><strong>252,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">37,300원</strong></td>
-							<td class="txtC">2017.11.23</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('LGM-X401L','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/ushop_iPhoneX_A1901-64_Silver_01.png" alt="아이폰X-256" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>아이폰X-256</strong></td>
-							<td class="txtC" rowspan="1">A1901-256</td>	
-							<td class="txtC">1,557,600원</td>
-							<td class="txtC"><strong>95,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">1,462,600원</strong></td>
-							<td class="txtC">2017.11.17</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('A1901-256','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/ushop_iPhoneX_A1901-64_SpaceGray_01.png" alt="아이폰X-64" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>아이폰X-64</strong></td>
-							<td class="txtC" rowspan="1">A1901-64</td>	
-							<td class="txtC">1,360,700원</td>
-							<td class="txtC"><strong>95,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">1,265,700원</strong></td>
-							<td class="txtC">2017.11.17</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('A1901-64','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/SM-T385L_1.png" alt="Galaxy TAB A" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>Galaxy TAB A</strong></td>
-							<td class="txtC" rowspan="1">SM-T385L</td>	
-							<td class="txtC">308,000원</td>
-							<td class="txtC"><strong>161,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">147,000원</strong></td>
-							<td class="txtC">2017.11.16</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/IML-C5000W_1.png" alt="와이파이쏙 슬림" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>와이파이쏙 슬림</strong></td>
-							<td class="txtC" rowspan="1">IML-C5000W</td>	
-							<td class="txtC">143,000원</td>
-							<td class="txtC"><strong>110,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">33,000원</strong></td>
-							<td class="txtC">2017.11.07</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/LG-F690L_1.png" alt="LG X cam" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>LG X cam</strong></td>
-							<td class="txtC" rowspan="1">LG-F690L</td>	
-							<td class="txtC">396,000원</td>
-							<td class="txtC"><strong>270,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">126,000원</strong></td>
-							<td class="txtC">2017.11.03</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/CPN-L09_1.png" alt="MediaPad" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>MediaPad</strong></td>
-							<td class="txtC" rowspan="1">CPN-L09</td>	
-							<td class="txtC">297,000원</td>
-							<td class="txtC"><strong>165,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">132,000원</strong></td>
-							<td class="txtC">2017.11.02</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/ushop_iPhone8plus_A1897-64_Red_01.png" alt="아이폰8+256" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>아이폰8+256</strong></td>
-							<td class="txtC" rowspan="1">A1897-256</td>	
-							<td class="txtC">1,283,700원</td>
-							<td class="txtC"><strong>95,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">1,188,700원</strong></td>
-							<td class="txtC">2017.10.27</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('A1897-256','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/ushop_iPhone8plus_A1897-64_Red_01.png" alt="아이폰8+64" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>아이폰8+64</strong></td>
-							<td class="txtC" rowspan="1">A1897-64</td>	
-							<td class="txtC">1,076,900원</td>
-							<td class="txtC"><strong>95,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">981,900원</strong></td>
-							<td class="txtC">2017.10.27</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('A1897-64','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/ushop_iPhone8_A1905-64_Red_01.png" alt="아이폰8-256" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>아이폰8-256</strong></td>
-							<td class="txtC" rowspan="1">A1905-256</td>	
-							<td class="txtC">1,142,900원</td>
-							<td class="txtC"><strong>95,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">1,047,900원</strong></td>
-							<td class="txtC">2017.10.27</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('A1905-256','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/ushop_iPhone8_A1905-64_Red_01.png" alt="아이폰8-64" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>아이폰8-64</strong></td>
-							<td class="txtC" rowspan="1">A1905-64</td>	
-							<td class="txtC">946,000원</td>
-							<td class="txtC"><strong>95,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">851,000원</strong></td>
-							<td class="txtC">2017.10.27</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('A1905-64','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/LGM-K120L_1.png" alt="LG X300" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>LG X300</strong></td>
-							<td class="txtC" rowspan="1">LGM-K120L</td>	
-							<td class="txtC">253,000원</td>
-							<td class="txtC"><strong>220,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">33,000원</strong></td>
-							<td class="txtC">2017.10.26</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('LGM-K120L','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/E5577s-321_1.png" alt="와이파이쏙" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>와이파이쏙</strong></td>
-							<td class="txtC" rowspan="1">E5577s-321</td>	
-							<td class="txtC">110,000원</td>
-							<td class="txtC"><strong>110,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">0원</strong></td>
-							<td class="txtC">2017.10.13</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/LG-F720L_1.png" alt="LG Stylus 2" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>LG Stylus 2</strong></td>
-							<td class="txtC" rowspan="1">LG-F720L</td>	
-							<td class="txtC">319,000원</td>
-							<td class="txtC"><strong>278,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">41,000원</strong></td>
-							<td class="txtC">2017.10.01</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/SM-N920L_1.png" alt="갤럭시 노트5" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>갤럭시 노트5</strong></td>
-							<td class="txtC" rowspan="1">SM-N920L</td>	
-							<td class="txtC">799,700원</td>
-							<td class="txtC"><strong>410,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">389,700원</strong></td>
-							<td class="txtC">2017.09.12</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/SM-N920L_8.png" alt="갤럭시 노트5 64GB" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>갤럭시 노트5 64GB</strong></td>
-							<td class="txtC" rowspan="1">SM-N920L64</td>	
-							<td class="txtC">821,700원</td>
-							<td class="txtC"><strong>410,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">411,700원</strong></td>
-							<td class="txtC">2017.09.12</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/ushop_LGQ6+_LGM-X600LP_Blue_01.png" alt="Q6+" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>Q6+</strong></td>
-							<td class="txtC" rowspan="1">LGM-X600LP</td>	
-							<td class="txtC">484,000원</td>
-							<td class="txtC"><strong>330,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">154,000원</strong></td>
-							<td class="txtC">2017.09.07</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/SM-J510L_1.png" alt="갤럭시 J5 2016" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>갤럭시 J5 2016</strong></td>
-							<td class="txtC" rowspan="1">SM-J510L</td>	
-							<td class="txtC">297,000원</td>
-							<td class="txtC"><strong>260,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">37,000원</strong></td>
-							<td class="txtC">2017.09.07</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/VIE-L09_1.png" alt="P9+" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>P9+</strong></td>
-							<td class="txtC" rowspan="1">VIE-L09</td>	
-							<td class="txtC">176,000원</td>
-							<td class="txtC"><strong>154,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">22,000원</strong></td>
-							<td class="txtC">2017.09.07</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/EVA-L09_1.png" alt="P9" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>P9</strong></td>
-							<td class="txtC" rowspan="1">EVA-L09</td>	
-							<td class="txtC">176,000원</td>
-							<td class="txtC"><strong>154,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">22,000원</strong></td>
-							<td class="txtC">2017.08.31</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/ITP-XD80L_1.png" alt="U+ Pad8" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>U+ Pad8</strong></td>
-							<td class="txtC" rowspan="1">ITP-XD80L</td>	
-							<td class="txtC">143,000원</td>
-							<td class="txtC"><strong>10,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">133,000원</strong></td>
-							<td class="txtC">2017.08.31</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/LG-P755L_1.png" alt="G Pad3 10.1 FHD" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>G Pad3 10.1 FHD</strong></td>
-							<td class="txtC" rowspan="1">LG-P755L</td>	
-							<td class="txtC">286,000원</td>
-							<td class="txtC"><strong>20,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">266,000원</strong></td>
-							<td class="txtC">2017.08.31</td>
-							<td class="txtC">
-							  
-							  
-							  
-							  B &lt; C
-							  
-							</td>
-							<td class="txtC">
-							  
-							  
-							  -
-							  
-							</td>
-						
-						
-						
-						</tr>
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-							
-								
-								
-									
-									
-								
-									
-									
-								
-							
-						
-						<tr>
-						
-							
-							
-						
-							<td class="txtC" rowspan="1">
-							  
-							  
-							  <img src="//image.uplus.co.kr/images/us/mo/ushop_LGQ8_LGM-X800L_SweetPink_01.png" alt="Q8" style="width:63px;" />
-							  
-							  
-							  
-							</td>
-							<td class="txtC" rowspan="1"><strong>Q8</strong></td>
-							<td class="txtC" rowspan="1">LGM-X800L</td>	
+							<td class="txtC"><strong>LG G2</strong></td>
+							<td class="txtC">LG-F320L</td>					
 							<td class="txtC">616,000원</td>
-							<td class="txtC"><strong>210,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">406,000원</strong></td>
-							<td class="txtC">2017.08.25</td>
+							<td class="txtC"><strong>530,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">86,000원</strong></td>
+							<td class="txtC">2015.07.11</td>
+							<td class="txtC">
+							  
+							  B &gt; C
+							  
+							  
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
+							  
+							</td>
+							
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
+							  
+							  
+							  <img src="//image.uplus.co.kr/images/us/mo/SM-C115L_1.png" alt="갤럭시 줌2" style="width:63px;" />
+							  
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>갤럭시 줌2</strong></td>
+							<td class="txtC" rowspan="1">SM-C115L</td>	
+							<td class="txtC">297,000원</td>
+							<td class="txtC"><strong>297,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">0원</strong></td>
+							<td class="txtC">2015.07.11</td>
 							<td class="txtC">
 							  
 							  
@@ -5594,9 +1958,7 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 							<td class="txtC">
 							  
 							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('LGM-X800L','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
-							  
-							  
+							  -
 							  
 							</td>
 						
@@ -5714,17 +2076,1129 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 							<td class="txtC" rowspan="1">
 							  
 							  
-							  <img src="//image.uplus.co.kr/images/us/mo/LG-F700L_1.png" alt="LG G5" style="width:63px;" />
+							  <img src="//image.uplus.co.kr/images/us/mo/SM-G850L_1.png" alt="갤럭시 알파" style="width:63px;" />
 							  
 							  
 							  
 							</td>
-							<td class="txtC" rowspan="1"><strong>LG G5</strong></td>
-							<td class="txtC" rowspan="1">LG-F700L</td>	
-							<td class="txtC">699,600원</td>
-							<td class="txtC"><strong>610,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">89,600원</strong></td>
-							<td class="txtC">2017.08.19</td>
+							<td class="txtC" rowspan="1"><strong>갤럭시 알파</strong></td>
+							<td class="txtC" rowspan="1">SM-G850L</td>	
+							<td class="txtC">495,000원</td>
+							<td class="txtC"><strong>322,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">173,000원</strong></td>
+							<td class="txtC">2015.07.10</td>
+							<td class="txtC">
+							  
+							  
+							  
+							  B &lt; C
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
+							  
+							</td>
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
+							  
+							  
+							  <img src="//image.uplus.co.kr/images/us/mo/LG-F310L_1.png" alt="LG GX" style="width:63px;" />
+							  
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>LG GX</strong></td>
+							<td class="txtC" rowspan="1">LG-F310L</td>	
+							<td class="txtC">352,000원</td>
+							<td class="txtC"><strong>330,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">22,000원</strong></td>
+							<td class="txtC">2015.06.26</td>
+							<td class="txtC">
+							  
+							  
+							  
+							  B &lt; C
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
+							  
+							</td>
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
+							  
+							  
+							  
+							  <img src="//image.uplus.co.kr/images/us/mo/thumbnail_noimg.png" alt="LG GX" style="width:63px;" />
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>LG GX</strong></td>
+							<td class="txtC" rowspan="1">LG-F310LR</td>	
+							<td class="txtC">352,000원</td>
+							<td class="txtC"><strong>330,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">22,000원</strong></td>
+							<td class="txtC">2015.06.26</td>
+							<td class="txtC">
+							  
+							  
+							  
+							  B &lt; C
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
+							  
+							</td>
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
+							  
+							  
+							  <img src="//image.uplus.co.kr/images/us/mo/IM-A860L_5.png" alt="베가 넘버 6" style="width:63px;" />
+							  
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>베가 넘버 6</strong></td>
+							<td class="txtC" rowspan="1">IM-A860L</td>	
+							<td class="txtC">319,000원</td>
+							<td class="txtC"><strong>300,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">19,000원</strong></td>
+							<td class="txtC">2015.05.29</td>
+							<td class="txtC">
+							  
+							  
+							  
+							  B &lt; C
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
+							  
+							</td>
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
+							  
+							  
+							  <img src="//image.uplus.co.kr/images/us/mo/IM-A890L_1.png" alt="베가 시크릿노트" style="width:63px;" />
+							  
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>베가 시크릿노트</strong></td>
+							<td class="txtC" rowspan="1">IM-A890L</td>	
+							<td class="txtC">297,000원</td>
+							<td class="txtC"><strong>297,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">0원</strong></td>
+							<td class="txtC">2015.05.29</td>
+							<td class="txtC">
+							  
+							  
+							  
+							  B &lt; C
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
+							  
+							</td>
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
+							  
+							  
+							  <img src="//image.uplus.co.kr/images/us/mo/LG-F470L_1.png" alt="LG G3 비트" style="width:63px;" />
+							  
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>LG G3 비트</strong></td>
+							<td class="txtC" rowspan="1">LG-F470L</td>	
+							<td class="txtC">352,000원</td>
+							<td class="txtC"><strong>330,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">22,000원</strong></td>
+							<td class="txtC">2015.05.29</td>
+							<td class="txtC">
+							  
+							  
+							  
+							  B &lt; C
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
+							  
+							</td>
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
+							  
+							  
+							  <img src="//image.uplus.co.kr/images/us/mo/LG-P490L_1.png" alt="LG G 패드 8.0 LTE" style="width:63px;" />
+							  
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>LG G 패드 8.0 LTE</strong></td>
+							<td class="txtC" rowspan="1">LG-P490L</td>	
+							<td class="txtC">330,000원</td>
+							<td class="txtC"><strong>252,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">78,000원</strong></td>
+							<td class="txtC">2015.05.29</td>
+							<td class="txtC">
+							  
+							  
+							  
+							  B &lt; C
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
+							  
+							</td>
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
+							  
+							  
+							  <img src="//image.uplus.co.kr/images/us/mo/LG-W120_1.png" alt="LG 워치 어베인 LTE" style="width:63px;" />
+							  
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>LG 워치 어베인 LTE</strong></td>
+							<td class="txtC" rowspan="1">LG-W120L</td>	
+							<td class="txtC">649,000원</td>
+							<td class="txtC"><strong>210,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">439,000원</strong></td>
+							<td class="txtC">2015.05.29</td>
+							<td class="txtC">
+							  
+							  
+							  
+							  B &lt; C
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
+							  
+							</td>
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
+							  
+							  
+							  <img src="//image.uplus.co.kr/images/us/mo/SHV-E310L_1.png" alt="갤럭시 메가" style="width:63px;" />
+							  
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>갤럭시 메가</strong></td>
+							<td class="txtC" rowspan="1">SHV-E310L</td>	
+							<td class="txtC">799,700원</td>
+							<td class="txtC"><strong>630,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">169,700원</strong></td>
+							<td class="txtC">2015.05.29</td>
 							<td class="txtC">
 							  
 							  B &gt; C
@@ -5853,17 +3327,17 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 							<td class="txtC" rowspan="1">
 							  
 							  
-							  <img src="//image.uplus.co.kr/images/us/mo/LGM-X320L_1.png" alt="X500" style="width:63px;" />
+							  <img src="//image.uplus.co.kr/images/us/mo/SHV-E500L_1.png" alt="갤럭시 윈" style="width:63px;" />
 							  
 							  
 							  
 							</td>
-							<td class="txtC" rowspan="1"><strong>X500</strong></td>
-							<td class="txtC" rowspan="1">LGM-X320L</td>	
-							<td class="txtC">319,000원</td>
-							<td class="txtC"><strong>134,000원</strong></td>
-							<td class="txtC"><strong class="pointcolor01">185,000원</strong></td>
-							<td class="txtC">2017.08.04</td>
+							<td class="txtC" rowspan="1"><strong>갤럭시 윈</strong></td>
+							<td class="txtC" rowspan="1">SHV-E500L</td>	
+							<td class="txtC">297,000원</td>
+							<td class="txtC"><strong>295,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">2,000원</strong></td>
+							<td class="txtC">2015.05.29</td>
 							<td class="txtC">
 							  
 							  
@@ -5874,9 +3348,424 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 							<td class="txtC">
 							  
 							  
-							  <a href="#//HPI;" class="btn" onclick="javascript:goBuyShop('LGM-X320L','PCFOGLTEA','LPZ0000777');"><span>구매하기</span></a>
+							  -
+							  
+							</td>
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
 							  
 							  
+							  <img src="//image.uplus.co.kr/images/us/mo/SM-C105L_1.png" alt="갤럭시 S4 줌" style="width:63px;" />
+							  
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>갤럭시 S4 줌</strong></td>
+							<td class="txtC" rowspan="1">SM-C105L</td>	
+							<td class="txtC">308,000원</td>
+							<td class="txtC"><strong>300,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">8,000원</strong></td>
+							<td class="txtC">2015.05.29</td>
+							<td class="txtC">
+							  
+							  
+							  
+							  B &lt; C
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
+							  
+							</td>
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
+							  
+							  
+							  <img src="//image.uplus.co.kr/images/us/mo/SM-T335L_1.png" alt="갤럭시 탭4 8.0" style="width:63px;" />
+							  
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>갤럭시 탭4 8.0</strong></td>
+							<td class="txtC" rowspan="1">SM-T335L</td>	
+							<td class="txtC">374,000원</td>
+							<td class="txtC"><strong>245,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">129,000원</strong></td>
+							<td class="txtC">2015.05.29</td>
+							<td class="txtC">
+							  
+							  
+							  
+							  B &lt; C
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
+							  
+							</td>
+						
+						
+						
+						</tr>
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+						
+							
+						
+							
+						
+					
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+							
+								
+								
+									
+									
+								
+									
+									
+								
+							
+						
+						<tr>
+						
+							
+							
+						
+							<td class="txtC" rowspan="1">
+							  
+							  
+							  <img src="//image.uplus.co.kr/images/us/mo/SM-T805L_1.png" alt="갤럭시 탭S 10.5" style="width:63px;" />
+							  
+							  
+							  
+							</td>
+							<td class="txtC" rowspan="1"><strong>갤럭시 탭S 10.5</strong></td>
+							<td class="txtC" rowspan="1">SM-T805L</td>	
+							<td class="txtC">799,700원</td>
+							<td class="txtC"><strong>150,000원</strong></td>
+							<td class="txtC"><strong class="pointcolor01">649,700원</strong></td>
+							<td class="txtC">2015.05.29</td>
+							<td class="txtC">
+							  
+							  
+							  
+							  B &lt; C
+							  
+							</td>
+							<td class="txtC">
+							  
+							  
+							  -
 							  
 							</td>
 						
@@ -6033,21 +3922,21 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 										
 									
 									<tr>
-										<td class="txtC">2017.12.31</td>
-										<td class="txtC"><strong>iPad 32GB</strong></td>
-										<td class="txtC" colspan="2">A1823-32</td>
+										<td class="txtC">2015.07.11</td>
+										<td class="txtC"><strong>LG G2</strong></td>
+										<td class="txtC" colspan="2">LG-F320L</td>
 									</tr>
 									<tr>
 										<td class="txtC">
 										  
+										  B &gt; C
 										  
 										  
-										  B &lt; C
 										  
 										</td>
-										<td class="rowAfter txtC">462,000원</td>
-										<td class="txtC"><strong>32,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">430,000원</strong></td>
+										<td class="rowAfter txtC">616,000원</td>
+										<td class="txtC"><strong>530,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">86,000원</strong></td>
 									</tr>
 									
 										
@@ -6153,9 +4042,9 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 										
 									
 									<tr>
-										<td class="txtC">2017.12.31</td>
-										<td class="txtC"><strong>LG 젠틀</strong></td>
-										<td class="txtC" colspan="2">LG-F580L</td>
+										<td class="txtC">2015.07.11</td>
+										<td class="txtC"><strong>갤럭시 줌2</strong></td>
+										<td class="txtC" colspan="2">SM-C115L</td>
 									</tr>
 									<tr>
 										<td class="txtC">
@@ -6165,8 +4054,8 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 										  B &lt; C
 										  
 										</td>
-										<td class="rowAfter txtC">132,000원</td>
-										<td class="txtC"><strong>132,000원</strong></td>
+										<td class="rowAfter txtC">297,000원</td>
+										<td class="txtC"><strong>297,000원</strong></td>
 										<td class="txtC"><strong class="pointcolor01">0원</strong></td>
 									</tr>
 									
@@ -6273,9 +4162,9 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 										
 									
 									<tr>
-										<td class="txtC">2017.12.31</td>
-										<td class="txtC"><strong>LG U</strong></td>
-										<td class="txtC" colspan="2">LG-F820L</td>
+										<td class="txtC">2015.07.10</td>
+										<td class="txtC"><strong>갤럭시 알파</strong></td>
+										<td class="txtC" colspan="2">SM-G850L</td>
 									</tr>
 									<tr>
 										<td class="txtC">
@@ -6285,8 +4174,1328 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 										  B &lt; C
 										  
 										</td>
-										<td class="rowAfter txtC">231,000원</td>
-										<td class="txtC"><strong>102,000원</strong></td>
+										<td class="rowAfter txtC">495,000원</td>
+										<td class="txtC"><strong>322,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">173,000원</strong></td>
+									</tr>
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+									<tr>
+										<td class="txtC">2015.06.26</td>
+										<td class="txtC"><strong>LG GX</strong></td>
+										<td class="txtC" colspan="2">LG-F310L</td>
+									</tr>
+									<tr>
+										<td class="txtC">
+										  
+										  
+										  
+										  B &lt; C
+										  
+										</td>
+										<td class="rowAfter txtC">352,000원</td>
+										<td class="txtC"><strong>330,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">22,000원</strong></td>
+									</tr>
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+									<tr>
+										<td class="txtC">2015.06.26</td>
+										<td class="txtC"><strong>LG GX</strong></td>
+										<td class="txtC" colspan="2">LG-F310LR</td>
+									</tr>
+									<tr>
+										<td class="txtC">
+										  
+										  
+										  
+										  B &lt; C
+										  
+										</td>
+										<td class="rowAfter txtC">352,000원</td>
+										<td class="txtC"><strong>330,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">22,000원</strong></td>
+									</tr>
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+									<tr>
+										<td class="txtC">2015.05.29</td>
+										<td class="txtC"><strong>베가 넘버 6</strong></td>
+										<td class="txtC" colspan="2">IM-A860L</td>
+									</tr>
+									<tr>
+										<td class="txtC">
+										  
+										  
+										  
+										  B &lt; C
+										  
+										</td>
+										<td class="rowAfter txtC">319,000원</td>
+										<td class="txtC"><strong>300,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">19,000원</strong></td>
+									</tr>
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+									<tr>
+										<td class="txtC">2015.05.29</td>
+										<td class="txtC"><strong>베가 시크릿노트</strong></td>
+										<td class="txtC" colspan="2">IM-A890L</td>
+									</tr>
+									<tr>
+										<td class="txtC">
+										  
+										  
+										  
+										  B &lt; C
+										  
+										</td>
+										<td class="rowAfter txtC">297,000원</td>
+										<td class="txtC"><strong>297,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">0원</strong></td>
+									</tr>
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+									<tr>
+										<td class="txtC">2015.05.29</td>
+										<td class="txtC"><strong>LG G3 비트</strong></td>
+										<td class="txtC" colspan="2">LG-F470L</td>
+									</tr>
+									<tr>
+										<td class="txtC">
+										  
+										  
+										  
+										  B &lt; C
+										  
+										</td>
+										<td class="rowAfter txtC">352,000원</td>
+										<td class="txtC"><strong>330,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">22,000원</strong></td>
+									</tr>
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+									<tr>
+										<td class="txtC">2015.05.29</td>
+										<td class="txtC"><strong>LG G 패드 8.0 LTE</strong></td>
+										<td class="txtC" colspan="2">LG-P490L</td>
+									</tr>
+									<tr>
+										<td class="txtC">
+										  
+										  
+										  
+										  B &lt; C
+										  
+										</td>
+										<td class="rowAfter txtC">330,000원</td>
+										<td class="txtC"><strong>252,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">78,000원</strong></td>
+									</tr>
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+									<tr>
+										<td class="txtC">2015.05.29</td>
+										<td class="txtC"><strong>LG 워치 어베인 LTE</strong></td>
+										<td class="txtC" colspan="2">LG-W120L</td>
+									</tr>
+									<tr>
+										<td class="txtC">
+										  
+										  
+										  
+										  B &lt; C
+										  
+										</td>
+										<td class="rowAfter txtC">649,000원</td>
+										<td class="txtC"><strong>210,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">439,000원</strong></td>
+									</tr>
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+									<tr>
+										<td class="txtC">2015.05.29</td>
+										<td class="txtC"><strong>갤럭시 메가</strong></td>
+										<td class="txtC" colspan="2">SHV-E310L</td>
+									</tr>
+									<tr>
+										<td class="txtC">
+										  
+										  B &gt; C
+										  
+										  
+										  
+										</td>
+										<td class="rowAfter txtC">799,700원</td>
+										<td class="txtC"><strong>630,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">169,700원</strong></td>
+									</tr>
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+									<tr>
+										<td class="txtC">2015.05.29</td>
+										<td class="txtC"><strong>갤럭시 윈</strong></td>
+										<td class="txtC" colspan="2">SHV-E500L</td>
+									</tr>
+									<tr>
+										<td class="txtC">
+										  
+										  
+										  
+										  B &lt; C
+										  
+										</td>
+										<td class="rowAfter txtC">297,000원</td>
+										<td class="txtC"><strong>295,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">2,000원</strong></td>
+									</tr>
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+									<tr>
+										<td class="txtC">2015.05.29</td>
+										<td class="txtC"><strong>갤럭시 S4 줌</strong></td>
+										<td class="txtC" colspan="2">SM-C105L</td>
+									</tr>
+									<tr>
+										<td class="txtC">
+										  
+										  
+										  
+										  B &lt; C
+										  
+										</td>
+										<td class="rowAfter txtC">308,000원</td>
+										<td class="txtC"><strong>300,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">8,000원</strong></td>
+									</tr>
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+										
+											
+											
+												
+												
+											
+												
+												
+											
+										
+									
+									<tr>
+										<td class="txtC">2015.05.29</td>
+										<td class="txtC"><strong>갤럭시 탭4 8.0</strong></td>
+										<td class="txtC" colspan="2">SM-T335L</td>
+									</tr>
+									<tr>
+										<td class="txtC">
+										  
+										  
+										  
+										  B &lt; C
+										  
+										</td>
+										<td class="rowAfter txtC">374,000원</td>
+										<td class="txtC"><strong>245,000원</strong></td>
 										<td class="txtC"><strong class="pointcolor01">129,000원</strong></td>
 									</tr>
 									
@@ -6393,1929 +5602,9 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 										
 									
 									<tr>
-										<td class="txtC">2017.12.29</td>
-										<td class="txtC"><strong>LG V30 Signature</strong></td>
-										<td class="txtC" colspan="2">LGM-V300L256</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">1,999,800원</td>
-										<td class="txtC"><strong>173,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">1,826,800원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.12.22</td>
-										<td class="txtC"><strong>LG V20</strong></td>
-										<td class="txtC" colspan="2">LG-F800L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  B &gt; C
-										  
-										  
-										  
-										</td>
-										<td class="rowAfter txtC">899,800원</td>
-										<td class="txtC"><strong>610,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">289,800원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.11.23</td>
-										<td class="txtC"><strong>X401</strong></td>
-										<td class="txtC" colspan="2">LGM-X401L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">289,300원</td>
-										<td class="txtC"><strong>252,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">37,300원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.11.17</td>
-										<td class="txtC"><strong>아이폰X-256</strong></td>
-										<td class="txtC" colspan="2">A1901-256</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">1,557,600원</td>
-										<td class="txtC"><strong>95,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">1,462,600원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.11.17</td>
-										<td class="txtC"><strong>아이폰X-64</strong></td>
-										<td class="txtC" colspan="2">A1901-64</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">1,360,700원</td>
-										<td class="txtC"><strong>95,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">1,265,700원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.11.16</td>
-										<td class="txtC"><strong>Galaxy TAB A</strong></td>
-										<td class="txtC" colspan="2">SM-T385L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">308,000원</td>
-										<td class="txtC"><strong>161,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">147,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.11.07</td>
-										<td class="txtC"><strong>와이파이쏙 슬림</strong></td>
-										<td class="txtC" colspan="2">IML-C5000W</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">143,000원</td>
-										<td class="txtC"><strong>110,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">33,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.11.03</td>
-										<td class="txtC"><strong>LG X cam</strong></td>
-										<td class="txtC" colspan="2">LG-F690L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">396,000원</td>
-										<td class="txtC"><strong>270,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">126,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.11.02</td>
-										<td class="txtC"><strong>MediaPad</strong></td>
-										<td class="txtC" colspan="2">CPN-L09</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">297,000원</td>
-										<td class="txtC"><strong>165,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">132,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.10.27</td>
-										<td class="txtC"><strong>아이폰8+256</strong></td>
-										<td class="txtC" colspan="2">A1897-256</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">1,283,700원</td>
-										<td class="txtC"><strong>95,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">1,188,700원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.10.27</td>
-										<td class="txtC"><strong>아이폰8+64</strong></td>
-										<td class="txtC" colspan="2">A1897-64</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">1,076,900원</td>
-										<td class="txtC"><strong>95,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">981,900원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.10.27</td>
-										<td class="txtC"><strong>아이폰8-256</strong></td>
-										<td class="txtC" colspan="2">A1905-256</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">1,142,900원</td>
-										<td class="txtC"><strong>95,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">1,047,900원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.10.27</td>
-										<td class="txtC"><strong>아이폰8-64</strong></td>
-										<td class="txtC" colspan="2">A1905-64</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">946,000원</td>
-										<td class="txtC"><strong>95,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">851,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.10.26</td>
-										<td class="txtC"><strong>LG X300</strong></td>
-										<td class="txtC" colspan="2">LGM-K120L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">253,000원</td>
-										<td class="txtC"><strong>220,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">33,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.10.13</td>
-										<td class="txtC"><strong>와이파이쏙</strong></td>
-										<td class="txtC" colspan="2">E5577s-321</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">110,000원</td>
-										<td class="txtC"><strong>110,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">0원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.10.01</td>
-										<td class="txtC"><strong>LG Stylus 2</strong></td>
-										<td class="txtC" colspan="2">LG-F720L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">319,000원</td>
-										<td class="txtC"><strong>278,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">41,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.09.12</td>
-										<td class="txtC"><strong>갤럭시 노트5</strong></td>
-										<td class="txtC" colspan="2">SM-N920L</td>
+										<td class="txtC">2015.05.29</td>
+										<td class="txtC"><strong>갤럭시 탭S 10.5</strong></td>
+										<td class="txtC" colspan="2">SM-T805L</td>
 									</tr>
 									<tr>
 										<td class="txtC">
@@ -8326,1208 +5615,8 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 										  
 										</td>
 										<td class="rowAfter txtC">799,700원</td>
-										<td class="txtC"><strong>410,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">389,700원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.09.12</td>
-										<td class="txtC"><strong>갤럭시 노트5 64GB</strong></td>
-										<td class="txtC" colspan="2">SM-N920L64</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">821,700원</td>
-										<td class="txtC"><strong>410,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">411,700원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.09.07</td>
-										<td class="txtC"><strong>Q6+</strong></td>
-										<td class="txtC" colspan="2">LGM-X600LP</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">484,000원</td>
-										<td class="txtC"><strong>330,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">154,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.09.07</td>
-										<td class="txtC"><strong>갤럭시 J5 2016</strong></td>
-										<td class="txtC" colspan="2">SM-J510L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">297,000원</td>
-										<td class="txtC"><strong>260,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">37,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.09.07</td>
-										<td class="txtC"><strong>P9+</strong></td>
-										<td class="txtC" colspan="2">VIE-L09</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">176,000원</td>
-										<td class="txtC"><strong>154,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">22,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.08.31</td>
-										<td class="txtC"><strong>P9</strong></td>
-										<td class="txtC" colspan="2">EVA-L09</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">176,000원</td>
-										<td class="txtC"><strong>154,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">22,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.08.31</td>
-										<td class="txtC"><strong>U+ Pad8</strong></td>
-										<td class="txtC" colspan="2">ITP-XD80L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">143,000원</td>
-										<td class="txtC"><strong>10,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">133,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.08.31</td>
-										<td class="txtC"><strong>G Pad3 10.1 FHD</strong></td>
-										<td class="txtC" colspan="2">LG-P755L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">286,000원</td>
-										<td class="txtC"><strong>20,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">266,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.08.25</td>
-										<td class="txtC"><strong>Q8</strong></td>
-										<td class="txtC" colspan="2">LGM-X800L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">616,000원</td>
-										<td class="txtC"><strong>210,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">406,000원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.08.19</td>
-										<td class="txtC"><strong>LG G5</strong></td>
-										<td class="txtC" colspan="2">LG-F700L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  B &gt; C
-										  
-										  
-										  
-										</td>
-										<td class="rowAfter txtC">699,600원</td>
-										<td class="txtC"><strong>610,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">89,600원</strong></td>
-									</tr>
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-									
-										
-									
-										
-									
-								
-									
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-										
-											
-											
-												
-												
-											
-												
-												
-											
-										
-									
-									<tr>
-										<td class="txtC">2017.08.04</td>
-										<td class="txtC"><strong>X500</strong></td>
-										<td class="txtC" colspan="2">LGM-X320L</td>
-									</tr>
-									<tr>
-										<td class="txtC">
-										  
-										  
-										  
-										  B &lt; C
-										  
-										</td>
-										<td class="rowAfter txtC">319,000원</td>
-										<td class="txtC"><strong>134,000원</strong></td>
-										<td class="txtC"><strong class="pointcolor01">185,000원</strong></td>
+										<td class="txtC"><strong>150,000원</strong></td>
+										<td class="txtC"><strong class="pointcolor01">649,700원</strong></td>
 									</tr>
 									
 										
@@ -9584,7 +5673,7 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 			<!-- pagination -->
 			<div class="pagination">
 				<div>
-					<span class="first" title="처음 페이지로 이동"><a href="#" onclick="goPage('1'); return false;">처음 페이지로 이동</a></span><span class="prev" title="이전 페이지로 이동"><a href="#">이전 페이지로 이동</a></span><span class="number"><a href="#" onclick="goPage('1'); return false;">1</a><a href="#" onclick="goPage('31'); return false;">2</a><a href="#" onclick="goPage('61'); return false;">3</a><a href="#" onclick="goPage('91'); return false;">4</a><em>5</em><a href="#" onclick="goPage('151'); return false;">6</a><a href="#" onclick="goPage('181'); return false;">7</a><a href="#" onclick="goPage('211'); return false;">8</a><a href="#" onclick="goPage('241'); return false;">9</a></span><span class="next" title="다음 페이지로 이동"><a href="#">다음 페이지로 이동</a></span><span class="last" title="마지막 페이지로 이동"><a href="#" onclick="goPage('241'); return false;">마지막 페이지로 이동</a></span>
+					<span class="first" title="처음 페이지로 이동"><a href="#" onclick="goPage('1'); return false;">처음 페이지로 이동</a></span><span class="prev" title="이전 페이지로 이동"><a href="#">이전 페이지로 이동</a></span><span class="number"><a href="#" onclick="goPage('1'); return false;">1</a><a href="#" onclick="goPage('31'); return false;">2</a><a href="#" onclick="goPage('61'); return false;">3</a><a href="#" onclick="goPage('91'); return false;">4</a><a href="#" onclick="goPage('121'); return false;">5</a><a href="#" onclick="goPage('151'); return false;">6</a><a href="#" onclick="goPage('181'); return false;">7</a><a href="#" onclick="goPage('211'); return false;">8</a><em>9</em></span><span class="next" title="다음 페이지로 이동"><a href="#">다음 페이지로 이동</a></span><span class="last" title="마지막 페이지로 이동"><a href="#">마지막 페이지로 이동</a></span>
 				</div>
 			</div>
 			<!--  pagination -->

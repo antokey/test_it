@@ -13,7 +13,16 @@ mysqli_query($conn, "set names utf8");
 </head>
 <body>
   <?php
-  		$category = $_GET['phone_select'];
+	for($i = 0 ; $i < 4 ; $i++){
+		echo "<table align = center width = '800' border = '1' cellpadding = '10'>
+    <tr align = center>
+      <td bgcolor = '#4374D9'></td>
+      <td bgcolor = '#4374D9'><font color = 'white'>KT</font></td>
+      <td bgcolor = '#4374D9'><font color = 'white'>SKT</font></td>
+      <td bgcolor = '#4374D9'><font color = 'white'>LG U+</font></td>
+    </tr>
+    <tr align = center>";
+		$category = $_GET['phone_select'];
           if($category == 'phone_name'){
             $keyword = $_GET['search'];
 
@@ -25,19 +34,9 @@ mysqli_query($conn, "set names utf8");
             $result_sk = mysqli_query($conn, $sql2);
             $result_lg = mysqli_query($conn, $sql3);
 			
-			$cnt_kt = mysqli_num_rows($result_kt);
-			$cnt_sk = mysqli_num_rows($result_sk);
-			$cnt_lg = mysqli_num_rows($result_lg);
-			
-			$max = max($cnt_kt, $cnt_sk, $cnt_lg);
-			
 			while($row1 = mysqli_fetch_array($result_kt)){
               $temp1[] = $row1;
 			}
-			
-			echo "이중배열 확인\n";
-			print_r($temp1);
-			echo "이중배열 확인끝\n";
 			
 			while($row2 = mysqli_fetch_array($result_sk)){
               $temp2[] = $row2;
@@ -58,12 +57,6 @@ mysqli_query($conn, "set names utf8");
               $result_sk = mysqli_query($conn, $sql2);
               $result_lg = mysqli_query($conn, $sql3);
 			  
-			  $cnt_kt = mysqli_num_rows($result_kt);
-			  $cnt_sk = mysqli_num_rows($result_sk);
-			  $cnt_lg = mysqli_num_rows($result_lg);
-			
-			  $max = max($cnt_kt, $cnt_sk, $cnt_lg);
-			  
 			  while($row1 = mysqli_fetch_array($result_kt)){
 				$temp1[] = $row1;
 			  }
@@ -76,58 +69,82 @@ mysqli_query($conn, "set names utf8");
 				$temp3[] = $row3;
 			  }
 		  }
-	$j = 0;
-	$k = 0;
-	$l = 0;
-	for($i = 0 ; $i < $max ; $i++){
-		echo "<table align = center width = '800' border = '1' cellpadding = '10'>
-    <tr align = center>
-      <td bgcolor = '#4374D9'></td>
-      <td bgcolor = '#4374D9'><font color = 'white'>KT</font></td>
-      <td bgcolor = '#4374D9'><font color = 'white'>SKT</font></td>
-      <td bgcolor = '#4374D9'><font color = 'white'>LG U+</font></td>
-    </tr>
-    <tr align = center>";
 		echo "
 		<td>정상가(a)</td>
-		<td>"$temp1[0][3];"</td>
-		<td>"$temp2[0][3];"</td>
-		<td>"$temp3[0][3];"</td>
-	</tr>
-	<tr align = center>
-		<td>공시지원금(b)</td>
-		<td>"$temp1[0][4];"</td>
-		<td>"$temp2[0][4];"</td>
-		<td>"$temp3[0][4];"</td>
-	</tr>
-	<tr align = center>
-		<td>추가지원금(c)</td>
-		<td>"$temp1[0][5];"</td>
-		<td>"$temp2[0][5];"</td>
-		<td>"$temp3[0][5];"</td>
-	</tr>
-	<tr align = center>
-		<td>판매가(c)</td>
-		<td>"$temp1[0][6];"</td>
-		<td>"$temp2[0][6];"</td>
-		<td>"$temp3[0][6];"</td>
-	</tr>
-	<tr align = center>
-		<td>공시일자</td>
-		<td>"$temp1[0][7];"</td>
-		<td>"$temp2[0][7];"</td>
-		<td>"$temp3[0][7];"</td>
-	</tr>
+		<td>
+			<ul>
+			</ul>
+		  </td>
+		<td>
+			<ul>
+			</ul>
+		</td>
+		<td>
+			<ul>
+			</ul>
+		  </td>
+		</tr>
+		<tr align = center>
+		  <td>공시지원금(b)</td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		</tr>
+		<tr align = center>
+		  <td>추가지원금(c)</td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		</tr>
+		<tr align = center>
+		  <td>판매가(c)</td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		</tr>
+		<tr align = center>
+		  <td>공시일자</td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		  <td>
+			<ul>
+			</ul>
+		  </td>
+		</tr>
 	  </table>";
-	  if($j < $cnt_kt){
-		  $j += 1;
-	  }
-	  if($k < $cnt_sk){
-		  $k += 1;
-	  }
-	  if($l < $cnt_lg){
-		  $l += 1;
-	  }
 	}
 	?>
 </body>
