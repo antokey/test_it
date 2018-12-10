@@ -119,14 +119,14 @@
 					break;
 				}
 			}
-			for($k = 0 ; $k < $cnt_sk ; $k++){
+			for($k = 0 ; $k < $cnt_lg ; $k++){
 				if($rows_lg[$i][3]==$rows_sk[$k][3]){
 					$flag_lg = TRUE;
 					break;
 				}
 			}
 			
-			$list = array('img','model', 'name','출고가(a)', '공시지원금(b)', '추가지원금(c)', '단말대금(a-b-c)','지원금 변화 그래프');
+			$list = array('img','model', 'name','출고가(a)', '공시지원금(b)', '추가지원금(c)', '단말대금(a-b-c)','공시일자','지원금 변화 그래프');
 			for($col = 0 ; $col < 9 ; $col++){
 				echo "<tr align=center>
 						<td bgcolor = '#4374D9'><font color = 'white'>".$list[$col]."</td>";
