@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from phone import LGPhoneInfo
-from DbManage import DBHelper as Db
+from DB_manager import DBHelper as Db
 import time
 import re
 import sys
@@ -29,7 +29,7 @@ display = Display(visible = 0, size = (2000, 2000))
 display.start()
 '''
 #driver = wd.Chrome('chromedriver')
-driver = wd.Chrome('/home/jieun/project/test_it/crawler/LG_SK/chromedriver')
+driver = wd.Chrome('./chromedriver')
 
 #homepage access
 driver.get(main_url)
@@ -45,12 +45,12 @@ for page in range(1, 10):
     #Get the html source and save
     html_source = driver.page_source
 
-    f = open("/home/jieun/project/test_it/crawler/LG_SK/source.txt", "w", encoding="utf-8")
+    f = open("./LG_SK/source.txt", "w", encoding="utf-8")
     f.write(html_source)
     f.close()
 
     #Open the save current html file
-    f = open("/home/jieun/project/test_it/crawler/LG_SK/source.txt", "rt", encoding="utf-8")
+    f = open("./LG_SK/source.txt", "rt", encoding="utf-8")
 
     #Declare the argument using for the distinction to keyword
     count = 0

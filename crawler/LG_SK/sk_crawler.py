@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from phone import SKPhoneInfo
-from DbManage import SKDBHelper as Db
+from DB_manager import SKDBHelper as Db
 import time
 import re
 import sys
@@ -23,6 +23,7 @@ chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 
 '''
+#if you get display error 
 pip3 install pyvirtualdisplay
 from pyvirtualdisplay import Display
 display = Display(visible = 0, size = (2000, 2000))
@@ -30,7 +31,7 @@ display.start()
 '''
 
 #driver = wd.Chrome("chromedriver")
-driver = wd.Chrome("/home/jieun/project/test_it/crawler/LG_SK/chromedriver")
+driver = wd.Chrome("./chromedriver")
 
 #Homepage Access
 driver.get(main_url)
@@ -55,12 +56,12 @@ for page in range(2, 10):
     ul = ul.group()
 
     #Save the html source
-    f = open("/home/jieun/project/test_it/crawler/LG_SK/source_sk.txt", "w", encoding="utf-8")
+    f = open("./LG_SK/source_sk.txt", "w", encoding="utf-8")
     f.write(ul)
     f.close()
 
     #Open the html source for the reading
-    f = open("/home/jieun/project/test_it/crawler/LG_SK/source_sk.txt", "rt", encoding="utf-8")
+    f = open("./LG_SK/source_sk.txt", "rt", encoding="utf-8")
     for line in f:
         if 'model_name' in line:
             text = re.sub('<.+?>', '', line, 0, re.I|re.S)

@@ -8,10 +8,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-import sys
-sys.path.append("/home/jieun/project/test_it/crawler/KT")
+#Declaration of Environmental Variables for Modular Declaration
+#import sys
+#sys.path.append("/home/jieun/project/test_it/crawler/KT")
+
 from KT_class import KT
-import KT_DB as Dh
+import DB_manager as Dh
 KT_list= []
 
 main_url='https://shop.kt.com/smart/supportAmtList.do'
@@ -21,7 +23,7 @@ options.add_argument('--ignore-certificate-errors-spki-list')
 options.add_argument('--ignore-ssl-errors')
 
 try:
-    driver=wd.Chrome(executable_path='/home/jieun/project/test_it/crawler/KT/chromedriver',chrome_options=options)
+    driver=wd.Chrome(executable_path='./chromedriver',chrome_options=options)
 except Exception as e:
     print('error!',e)
     
@@ -54,7 +56,7 @@ for page in range(3, int(final_page)+2): #3-5
         driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %page).click()
         #print("go to [%d] pages" % int(page-1))
         html=driver.page_source
-        file_ = open('/home/jieun/project/test_it/crawler/KT/html/page_%d.html' %int(page-1), 'w',encoding='UTF8' )
+        file_ = open('./KT/html/page_%d.html' %int(page-1), 'w',encoding='UTF8' )
         time.sleep(2)
         file_.write(html)
         file_.close()
@@ -65,7 +67,7 @@ for page in range(3, int(final_page)+2): #3-5
 #다시 돌아가 첫 페이지 html 추출
 driver.find_element_by_xpath('//*[@id="supportAmtList"]/div/a[%s]' %3).click()
 html=driver.page_source
-file_ = open('/home/jieun/project/test_it/crawler/KT/html/page_1.html', 'w',encoding='UTF8' )
+file_ = open('./KT/html/page_1.html', 'w',encoding='UTF8' )
 file_.write(html)
 file_.close()
 
@@ -75,8 +77,8 @@ driver.quit()
 
 #td 태그 내부의 내용을 추출하여 특정 파일(write.txt)에 저장 
 for page in range(1, int(final_page)+1):
-    file_ = open('/home/jieun/project/test_it/crawler/KT/html/page_%s.html' %page, 'r',encoding='UTF8' )
-    file2 = open('/home/jieun/project/test_it/crawler/KT/write', 'w',encoding='UTF8' )
+    file_ = open('./KT/html/page_%s.html' %page, 'r',encoding='UTF8' )
+    file2 = open('./KT/write', 'w',encoding='UTF8' )
     data = file_.read()
     a=re.findall("<td.*?>(.*?)</td>",data)
     for i in a:
@@ -85,7 +87,7 @@ for page in range(1, int(final_page)+1):
     file2.close()
     file_.close()
     #read write file -> save the instance of class_kt
-    file_ = open('/home/jieun/project/test_it/crawler/KT/write', 'r',encoding='UTF8' )
+    file_ = open('KT/write', 'r',encoding='UTF8' )
     i=1
     flag=0
     first=False
@@ -146,11 +148,10 @@ for page in range(1, int(final_page)+1):
                 break
     file_.close()
 
-#db 입력
-'''
-import importlib
-importlib.reload(Dh)
-'''
+#module reload
+#import importlib
+#importlib.reload(Dh)
+
 db=Dh.DBHelper()
 for obj in KT_list:
     db.db_insertCrawlingData(
@@ -165,7 +166,3 @@ for obj in KT_list:
     )
 db.db_free()
 
-'''
-import sys
-sys.exit()
-'''
