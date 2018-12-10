@@ -1,4 +1,4 @@
-# 1.시스템 개요도
+### 1.시스템 개요도
 
 <div>
 <img width="1500" src="https://user-images.githubusercontent.com/45190560/49719579-e0209a00-fca0-11e8-8d01-c2cf6405365c.PNG">
@@ -26,7 +26,7 @@
 
 
 
-# 2. 크롤링 타켓 사이트
+### 2. 크롤링 타켓 사이트
 
   KT : https://shop.kt.com/smart/supportAmtList.do
 
@@ -34,7 +34,7 @@
 
   LG U+ : https://www.uplus.co.kr/css/note/item/RetrieveItemDstrDisc.hpi
 
-# 3. 개발환경
+### 3. 개발환경
 
   OS : Ubuntu 18.04.1 LTS
 
@@ -44,11 +44,11 @@
     우리는 Aaphce2 web Server 환경과 Mysql Database 환경을 모두 포함 하는 통합 패키지 bitnami를 사용하였습니다.
 
 
-# 4. 설치
+### 4. 설치
 
   저희 시스템을 동작시키 위해서 사전에 준비가 필요한 사항을 제시 합니다.
 
-## 1. webdriver (For selenium) 설치
+#### 1. webdriver (For selenium) 설치
 
   크롤러가 selenium 모듈을 통해 동작하기 때문에, 사용자가 원하는 webdriver 설치를 진행 하셔야 합니다.
   
@@ -64,7 +64,7 @@
   #driver = wd.Chrome('./chromedriver')
   ```
 
-## 2. Selenium 및 pymysql 설치
+#### 2. Selenium 및 pymysql 설치
 
   저희 프로그램은 Python의 Package인 Selenium 을 통해 웹 크롤링을 수행하며,
   pymysql을 통해 데이터베이스 서버와 프로그램을 연동시킵니다. Linux/Python3 환경에서는 아래와 같은 코드로 패키지를 설치 할 수 있습니다.
@@ -75,6 +75,6 @@
   $pip3 install pymysql
   ```
 
-# 5. 실행
+### 5. 실행
 
   만약 저희 시스텝을 간접적으로 체험하고 싶다면, [JE_JS_PHONE](http://210.117.181.26:8080/index.php) 해당 링크를 클릭하여 저희의 웹서버를 방문해주십시오시오..
