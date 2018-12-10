@@ -28,11 +28,11 @@
 
 # 2. 크롤링 타켓 사이트
 
-  KT : https://shop.kt.com/smart/supportAmtList.do
+ *KT : https://shop.kt.com/smart/supportAmtList.do
 
-  SKT : http://shop.tworld.co.kr/handler/Dantong-SKT
+ *SKT : http://shop.tworld.co.kr/handler/Dantong-SKT
 
-  LG U+ : https://www.uplus.co.kr/css/note/item/RetrieveItemDstrDisc.hpi
+ *LG U+ : https://www.uplus.co.kr/css/note/item/RetrieveItemDstrDisc.hpi
 
 # 3. 개발환경
 
