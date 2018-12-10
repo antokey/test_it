@@ -61,8 +61,8 @@
   >아래의 코드에서 Window환경에서는 1번라인, Linux or Max 환경에서는 2번라인처럼 웹 드라이버를 실행 시켜주시면 됩니다.
   
   ```python
-  driver = wd.Chrome('chromedriver')
-  #driver = wd.Chrome('./chromedriver')
+  driver = wd.Chrome('chromedriver') #1
+  driver = wd.Chrome('./chromedriver') #2
   ```
 
   #### 2) Selenium 및 pymysql 설치
