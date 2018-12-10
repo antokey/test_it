@@ -41,21 +41,20 @@ Web Server & Database Server : [Bitnami 다운로드](https://bitnami.com/stack/
 크롤러가 크롬 드라이버를 통하여 크롤링을 하기 때문에 크롬 설치가 필수입니다. 크롬 설치는 [바로가기](https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&hl=ko)를 통해 해당 웹페이지 설명대로 OS에 맞게 설치를 진행하면 됩니다. 크롬 설치가 완료가 된 후, Linux 환경에서 돌리고자 하는 분들은 소스 코드 그대로 사용하면 되지만 Windows 환경에서 돌리고자 하는 분들은
 
 
-'''python
+```python
 chrome_options = wd.ChromeOptions()
 chrome_options.binary_location = '/opt/google/chrome/google-chrome'
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
-
-'''
+```
 
 해당 부분을 주석처리 해주시고,
 
-'''python
+```python
 driver = wd.Chrome('chromedriver')
 #driver = wd.Chrome('./chromedriver')
-'''
+```
 
 드라이버를 위에 적힌 소스를 사용해주시기 바랍니다.
 
@@ -63,18 +62,18 @@ driver = wd.Chrome('chromedriver')
 
 저희 프로그램은 Python에서 제공하는 Package인 Selenium과 pymysql을 활용하여 웹 크롤링 및 데이터베이스와 연동합니다. Linux 환경에서는
 
-'''
+```
 $sudo su apt-get install pip3
 $pip3 install selenium
 $pip3 install pymysql
-'''
+```
 
 위의 명령어를 사용하면 Selenium과 pymysql Package가 정상적으로 다운받아 질 것입니다. Windows 환경은 '윈도우+R'키를 입력하여 명령 프롬프트(cmd)를 실행한 다음,
 
-'''
+```
 $pip install selenium
 $pip install pymysql
-'''
+```
 
 위의 명령어를 사용하면 Selenium과 pymysql Package가 정상적으로 다운받아 질 것입니다.
 
