@@ -3,9 +3,10 @@
 <div>
 <img width="1500" src="https://user-images.githubusercontent.com/45190560/49719579-e0209a00-fca0-11e8-8d01-c2cf6405365c.PNG">
 </div>
-위의 그림은 우리의 웹 크롤링 시스템에 대한 개요도 입니다.
 
-우리의 웹크롤링 시스템은 크게 4파트로 나눌 수 있습니다.
+*위의 그림은 우리의 웹 크롤링 시스템에 대한 개요도 입니다.*
+
+*우리의 웹크롤링 시스템은 크게 4파트로 나눌 수 있습니다.*
 
 
   #### 1) Crawler 
@@ -46,28 +47,28 @@
 
 # 4. 설치
 
-  저희 시스템을 동작시키 위해서 사전에 준비가 필요한 사항을 제시 합니다.
+  *저희 시스템을 동작시키 위해서 사전에 준비가 필요한 사항을 제시 합니다.*
 
-### 1) webdriver (For selenium) 설치
+  #### 1) webdriver (For selenium) 설치
 
-  크롤러가 selenium 모듈을 통해 동작하기 때문에, 사용자가 원하는 webdriver 설치를 진행 하셔야 합니다.
+  >크롤러가 selenium 모듈을 통해 동작하기 때문에, 사용자가 원하는 webdriver 설치를 진행 하셔야 합니다.
   
-  (저희 시스템에서는 chromedriver(for linux)를 활용 하였으며, test_it/crawler 디렉터리 내부에 포함 되어있습니다.
-  이 chormedriver 드라이버의 경우 google_chrome이 설치 되어있지 않으면 실행 되지 않습니다.)
+  >(저희 시스템에서는 chromedriver(for linux)를 활용 하였으며, test_it/crawler 디렉터리 내부에 포함 되어있습니다.
+  >이 chormedriver 드라이버의 경우 google_chrome이 설치 되어있지 않으면 실행 되지 않습니다.)
 
-  webdriver설치는 [바로가기](https://www.seleniumhq.org/download/)를 통해서 원하는 브라우저에 호환되는 webdriver를 설치하시면 됩니다.
+  >webdriver설치는 [바로가기](https://www.seleniumhq.org/download/)를 통해서 원하는 브라우저에 호환되는 webdriver를 설치하시면 됩니다.
   
-  아래의 코드에서 Window환경에서는 1번라인, Linux or Max 환경에서는 2번라인처럼 웹 드라이버를 실행 시켜주시면 됩니다.
+  >아래의 코드에서 Window환경에서는 1번라인, Linux or Max 환경에서는 2번라인처럼 웹 드라이버를 실행 시켜주시면 됩니다.
   
   ```python
   driver = wd.Chrome('chromedriver')
   #driver = wd.Chrome('./chromedriver')
   ```
 
-### 2) Selenium 및 pymysql 설치
+  #### 2) Selenium 및 pymysql 설치
 
-  저희 프로그램은 Python의 Package인 Selenium 을 통해 웹 크롤링을 수행하며,
-  pymysql을 통해 데이터베이스 서버와 프로그램을 연동시킵니다. Linux/Python3 환경에서는 아래와 같은 코드로 패키지를 설치 할 수 있습니다.
+  >저희 프로그램은 Python의 Package인 Selenium 을 통해 웹 크롤링을 수행하며,
+  >pymysql을 통해 데이터베이스 서버와 프로그램을 연동시킵니다. Linux/Python3 환경에서는 아래와 같은 코드로 패키지를 설치 할 수 있습니다.
 
   ```
   $sudo su apt-get install pip3
@@ -77,4 +78,4 @@
 
 # 5. 시스템 체험
 
-  만약 저희 시스텝을 간접적으로 체험하고 싶다면, [JE_JS_PHONE](http://210.117.181.26:8080/index.php) 해당 링크를 클릭하여 저희의 웹서버를 방문해주십시오시오..
+  *만약 저희 시스텝을 간접적으로 체험하고 싶다면, [JE_JS_PHONE](http://210.117.181.26:8080/index.php) 해당 링크를 클릭하여 저희의 웹서버를 방문해주십시오시오..*
