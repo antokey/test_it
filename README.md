@@ -1,83 +1,80 @@
-# 1. 개요도
+# 1.시스템 개요도
 
 <div>
-<img width="2000" src="https://user-images.githubusercontent.com/45190560/49719579-e0209a00-fca0-11e8-8d01-c2cf6405365c.PNG">
+<img width="1500" src="https://user-images.githubusercontent.com/45190560/49719579-e0209a00-fca0-11e8-8d01-c2cf6405365c.PNG">
 </div>
+위의 그림은 우리의 웹 크롤링 시스템에 대한 개요도 입니다.
 
-개요도를 크게 나누자면 4파트로 나눌 수 있습니다.
-
-bash script : 'crawler.sh'라는 bash script를 제작하여, 매일 크롤러가 돌아갈 때 crawling.log라는 파일에 각 통신사 크롤러에서 업데이트 되거나 크롤링 시 발생하는 오류를 저장하게 했습니다.
-
-Crawler : Selenium 패키지를 활용하여 파이썬으로 제작된 크롤러는 각 통신사 공시지원금 사이트에서 데이터를 크롤링합니다.
-
-MySQL Database : Bitnami를 통해 데이터베이스 서버를 구축 후, 크롤링한 데이터를 이미지, 모델명, 제품명, 출고가, 공시지원금, 추가지원금, 판매가, 공시일자 순으로 각 통신사 테이블에 삽입합니다. 만약 각 테이블 별로 공시일자가 업데이트 된다면, 업데이트 이전의 레코드를 저장하여 그래프화 할 수 있도록 테이블을 새로 구축했습니다.
-
-Web Page : Bitnami를 통해 웹 서버를 구축 후, 메인 페이지인 index.php에서 제품명과 모델명 카테고리로 검색어 종류를 선택하고 검색어를 입력하면 function.php를 통해 검색어에 해당하는 각 통신사 별로 정보가 출력됩니다. 또한, 공시지원금 변화 내역을 보고 싶다면 '공시지원금 변화 그래프' 란의 버튼을 클릭하면 graph.php를 통해 그래프가 출력됩니다.
+우리의 웹크롤링 시스템은 크게 4파트로 나눌 수 있습니다.
 
 
-# 2. 각 통신사 별 사이트
+  1)Crawler : 
+    해당하는 통신사 공시지원금 사이트에서 데이터를 크롤링
+    동적 웹페이지 크롤링을 위해 Selenium Package 활용
+    
+  2)MySQL Database : 
+     크롤링한 데이터가 이미지, 모델명, 제품명, 출고가, 공시지원금, 추가지원금, 판매가, 공시일자 순으로 각 통신사 테이블에 삽입됨
+     만약 특정 통신사의 특정 모델 공시일자가 갱신 된다면, 새롭게 갱신된 값을 따로 저장하여 그래프화 할 수 있도록 업데이트전용 테이블 존재
 
-KT : https://shop.kt.com/smart/supportAmtList.do
+  3)Web server:
+     메인 페이지에서 검색옵션을 선택하고 검색어를 입력하면 검색어에 해당하는 모델이 정보가 통신사 별로 출력 되며 이제까지 갱신된 지원금을 그래프를 통해 확인 가능
 
-SKT : http://shop.tworld.co.kr/handler/Dantong-SKT
+  4)bash script (for crawling) : 
+    각 크롤러가 동작할 수 있도록 작성 된 스크립트
+    해당하는 통신사에서 특정 모델에 대한 공시지원금(공시 일자)이 갱신 되거나, 크롤링 시 발생하는 오류를 log에 저장하도록 설계.
+    리눅스의 crontab 등의 기능을 통해 이 스크립트 파일이 정기적 실행 됨으로써 정기적인 크롤링 수행 될 수 있음
 
-LG U+ : https://www.uplus.co.kr/css/note/item/RetrieveItemDstrDisc.hpi
+
+
+# 2. 크롤링 타켓 사이트
+
+  KT : https://shop.kt.com/smart/supportAmtList.do
+
+  SKT : http://shop.tworld.co.kr/handler/Dantong-SKT
+
+  LG U+ : https://www.uplus.co.kr/css/note/item/RetrieveItemDstrDisc.hpi
 
 # 3. 개발환경
 
-OS : Ubuntu 18.04.1 LTS
+  OS : Ubuntu 18.04.1 LTS
 
-Language : Python 3.6.7, PHP 7, bash script, HTML, CSS
+  Language : Python 3.6.7, PHP 7, bash script, HTML, CSS , js
 
-Web Server & Database Server : [Bitnami 다운로드](https://bitnami.com/stack/wamp/installer)
+  web Server & Database : [Bitnami 다운로드](https://bitnami.com/stack/wamp/installer)
+    우리는 Aaphce2 web Server 환경과 Mysql Database 환경을 모두 포함 하는 통합 패키지 bitnami를 사용하였습니다.
 
 
 # 4. 설치
 
-저희 프로그램을 실행하기 위해서는 먼저 사전으로 설치해야하는 것이 있습니다.
+  저희 시스템을 동작시키 위해서 사전에 준비가 필요한 사항을 제시 합니다.
 
-## 1. 크롬 설치
+## 1. webdriver (For selenium) 설치
 
-크롤러가 크롬 드라이버를 통하여 크롤링을 하기 때문에 크롬 설치가 필수입니다. 크롬 설치는 [바로가기](https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&hl=ko)를 통해 해당 웹페이지 설명대로 OS에 맞게 설치를 진행하면 됩니다. 크롬 설치가 완료가 된 후, Linux 환경에서 돌리고자 하는 분들은 소스 코드 그대로 사용하면 되지만 Windows 환경에서 돌리고자 하는 분들은
+  크롤러가 selenium 모듈을 통해 동작하기 때문에, 사용자가 원하는 webdriver 설치를 진행 하셔야 합니다.
+  
+  (저희 시스템에서는 chromedriver(for linux)를 활용 하였으며, test_it/crawler 디렉터리 내부에 포함 되어있습니다.
+  이 chormedriver 드라이버의 경우 google_chrome이 설치 되어있지 않으면 실행 되지 않습니다.)
 
-
-```python
-chrome_options = wd.ChromeOptions()
-chrome_options.binary_location = '/opt/google/chrome/google-chrome'
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-dev-shm-usage')
-```
-
-해당 부분을 주석처리 해주시고,
-
-```python
-driver = wd.Chrome('chromedriver')
-#driver = wd.Chrome('./chromedriver')
-```
-
-드라이버를 위에 적힌 소스를 사용해주시기 바랍니다.
+  webdriver설치는 [바로가기](https://www.seleniumhq.org/download/)를 통해서 원하는 브라우저에 호환되는 webdriver를 설치하시면 됩니다.
+  
+  아래의 코드에서 Window환경에서는 1번라인, Linux or Max 환경에서는 2번라인처럼 웹 드라이버를 실행 시켜주시면 됩니다.
+  
+  ```python
+  driver = wd.Chrome('chromedriver')
+  #driver = wd.Chrome('./chromedriver')
+  ```
 
 ## 2. Selenium 및 pymysql 설치
 
-저희 프로그램은 Python에서 제공하는 Package인 Selenium과 pymysql을 활용하여 웹 크롤링 및 데이터베이스와 연동합니다. Linux 환경에서는
+  저희 프로그램은 Python의 Package인 Selenium 을 통해 웹 크롤링을 수행하며,
+  pymysql을 통해 데이터베이스 서버와 프로그램을 연동시킵니다. Linux/Python3 환경에서는 아래와 같은 코드로 패키지를 설치 할 수 있습니다.
 
-```
-$sudo su apt-get install pip3
-$pip3 install selenium
-$pip3 install pymysql
-```
-
-위의 명령어를 사용하면 Selenium과 pymysql Package가 정상적으로 다운받아 질 것입니다. Windows 환경은 '윈도우+R'키를 입력하여 명령 프롬프트(cmd)를 실행한 다음,
-
-```
-$pip install selenium
-$pip install pymysql
-```
-
-위의 명령어를 사용하면 Selenium과 pymysql Package가 정상적으로 다운받아 질 것입니다.
-
+  ```
+  $sudo su apt-get install pip3
+  $pip3 install selenium
+  $pip3 install pymysql
+  ```
 
 # 5. 실행
 
-만약 저희 프로그램을 간접적으로 체험하고 싶다면, [JE_JS_PHONE](http://210.117.181.26:8080/index.php) 해당 링크를 클릭하여 주십시오.
+  만약 저희 시스텝을 간접적으로 체험하고 싶다면, [JE_JS_PHONE](http://210.117.181.26:8080/index.php) 해당 링크를 클릭하여 저희의 웹서버를 방문해주십시오.
