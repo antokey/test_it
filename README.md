@@ -28,19 +28,19 @@
 
 # 2. 크롤링 타켓 사이트
 
- *KT : https://shop.kt.com/smart/supportAmtList.do
+ * KT : https://shop.kt.com/smart/supportAmtList.do
 
- *SKT : http://shop.tworld.co.kr/handler/Dantong-SKT
+ * SKT : http://shop.tworld.co.kr/handler/Dantong-SKT
 
- *LG U+ : https://www.uplus.co.kr/css/note/item/RetrieveItemDstrDisc.hpi
+ * LG U+ : https://www.uplus.co.kr/css/note/item/RetrieveItemDstrDisc.hpi
 
 # 3. 개발환경
 
-  >OS : Ubuntu 18.04.1 LTS
+  * OS : Ubuntu 18.04.1 LTS
 
-  >Language : Python 3.6.7, PHP 7, bash script, HTML, CSS , js
-
-  >web Server & Database : [Bitnami 다운로드](https://bitnami.com/stack/wamp/installer)
+  * Language : Python 3.6.7, PHP 7, bash script, HTML, CSS , js
+  
+  * web Server & Database : [Bitnami 다운로드](https://bitnami.com/stack/wamp/installer)
     우리는 Aaphce2 web Server 환경과 Mysql Database 환경을 모두 포함 하는 통합 패키지 bitnami를 사용하였습니다.
 
 
@@ -66,8 +66,8 @@
 
 #### 2) Selenium 및 pymysql 설치
 
-  >저희 프로그램은 Python의 Package인 Selenium 을 통해 웹 크롤링을 수행하며,
-  >pymysql을 통해 데이터베이스 서버와 프로그램을 연동시킵니다. Linux/Python3 환경에서는 아래와 같은 코드로 패키지를 설치 할 수 있습니다.
+  저희 프로그램은 Python의 Package인 Selenium 을 통해 웹 크롤링을 수행하며,
+  pymysql을 통해 데이터베이스 서버와 프로그램을 연동시킵니다. Linux/Python3 환경에서는 아래와 같은 코드로 패키지를 설치 할 수 있습니다.
 
   ```
   $sudo su apt-get install pip3
