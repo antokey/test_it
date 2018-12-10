@@ -89,12 +89,12 @@ for page in range(2, 10):
             elif count == 3:
                 addition = int(price_int)
                 count = 0
-        if 'strong' in line:
+        if '<strong class="price">' in line:
             a = re.sub('<.+?>', '', line, 0, re.I|re.S)
             text = re.sub('&nbsp;|\t', '', a)
             price_int = re.sub('\D+', '', text)
             total_price = int(price_int)
-            obj = SKPhoneInfo(image, model_name, phone_name,original_price,gongsi, addition, total_price, date)
+            obj = SKPhoneInfo(image, model_name, phone_name, original_price, gongsi, addition, total_price, date)
             list_sk.append(obj)
 
     #Close the html file for the next html source
@@ -108,7 +108,6 @@ for page in range(2, 10):
         print("Next Page Error!", e)
 
 #Check the duplicated value in Database and send to the Database
-db = Db()
 for obj in list_sk:
     db.db_insertCrawlingData(
         obj.img_link,
