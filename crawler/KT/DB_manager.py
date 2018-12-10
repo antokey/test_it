@@ -32,7 +32,6 @@ class DBHelper:
 
     def db_insertCrawlingData(self,img_link, model,name, out_price, gongshi,chuga, danmal,date): # add the instance or update
         with self.conn.cursor() as cursor: #with문을 사용함으로서 자동으로 닫아줌
-            file=open('test','a')
             find_sql = '''
             select * from `kt` where model=%s
             '''
