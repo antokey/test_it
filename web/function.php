@@ -120,7 +120,7 @@
 				}
 			}
 			for($k = 0 ; $k < $cnt_lg ; $k++){
-				if($rows_lg[$i][3]==$rows_sk[$k][3]){
+				if($rows_lg[$k][3]==$rows_sk[$i][3]){
 					$flag_lg = TRUE;
 					break;
 				}
