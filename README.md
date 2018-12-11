@@ -80,3 +80,6 @@
 # 5. 시스템 체험
 
   *만약 저희 시스텝을 간접적으로 체험하고 싶다면, [JE_JS_PHONE](http://210.117.181.26:8080/index.php) 해당 링크를 클릭하여 저희의 웹서버를 방문해주십시오시오..*
+
+#  error detect
+*2018/12/11/14:00 web/fucntion.php error detect 
